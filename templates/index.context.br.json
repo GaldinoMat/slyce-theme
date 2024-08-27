@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-c549ee114357dbffc4e4caf9e747cd39": null,
+            "header-3da0c3bff3f4a28b1bb158ed07cc16a4": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-72a0977a9b67ddc1be81e5915bc20eb1": null,
+            "header-fbfcd69f932451182cd07f5e62e2775c": null,
             "text_align": "vertical-center horizontal-center",
-            "header-5dc8f13cdfe0d5095d04a840d5ff1af2": null,
+            "header-0848583fcefd6052aee7a990723e7238": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas_copiar-Fem2.jpg",
             "video_url": "",
-            "header-1daaa873c95cbcdb02cc462ab5d8f258": null,
+            "header-7258f1625a05f0f6aa53d02674d3e3a7": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-92d53a318c26f2a1469629bb6c948e2c": null,
+            "header-cd0429823eb0506d14d4ad77a013e5b3": null,
             "text_align": "vertical-center horizontal-center",
-            "header-1dd6232ec3013f1d8f553bb1bdc931aa": null,
+            "header-7c3c6f7332b77334e927f809bd588439": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -429,79 +429,18 @@
         ".section-header {margin-bottom: 15px;}"
       ],
       "settings": {
-        "title": "Acessórios",
-        "home_featured_products": "acessorios",
+        "title": "novidades para ele",
+        "home_featured_products": "masculino",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
-        "view_all": true,
+        "view_all": false,
         "divider": false
       },
       "blocks": {
       },
       "block_order": [
 
-      ]
-    },
-    "805e92c0-e08a-47ad-95f4-ee2f73ee6f7e": {
-      "type": "text-columns",
-      "disabled": false,
-      "custom_css": [
-
-      ],
-      "settings": {
-        "title": "",
-        "align_text": "center",
-        "divider": false
-      },
-      "blocks": {
-        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-1": {
-          "type": "text_block",
-          "disabled": false,
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/V-0011.jpg",
-            "image_mask": "portrait",
-            "image_width": 480,
-            "title": "",
-            "text": "",
-            "button_label": "Championship",
-            "button_link": "shopify:\/\/collections\/championship"
-          }
-        },
-        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-2": {
-          "type": "text_block",
-          "disabled": false,
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas-Endurance.jpg",
-            "image_mask": "portrait",
-            "image_width": 480,
-            "title": "",
-            "text": "",
-            "button_label": "Endurance",
-            "button_link": "shopify:\/\/collections\/linha-endurance"
-          }
-        },
-        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-3": {
-          "type": "text_block",
-          "disabled": false,
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Banner_Categorias_Vintage_Novo.jpg",
-            "image_mask": "portrait",
-            "image_width": 480,
-            "title": "",
-            "text": "",
-            "button_label": "Vintage",
-            "button_link": "shopify:\/\/collections\/linha-vintage"
-          }
-        }
-      },
-      "block_order": [
-        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-1",
-        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-2",
-        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-3"
       ]
     },
     "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291": {
@@ -571,10 +510,9 @@
     "featured_collection_3dcBp",
     "rich_text_cQtJq",
     "promo_grid_9KrmE",
+    "featured_collection_XMmwp",
     "rich_text_xRX4g",
     "slideshow_n8PHJ",
-    "featured_collection_XMmwp",
-    "805e92c0-e08a-47ad-95f4-ee2f73ee6f7e",
     "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291"
   ]
 }
