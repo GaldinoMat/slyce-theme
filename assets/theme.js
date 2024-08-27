@@ -4751,8 +4751,8 @@ theme.recentlyViewed = {
               <div class="grid-product__image-mask">
                 ${image}
               </div>
-              <div class="grid-product__meta">
-                <div class="grid-product__title">${product.title}</div>
+              <div class="grid-product__meta recently-viewed-meta">
+                <div class="grid-product__title recently-viewed-meta">${product.title}</div>
                 ${priceMarkup}
                 ${vendorMarkup}
               </div>

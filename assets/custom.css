@@ -813,14 +813,6 @@ a.jdgm-write-rev-link {
   }
 }
 
-.grid-test {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px 0;
-  padding: 10px 0;
-  justify-content: center;
-}
-
 @media (max-width: 425px) {
   .grid--uniform {
     display: flex;
@@ -958,4 +950,17 @@ p#pq-branding {
     min-height: 836px;
     height: 836px;
   }
+}
+
+.splide__arrow {
+  top: 40% !important;
+  background-color: #203122 !important;
+}
+
+.splide__arrow svg{
+  fill: white !important;
+}
+
+.recently-viewed-meta {
+  width: 100% !important;
 }

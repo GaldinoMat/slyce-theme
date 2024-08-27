@@ -7,7 +7,7 @@
     </div>
   {%- endif -%}
 
-  <div class="grid {% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom grid-test">
+  <div class="grid {% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom">
     {%- liquid
       assign grid_item_width = 'medium-up--one-third'
       case section.blocks.size
