@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "parent": "index.json",
   "context": {
@@ -216,8 +225,8 @@
         ".section-header {margin-bottom: 15px; padding-top: 20px;}"
       ],
       "settings": {
-        "title": "Novidades",
-        "home_featured_products": "shop-all",
+        "title": "Novidades para ela",
+        "home_featured_products": "para-elas",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
@@ -293,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-bedb935e6fd69d394413e313206c790d": null,
+            "header-c549ee114357dbffc4e4caf9e747cd39": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-d6d4b25334afe74522079735ef47533b": null,
+            "header-72a0977a9b67ddc1be81e5915bc20eb1": null,
             "text_align": "vertical-center horizontal-center",
-            "header-45c699caf34e16f8bb7f4fb8833755e0": null,
+            "header-5dc8f13cdfe0d5095d04a840d5ff1af2": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -318,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas_copiar-Fem2.jpg",
             "video_url": "",
-            "header-a4e48dad74df568e1a27d6e8026990ce": null,
+            "header-1daaa873c95cbcdb02cc462ab5d8f258": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-421a21afe9d65f1f8a45be6c848e9076": null,
+            "header-92d53a318c26f2a1469629bb6c948e2c": null,
             "text_align": "vertical-center horizontal-center",
-            "header-89e9d356cb24d6f8f2f9450327b19561": null,
+            "header-1dd6232ec3013f1d8f553bb1bdc931aa": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
