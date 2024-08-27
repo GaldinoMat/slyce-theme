@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "parent": "product.produto-kit.json",
   "context": {
@@ -8,14 +17,6 @@
       "settings": {
       },
       "blocks": {
-        "simple_bundles_kits_infinite_options_selector_M9H6T": {
-          "type": "shopify:\/\/apps\/simple-bundles-kits\/blocks\/infinite-options-selector\/e553276b-36b2-446d-b80a-aa47fe5f96ac",
-          "disabled": false,
-          "settings": {
-            "select_placeholder": "Selecione as Opções",
-            "disable_oos_options": true
-          }
-        },
         "variant_picker": {
           "disabled": true,
           "settings": {
@@ -31,7 +32,6 @@
         "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
         "price",
         "description",
-        "simple_bundles_kits_infinite_options_selector_M9H6T",
         "separator",
         "variant_picker",
         "inventory_status",

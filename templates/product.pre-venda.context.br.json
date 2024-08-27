@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "parent": "product.pre-venda.json",
   "context": {
@@ -29,13 +38,6 @@
       "settings": {
       },
       "blocks": {
-        "dc_pre_orders_preorder_now_preorder_shipping_policy_q4M8y": {
-          "type": "shopify:\/\/apps\/dc-pre-orders-preorder-now\/blocks\/preorder-shipping-policy\/31798c03-8451-4b34-b6bd-53a41ce1a967",
-          "disabled": false,
-          "settings": {
-            "vertical-margins": 0
-          }
-        }
       },
       "block_order": [
         "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
@@ -46,8 +48,7 @@
         "inventory_status",
         "buy_buttons",
         "6bdad11c-2b78-418c-8aaa-087cc6c3fb01",
-        "complementary_products_aFgBzd",
-        "dc_pre_orders_preorder_now_preorder_shipping_policy_q4M8y"
+        "complementary_products_aFgBzd"
       ]
     }
   },
