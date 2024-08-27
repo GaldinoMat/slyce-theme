@@ -1,0 +1,62 @@
+{
+  "parent": "product.pre-venda.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "1716747186eaa1b89a": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      },
+      "blocks": {
+        "dc_pre_orders_preorder_now_preorder_product_config_dnHp6": {
+          "type": "shopify:\/\/apps\/dc-pre-orders-preorder-now\/blocks\/preorder-product-config\/31798c03-8451-4b34-b6bd-53a41ce1a967",
+          "disabled": false,
+          "settings": {
+            "product": "capa-de-raquete-de-couro",
+            "shipping-policy-date-format": "%B %e, %Y"
+          }
+        }
+      },
+      "block_order": [
+        "dc_pre_orders_preorder_now_preorder_product_config_dnHp6"
+      ]
+    },
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "dc_pre_orders_preorder_now_preorder_shipping_policy_q4M8y": {
+          "type": "shopify:\/\/apps\/dc-pre-orders-preorder-now\/blocks\/preorder-shipping-policy\/31798c03-8451-4b34-b6bd-53a41ce1a967",
+          "disabled": false,
+          "settings": {
+            "vertical-margins": 0
+          }
+        }
+      },
+      "block_order": [
+        "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
+        "price",
+        "description",
+        "separator",
+        "variant_picker",
+        "inventory_status",
+        "buy_buttons",
+        "6bdad11c-2b78-418c-8aaa-087cc6c3fb01",
+        "complementary_products_aFgBzd",
+        "dc_pre_orders_preorder_now_preorder_shipping_policy_q4M8y"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "17024281419024b538",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

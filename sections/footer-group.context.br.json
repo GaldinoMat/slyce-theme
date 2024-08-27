@@ -1,0 +1,148 @@
+{
+  "parent": "footer-group.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "2e18d429-f014-4a22-9dba-af5fa095e0ee": {
+      "type": "scrolling-text",
+      "disabled": false,
+      "custom_css": [
+        "{background-color: var(--colorFooter); color: #49604c;}",
+        ".scrolling-text {padding-top: 15px;}"
+      ],
+      "settings": {
+        "text": "",
+        "link": "",
+        "text_size": 20,
+        "text_spacing": true,
+        "direction": "left",
+        "speed": 300
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "b0b8bc86-8c67-42eb-9da5-6abefdd04047": {
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "align_text": "left",
+        "image_width": "50",
+        "image_mask": "none",
+        "image_position": "left",
+        "color_background": "#f5f5f5",
+        "color_text": "#203122",
+        "top_padding": false,
+        "bottom_padding": false
+      },
+      "blocks": {
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-text-1": {
+          "settings": {
+            "text": "<h3>Assine nossa newsletter<\/h3><p>Faça parte da nossa comunidade e não perca nenhuma novidade.<\/p>"
+          }
+        },
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-form-1": {
+          "settings": {
+          }
+        }
+      }
+    },
+    "footer-promotions": {
+      "disabled": false,
+      "settings": {
+        "hide_homepage": true
+      },
+      "blocks": {
+      }
+    },
+    "footer": {
+      "settings": {
+        "show_payment_icons": true
+      },
+      "blocks": {
+        "6ab1da7d-a19b-406a-9463-b3dfb4b0b2a1": {
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo_site_rodape.svg",
+            "desktop_logo_height": 50
+          }
+        },
+        "89530b8f-6253-4b06-8444-cf0a35f338b9": {
+          "disabled": false,
+          "settings": {
+            "text": "<p>SLYCE ARTIGOS ESPORTIVOS LTDA.<br\/>CNPJ: 52.380.726\/0001-09<br\/>Avenida Nove de Julho, 5966 - Conjunto 62<br\/>São Paulo\/SP - CEP: 01406-902<br\/><br\/>Atendimento ao Cliente<br\/>Seg - Sex &gt; 09h às 18h<\/p><p><a href=\"https:\/\/api.whatsapp.com\/send?phone=5511971602243\" target=\"_blank\" title=\"https:\/\/api.whatsapp.com\/send?phone=5511971602243\">+55 11 97160-2243<\/a><br\/><a href=\"mailto:sac@slyce.com.br\" target=\"_blank\" title=\"mailto:sac@slyce.com.br\">sac@slyce.com.br<\/a><\/p>"
+          }
+        },
+        "d46c97fc-b310-43b1-b505-5bc49e4286a6": {
+          "disabled": false,
+          "settings": {
+          }
+        },
+        "7d0d8a6c-29d1-4834-97de-5952fd0c1b68": {
+          "disabled": false,
+          "settings": {
+          }
+        },
+        "69fb9149-3fe4-4871-b1f7-6a9165011a81": {
+          "disabled": false,
+          "settings": {
+          }
+        },
+        "f70097e0-7d2e-4db2-b856-888572869d9d": {
+          "settings": {
+            "container_width": 18
+          }
+        }
+      }
+    },
+    "1721240609d78e1a94": {
+      "type": "apps",
+      "disabled": false,
+      "custom_css": [
+        "#app-embed {background-color: #f5f5f5; margin-top: 5px; margin-bottom: 5px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      },
+      "blocks": {
+        "forms_inline_BxtGE": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "disabled": false,
+          "settings": {
+            "paragraph-de6ca7b169ece6918ded75bab6ac0a77": null,
+            "form_id": "140509",
+            "header-9f624b57cc6749f840efd5a12f22c9c9": null,
+            "text_color": "#203122",
+            "button_background_color": "#203122",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "header-09e860980cb70bb0af08ce1940abb00c": null,
+            "text_alignment": "center",
+            "header-90c89d8fc7286c82c15adb74d1ac4060": null,
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_BxtGE"
+      ]
+    }
+  },
+  "order": [
+    "2e18d429-f014-4a22-9dba-af5fa095e0ee",
+    "b0b8bc86-8c67-42eb-9da5-6abefdd04047",
+    "1721240609d78e1a94",
+    "footer-promotions",
+    "footer"
+  ]
+}

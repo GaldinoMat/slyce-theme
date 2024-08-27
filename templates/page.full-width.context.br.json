@@ -1,0 +1,18 @@
+{
+  "parent": "page.full-width.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

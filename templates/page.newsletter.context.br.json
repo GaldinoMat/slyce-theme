@@ -1,0 +1,99 @@
+{
+  "parent": "page.newsletter.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "text_and_image_7wzwG": {
+      "type": "text-and-image",
+      "disabled": false,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "header-84d4ae79432930b8cb1869cfd60d1991": null,
+        "image": "shopify:\/\/shop_images\/Banners_Horizontais_DesktopVintage.jpg",
+        "image_mask": "none",
+        "header-08bf366360a2bf00801833878e11e4ce": null,
+        "image2": null,
+        "image2_mask": "none",
+        "header-0bc2ec473c5556d90b48a2baca2dbad3": null,
+        "subtitle": "",
+        "title": "INSCREVA-SE",
+        "text": "<p>Faça parte do mundo Slyce para ter acesso antecipado aos lançamentos e ficar por dentro das novidades e notícias do mundo do tênis<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "newsletter_YhGmN": {
+      "type": "newsletter",
+      "disabled": false,
+      "settings": {
+        "paragraph-47283b2a6b07c56002c4a5ec538a8acc": null,
+        "align_text": "center",
+        "header-36eaab04315ae2f334e790fd05181f00": null,
+        "image": null,
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "top_padding": true,
+        "bottom_padding": true
+      },
+      "blocks": {
+        "title_tPft3": {
+          "type": "title",
+          "disabled": false,
+          "settings": {
+            "title": "",
+            "heading_size": "h2"
+          }
+        },
+        "text_mhYWV": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        },
+        "form_M7BGt": {
+          "type": "form",
+          "disabled": false,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title_tPft3",
+        "text_mhYWV",
+        "form_M7BGt"
+      ]
+    },
+    "main": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_and_image_7wzwG",
+    "newsletter_YhGmN"
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "parent": "page.about.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "cd1227b0-c13c-467b-b204-cf3999d63f38": {
+      "disabled": false,
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7b07da32a21d4079bcb943244c6491dc.mp4",
+        "color_border": "#f4f4f4",
+        "layout": "left",
+        "height": 550
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "9fef911b-d0b0-42fc-9c7f-5f4b6636a360": {
+      "disabled": false,
+      "custom_css": [
+        "{font-size: 18px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "template--14993005871169__9fef911b-d0b0-42fc-9c7f-5f4b6636a360-image-1": {
+          "disabled": false,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-QuemSomos.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14993005871169__9fef911b-d0b0-42fc-9c7f-5f4b6636a360-liquid-1": {
+          "disabled": false,
+          "settings": {
+            "code": "<h2>QUEM SOMOS<\/h2><p class=\"text-about\">Nós somos praticantes e amantes do tênis. Valorizamos a ideia de que o fracasso é um passo essencial rumo ao sucesso. E entendemos que a busca incessante pela excelência, a dedicação aos treinos e a resiliência mental nos aproximam cada vez mais dos nossos sonhos, tanto dentro quanto fora das quadras.<\/p>\n\n<p class=\"text-about\">Criamos produtos de excelência para quem vive e respira o mundo do tênis.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14993005871169__9fef911b-d0b0-42fc-9c7f-5f4b6636a360-image-1",
+        "template--14993005871169__9fef911b-d0b0-42fc-9c7f-5f4b6636a360-liquid-1"
+      ]
+    },
+    "31fecfae-4ee2-4e76-8641-7cb7f8835770": {
+      "disabled": false,
+      "custom_css": [
+        "\/* Estilos padrão para desktop *\/.grid--flush-bottom {display: flex; flex-direction: row; align-content: center; justify-content: center;}",
+        ".grid__item {background: #203122; color: #ffffff; padding: 24px; margin: 0 12px; box-sizing: border-box;}",
+        ".grid__item h3 {font-size: 20px; height: 44px; display: flex; align-items: center; justify-content: center;}",
+        ".grid__item p {font-size: 14px;}",
+        "@media (max-width: 768px) {.grid--flush-bottom {flex-direction: column; align-items: center; justify-content: center; } .grid__item {margin: 12px 0; width: 100%; }}"
+      ],
+      "settings": {
+        "title": "O que acreditamos",
+        "align_text": "center",
+        "divider": false
+      },
+      "blocks": {
+        "template--14993005871169__31fecfae-4ee2-4e76-8641-7cb7f8835770-text_block-1": {
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/slyce_icon_01_1.png",
+            "image_mask": "square",
+            "image_width": 90,
+            "title": "PRESSURE MAKES DIAMONDS,  RISE TO THE OCCASION",
+            "text": "<p>O que torna um ser humano diferenciado é sua habilidade de performar sob pressão. Não basta possuir toda a habilidade do mundo se a sua resiliência mental falha nos momentos decisivos.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14993005871169__31fecfae-4ee2-4e76-8641-7cb7f8835770-text_block-2": {
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/slyce_icon_02_1.png",
+            "image_mask": "square",
+            "image_width": 90,
+            "title": "FAIL YOUR WAY TO SUCCESS",
+            "text": "<p> Cada queda nos ensina, molda nossa resiliência e nos direciona para a vitória. Abraçar os fracassos como parte essencial do caminho é o segredo para alcançar um sucesso duradouro.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14993005871169__31fecfae-4ee2-4e76-8641-7cb7f8835770-text_block-3": {
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/slyce_icon_03_1.png",
+            "image_mask": "square",
+            "image_width": 90,
+            "title": "PERFORMANCE AND ELEGANCE GO HAND IN HAND",
+            "text": "<p>Vestir-se bem é o segredo para sentir-se confiante e pronto para entregar o melhor de si em todas as situações.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14993005871169__31fecfae-4ee2-4e76-8641-7cb7f8835770-text_block-1",
+        "template--14993005871169__31fecfae-4ee2-4e76-8641-7cb7f8835770-text_block-2",
+        "template--14993005871169__31fecfae-4ee2-4e76-8641-7cb7f8835770-text_block-3"
+      ]
+    },
+    "532c0c90-1352-485c-b2f4-3b244cb7a330": {
+      "disabled": false,
+      "custom_css": [
+        ".hero__top-subtitle {font-size: 20px; letter-spacing: 0.3em;}",
+        "h2.h1.hero__title {font-size: 64px;}",
+        ".hero__subtitle {font-size: 14px; margin-bottom: 5px; margin-top: 16px; text-align: center; max-width: 70%; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "500px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "template--14993005871169__532c0c90-1352-485c-b2f4-3b244cb7a330-image-1": {
+          "disabled": false,
+          "settings": {
+            "top_subheading": "O que buscamos",
+            "title": "ELEVAR O TÊNIS BRASILEIRO",
+            "subheading": "Todas as ações feita por nós são direcionadas para auxiliar o tenista a alcançar seu potencial máximo. Para nós, a crença de que 'Nada nunca está perdido' é mais do que um slogan. Estamos aqui para apoiar cada passo do caminho, ajudando os tenistas a superar desafios e a encontrar sucesso. It's never over.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/H-0018.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/slyce_banner_03_d479872f-3b96-475e-8074-f902b11aa970.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 28
+          }
+        }
+      },
+      "block_order": [
+        "template--14993005871169__532c0c90-1352-485c-b2f4-3b244cb7a330-image-1"
+      ]
+    },
+    "f0b4b010-d0c8-4e20-871e-59838e891ad4": {
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20230815105336_IMG_0432.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Apoiando a próxima geração",
+        "text": "<p>O Tênis segue sendo um esporte inacessível para grande parte da população brasileira. Elevar o esporte no Brasil significa apoiar todos os apaixonados pelo esporte. É por isso que a Slyce apoia o Instituto Próxima Geração, Instituto que faz a diferença na vida de milhares de crianças apaixonadas pelo tênis.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "55c79d25-a1c8-4dc8-aba3-c046a0f68349": {
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/uprooted-trees.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Sustentabildade",
+        "text": "<p>Na Slyce, somos comprometidos com o meio ambiente e por isso seguimos algumas diretrizes importantes:<\/p><p>1. Embalagens zero plástico<\/p><p>2. Tecidos 100% vegano<\/p><p>3. Priorização da logística sustentável <br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "2b71a88b-f26f-43ee-b9a3-fdc20abe2947": {
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/brazil-banner-above-outdoor-wall.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Mão de Obra Nacional",
+        "text": "<p>80% da nossa matéria prima é comprada e fabricada no Brasil. Valorizamos e apoiamos a indústria nacional, contribuindo para o crescimento e desenvolvimento da mão da obra nacional<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "f9caa3b5-eacd-453e-8f7c-5643c6ce09bb": {
+      "disabled": false,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "cb56ae2f-7229-4f23-a1a8-e9e8de3d4aff": {
+          "disabled": false,
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "cb56ae2f-7229-4f23-a1a8-e9e8de3d4aff"
+      ]
+    },
+    "8ebe3212-c9e7-47fa-a88c-0a39e3413c27": {
+      "disabled": false,
+      "custom_css": [
+        ".hero__subtitle {font-size: 14px; margin-bottom: 10px; margin-top: 12px; max-width: 70%; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "400px",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "template--14993005871169__8ebe3212-c9e7-47fa-a88c-0a39e3413c27-image-1": {
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "APOIANDO A PRÓXIMA GERAÇÃO",
+            "title_size": 64,
+            "subheading": "O Tênis segue sendo um esporte inacessível para grande parte da população brasileira. Elevar o esporte no Brasil significa apoiar todos os apaixonados por ele. É por isso que a Slyce apoia o Instituto Próxima Geração, que faz a diferença na vida de milhares de crianças apaixonadas pelo tênis.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/bannerIPG.jpg",
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 24
+          }
+        },
+        "8d8910c4-57ae-43ff-b987-73d85907a9de": {
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "esg",
+            "title_size": 64,
+            "subheading": "Na Slyce, somos comprometidos com o meio ambiente e por isso que ultilizamos apenas embalagens biodegradáveis e\/ou recicladas.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS5_9ce1a6dc-1c54-40ff-ae14-8f7490f2d1d3.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_Mobile-ATLETAS5_a3afd323-11c2-46c0-a186-4a0e6dd9ef41.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 24
+          }
+        },
+        "image_PwcJF6": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "MÃO DE OBRA NACIONAL",
+            "title_size": 64,
+            "subheading": "Aproximadamente 70% da nossa matéria prima é comprada e fabricada no Brasil. Valorizamos e apoiamos a indústria brasileira, contribuindo para o crescimento e desenvolvimento da mão da obra nacional.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/bannermaodeobra.jpg",
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--14993005871169__8ebe3212-c9e7-47fa-a88c-0a39e3413c27-image-1",
+        "8d8910c4-57ae-43ff-b987-73d85907a9de",
+        "image_PwcJF6"
+      ]
+    },
+    "51c32113-4536-444b-ac56-5fbdf89735d7": {
+      "disabled": false,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "template--14993005871169__51c32113-4536-444b-ac56-5fbdf89735d7-heading-1": {
+          "disabled": false,
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14993005871169__51c32113-4536-444b-ac56-5fbdf89735d7-heading-1"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "cd1227b0-c13c-467b-b204-cf3999d63f38",
+    "9fef911b-d0b0-42fc-9c7f-5f4b6636a360",
+    "31fecfae-4ee2-4e76-8641-7cb7f8835770",
+    "532c0c90-1352-485c-b2f4-3b244cb7a330",
+    "f0b4b010-d0c8-4e20-871e-59838e891ad4",
+    "55c79d25-a1c8-4dc8-aba3-c046a0f68349",
+    "2b71a88b-f26f-43ee-b9a3-fdc20abe2947",
+    "f9caa3b5-eacd-453e-8f7c-5643c6ce09bb",
+    "8ebe3212-c9e7-47fa-a88c-0a39e3413c27",
+    "51c32113-4536-444b-ac56-5fbdf89735d7"
+  ]
+}

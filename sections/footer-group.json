@@ -1,0 +1,149 @@
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "scrolling_text_WpTWhJ": {
+      "type": "scrolling-text",
+      "custom_css": [
+        "{background-color: var(--colorFooter); color: #fff;}"
+      ],
+      "settings": {
+        "text": "",
+        "link": "",
+        "text_size": 20,
+        "text_spacing": true,
+        "direction": "left",
+        "speed": 300
+      }
+    },
+    "b0b8bc86-8c67-42eb-9da5-6abefdd04047": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "Inscreva-se",
+            "heading_size": "h3"
+          }
+        },
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>New drops<\/strong><\/h2><p>Faça parte da nossa comunidade, não perca nenhuma novidade e seja o primeiro a ter acesso aos lançamentos<\/p>"
+          }
+        },
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-form-1": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-title-1",
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-text-1",
+        "sections--14989996654657__b0b8bc86-8c67-42eb-9da5-6abefdd04047-form-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "align_text": "left",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "color_background": "#f5f5f5",
+        "color_text": "#203122",
+        "top_padding": false,
+        "bottom_padding": false
+      }
+    },
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "settings": {
+        "hide_homepage": false,
+        "image_size": "wide"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "6ab1da7d-a19b-406a-9463-b3dfb4b0b2a1": {
+          "type": "logo_social",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo_site_rodape.png",
+            "desktop_logo_height": 50,
+            "container_width": 95
+          }
+        },
+        "89530b8f-6253-4b06-8444-cf0a35f338b9": {
+          "type": "custom",
+          "settings": {
+            "show_footer_title": false,
+            "title": "Custom text",
+            "text": "<p>Atendimento ao Cliente<br\/>Seg - Sex &gt; 09h às 18h<br\/>Sáb &gt; 09h às 13h<\/p><p>Rua Coronel José Eusébio, 95, Casa 13, <br\/>São Paulo\/SP - CEP: 01239-030<\/p><p>+55 11 98929-3818<\/p>",
+            "container_width": 30
+          }
+        },
+        "d46c97fc-b310-43b1-b505-5bc49e4286a6": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "shop",
+            "container_width": 16
+          }
+        },
+        "7d0d8a6c-29d1-4834-97de-5952fd0c1b68": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "slyce",
+            "container_width": 16
+          }
+        },
+        "69fb9149-3fe4-4871-b1f7-6a9165011a81": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "politicas",
+            "container_width": 20
+          }
+        },
+        "f70097e0-7d2e-4db2-b856-888572869d9d": {
+          "type": "newsletter",
+          "settings": {
+            "show_footer_title": true,
+            "title": "Nossas redes",
+            "text": "",
+            "container_width": 95
+          }
+        }
+      },
+      "block_order": [
+        "6ab1da7d-a19b-406a-9463-b3dfb4b0b2a1",
+        "89530b8f-6253-4b06-8444-cf0a35f338b9",
+        "d46c97fc-b310-43b1-b505-5bc49e4286a6",
+        "7d0d8a6c-29d1-4834-97de-5952fd0c1b68",
+        "69fb9149-3fe4-4871-b1f7-6a9165011a81",
+        "f70097e0-7d2e-4db2-b856-888572869d9d"
+      ],
+      "custom_css": [
+        ".image-wrap {background: none !important;}"
+      ],
+      "settings": {
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false,
+        "show_payment_icons": false,
+        "show_copyright": true,
+        "copyright_text": ""
+      }
+    }
+  },
+  "order": [
+    "scrolling_text_WpTWhJ",
+    "b0b8bc86-8c67-42eb-9da5-6abefdd04047",
+    "footer-promotions",
+    "footer"
+  ]
+}

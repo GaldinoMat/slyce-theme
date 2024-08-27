@@ -1,0 +1,233 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "fe5979da-c325-4d0a-b2f3-4e3c801eed9a": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": true
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "6bdad11c-2b78-418c-8aaa-087cc6c3fb01": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "button_style": "style_4",
+            "button_border": 0,
+            "button_font_size": 16,
+            "button_font_weight": "500",
+            "button_border_radius": 0,
+            "button_vertical_space": 8,
+            "button_horizontal_space": 40,
+            "button_text_color": "#1d4321",
+            "button_background": "#ffffff",
+            "border_color": "#ffffff",
+            "hover_button_text_color": "#136c34",
+            "hover_button_background_color": "#ffffff",
+            "hover_button_border_color": "#136c34",
+            "is_new_icon_settings": false,
+            "icon_type": "outline",
+            "icon_size": 24,
+            "icon_background_type": "icon_round_background",
+            "icon_background_color": "#136c34",
+            "icon_fill_color": "#136c34",
+            "icon_border_color": "#136c34",
+            "icon_hover_color": "#1c4220",
+            "selected_icon_fill_color": "#136c34",
+            "selected_icon_border_color": "#1c4220"
+          }
+        },
+        "complementary_products_aFgBzd": {
+          "type": "complementary_products",
+          "disabled": true,
+          "settings": {
+            "product_complementary_heading": "Monte seu kit",
+            "complementary_count": 10,
+            "per_slide": 2,
+            "control_type": "arrows",
+            "image_style": "default"
+          }
+        }
+      },
+      "block_order": [
+        "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
+        "price",
+        "description",
+        "separator",
+        "variant_picker",
+        "inventory_status",
+        "buy_buttons",
+        "6bdad11c-2b78-418c-8aaa-087cc6c3fb01",
+        "complementary_products_aFgBzd"
+      ],
+      "custom_css": [
+        "a.icon-wishlist-heart-empty.wishlist-btn.heart-wishlist-animation.style_4.hulkapps-wishlist-btn-enabled {width: 100%;}",
+        "p#pq-branding {font-size: 16px; display: none;}"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_height": "fixed",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "tab_Y7KCYf": {
+          "type": "tab",
+          "settings": {
+            "title": "Características",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_Gjg4hU": {
+          "type": "tab",
+          "settings": {
+            "title": "Composição",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_PDbDFG": {
+          "type": "tab",
+          "settings": {
+            "title": "Envios & Devolução",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_A8KnNA": {
+          "type": "tab",
+          "settings": {
+            "title": "Instruções de Lavagem",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_Y7KCYf",
+        "tab_Gjg4hU",
+        "tab_PDbDFG",
+        "tab_A8KnNA"
+      ],
+      "custom_css": [
+        "{padding-top: 40px;}"
+      ],
+      "settings": {
+        "max_width": false
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Designs Sofisticados",
+        "title": "E Performance Incomparável",
+        "text": "<p>Queremos que você se sinta no seu melhor dentro da quadra, para que, quando a pressão chegar, possa executar o ponto no mais alto nível<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Slyce_banner_08.jpg",
+        "layout": "right",
+        "height": 550,
+        "framed": false,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "17024281419024b538": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_GY9db8": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_GY9db8"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "Complete o seu Kit",
+        "related_count": 3,
+        "products_per_row": 3
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 5
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "17024281419024b538",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

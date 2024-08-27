@@ -1,0 +1,174 @@
+{
+  "parent": "collection.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "slideshow_c3XCd": {
+      "type": "slideshow",
+      "disabled": false,
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "500px",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_a7fjm": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "{{ collection.metafields.custom.foto_secao_desktop.value }}",
+            "image_mobile": "{{ collection.metafields.custom.foto_secao_mobile.value }}",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_a7fjm"
+      ]
+    },
+    "d02ede7d-3345-4f7a-87c4-9a74bffc483f": {
+      "type": "featured-collections",
+      "disabled": false,
+      "custom_css": [
+        ".index-section {margin-bottom: 100px;}"
+      ],
+      "settings": {
+        "title": "conheça nossa linha completa",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      },
+      "blocks": {
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-1": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "camisetas",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-2": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "shorts",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-4": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "moletons",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-3": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "bones",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-1",
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-2",
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-4",
+        "template--14990209024065__d02ede7d-3345-4f7a-87c4-9a74bffc483f-collection-3"
+      ]
+    },
+    "collection-header": {
+      "disabled": false,
+      "settings": {
+        "collection_image_enable": false,
+        "parallax_direction": "top"
+      },
+      "blocks": {
+      }
+    },
+    "promo-grid": {
+      "settings": {
+        "full_width": true
+      },
+      "blocks": {
+        "banner": {
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "advanced": {
+          "settings": {
+            "subheading": "linha gameday",
+            "heading": "it's never over",
+            "image": "shopify:\/\/shop_images\/Slyce_banner_06.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "banner",
+        "advanced"
+      ]
+    },
+    "main-collection": {
+      "disabled": false,
+      "custom_css": [
+        "h2 {font-size: 55px;}"
+      ],
+      "settings": {
+        "collapsed": true,
+        "filter_style": "drawer",
+        "enable_color_swatches": true
+      },
+      "blocks": {
+        "collection_description": {
+          "disabled": false,
+          "settings": {
+          }
+        },
+        "subcollections": {
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 4
+          }
+        },
+        "product_grid": {
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 3,
+            "rows_per_page": 4,
+            "mobile_flush_grid": false
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "slideshow_c3XCd",
+    "collection-header",
+    "promo-grid",
+    "main-collection",
+    "d02ede7d-3345-4f7a-87c4-9a74bffc483f"
+  ]
+}

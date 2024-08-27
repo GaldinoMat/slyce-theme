@@ -1,0 +1,121 @@
+{
+  "parent": "product.produto-sem-tabela-medida.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "hero_video_QLmwa": {
+      "type": "hero-video",
+      "disabled": false,
+      "settings": {
+        "title": "Performance \nIncomparável",
+        "title_size": 55,
+        "subheading": "Queremos que você se sinta no seu melhor dentro da quadra",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/edbeddd5c27f4f5fb7f612935fc89cd8.mp4",
+        "overlay_opacity": 24,
+        "section_height": "450px",
+        "mobile_height": "auto"
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "main": {
+      "custom_css": [
+        "a.icon-wishlist-heart-empty.wishlist-btn.heart-wishlist-animation.style_4.hulkapps-wishlist-btn-enabled {width: 100%;}",
+        ".icon-and-text {background-color: #e0d3b4; \/* Cor de fundo desejada *\/ padding: 10px; \/* Adiciona algum espaço dentro do elemento para o texto não ficar colado nas bordas *\/}",
+        ".icon.icon-package {display: none;}",
+        ".coming-soon-label {font-size: 15px; font-weight: bold;}",
+        ".product-block .rte p {font-size: 12px;}"
+      ],
+      "settings": {
+      },
+      "blocks": {
+        "sales_point_rVKGC": {
+          "type": "sales_point",
+          "disabled": false,
+          "settings": {
+            "icon": "package",
+            "text": "{{ product.metafields.custom.tipo.value }}"
+          }
+        },
+        "complementary_products_aFgBzd": {
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_rVKGC",
+        "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
+        "price",
+        "description",
+        "separator",
+        "variant_picker",
+        "inventory_status",
+        "buy_buttons",
+        "6bdad11c-2b78-418c-8aaa-087cc6c3fb01",
+        "complementary_products_aFgBzd"
+      ]
+    },
+    "sub": {
+      "settings": {
+      },
+      "blocks": {
+        "tab_Y7KCYf": {
+          "settings": {
+            "content": "{{ product.metafields.custom.caracter_stica | metafield_tag }}"
+          }
+        },
+        "tab_Gjg4hU": {
+          "settings": {
+            "content": "<p>{{ product.metafields.custom.composi_o | metafield_tag }}<\/p>"
+          }
+        },
+        "tab_A8KnNA": {
+          "settings": {
+            "content": "",
+            "page": "{{ product.metafields.custom.tipo_de_lavagem.value }}"
+          }
+        },
+        "tab_PDbDFG": {
+          "settings": {
+            "content": "<p>Mudou de ideia? Se arrependeu ou o seu pedido não era o que você queria? Não se preocupe. Sua satisfação é prioridade para a <strong>Slyce<\/strong>. Aqui você tem o direito de troca gratuita!<\/p><p>Comprometidos com os princípios de excelência no atendimento, transparência e em conformidade com o Código de Defesa do Consumidor, a <strong>Slyce<\/strong> arca com todos os custos de troca, devolução e também da entrega de um novo produto.<\/p><p>Conforme lei do artigo 41 do Código de Defesa do Consumidor, na loja virtual da <strong>Slyce<\/strong>, o consumidor tem até 07 (sete) dias corridos após a entrega para se arrepender e comunicar a desistência do produto adquirido ao fornecedor.<\/p><p>O consumidor que comprar no site da <strong>Slyce <\/strong>tem até 30 dias corridos após a entrega para pedir a troca do produto, desde que o produto trocado respeite os índices de qualidade da equipe Slyce.<\/p><p>Leia mais sobre as trocas e devoluções <a href=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\">aqui<\/a>.<\/p><p>Para saber mais sobre nossos métodos de envio, <a href=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\">clique aqui.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_Y7KCYf",
+        "tab_Gjg4hU",
+        "tab_A8KnNA",
+        "tab_PDbDFG"
+      ]
+    },
+    "17024281419024b538": {
+      "settings": {
+      },
+      "blocks": {
+        "judge_me_reviews_review_widget_GY9db8": {
+          "disabled": true,
+          "settings": {
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "hero_video_QLmwa",
+    "17024281419024b538",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

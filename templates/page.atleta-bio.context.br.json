@@ -1,0 +1,199 @@
+{
+  "parent": "page.atleta-bio.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "rich_text_K487p": {
+      "type": "rich-text",
+      "disabled": false,
+      "custom_css": [
+        ".index-section {padding-top: 20px;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "heading_qjpq6": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "{{ page.title }}"
+          }
+        },
+        "text_EUiJ6": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "{{ page.metafields.custom.titulo_atletas_bio | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qjpq6",
+        "text_EUiJ6"
+      ]
+    },
+    "text_and_image_JXJCj": {
+      "type": "text-and-image",
+      "disabled": false,
+      "custom_css": [
+        ".metafield-multi_line_text_field {font-size: 14px;}",
+        ".index-section {padding-top: 20px;}"
+      ],
+      "settings": {
+        "header-5d54f03d32eafda3b7dcff0332b1d1eb": null,
+        "image": "{{ page.metafields.custom.banner1_bioatletas.value }}",
+        "image_mask": "none",
+        "header-bd9df58d742e2da8a768da666d150985": null,
+        "image2": null,
+        "image2_mask": "none",
+        "header-25129c42a55f35b86c59240216484be9": null,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ page.metafields.custom.atletas_bio_texto1 | metafield_tag }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "text_and_image_k37xK": {
+      "type": "text-and-image",
+      "disabled": false,
+      "custom_css": [
+        ".metafield-multi_line_text_field {font-size: 14px;}",
+        ".index-section {padding-top: 20px;}"
+      ],
+      "settings": {
+        "header-e7c48a73cde46aadd75019dec55cba82": null,
+        "image": "{{ page.metafields.custom.atletas_bio_imagem2.value }}",
+        "image_mask": "none",
+        "header-76d72b5ecaa308668da6f9da625602d3": null,
+        "image2": "{{ page.metafields.custom.atletas_bio_imagem3.value }}",
+        "image2_mask": "rounded",
+        "header-6d51a9e10cf316d68c20f1e0bc006735": null,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ page.metafields.custom.atletas_bio_texto2 | metafield_tag }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "text_and_image_dYR8P": {
+      "type": "text-and-image",
+      "disabled": false,
+      "custom_css": [
+        ".metafield-multi_line_text_field {font-size: 14px;}",
+        ".index-section {padding-bottom: 20px;}"
+      ],
+      "settings": {
+        "header-9b92ab5fd3d77ee54107f6d8811180be": null,
+        "image": "{{ page.metafields.custom.atletas_bio_imagem4.value }}",
+        "image_mask": "none",
+        "header-a85dec480a0dc8b56dc66ab38d0bcfe4": null,
+        "image2": "{{ page.metafields.custom.atletas_bio_imagem5.value }}",
+        "image2_mask": "none",
+        "header-8692c00863b8fbba2328e26ea877ec58": null,
+        "subtitle": "",
+        "title": "",
+        "text": "<p>{{ page.metafields.custom.atletas_bio_texto3 | metafield_tag }}<\/p>",
+        "button_label": "VER INSTAGRAM",
+        "button_link": "{{ page.metafields.custom.url_insta.value }}",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "left",
+        "divider": false,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "slideshow_B8HQ8": {
+      "type": "slideshow",
+      "disabled": false,
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_EQQbp": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "{{ page.metafields.custom.atletas_bio_imagem6.value }}",
+            "image_mobile": "{{ page.metafields.custom.atletas_bio_imagem6.value }}",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_EQQbp"
+      ]
+    },
+    "main": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_K487p",
+    "text_and_image_JXJCj",
+    "text_and_image_k37xK",
+    "text_and_image_dYR8P",
+    "slideshow_B8HQ8"
+  ]
+}

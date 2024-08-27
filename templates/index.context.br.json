@@ -1,0 +1,571 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "08ae2f32-005a-424d-ad05-79c9c538ee9f": {
+      "type": "slideshow",
+      "disabled": false,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "500px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_UxmyM": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "LANÇAMENTO",
+            "title": "CONJUNTO CHAMPIONSHIP CLASSIC",
+            "title_size": 80,
+            "subheading": "Inspirado na alfaiataria clássica, meticulosamente desenvolvido para otimizar a performance dentro das quadras",
+            "link": "shopify:\/\/collections\/championship",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-EmBreve.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_Mobile-Lancamento2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_qLj7f": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "Conheça",
+            "title": "Championship Collection",
+            "title_size": 64,
+            "subheading": "Desenvolvido para máxima performance e estilo dentro de quadra",
+            "link": "shopify:\/\/collections\/championship",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_DesktopNew.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_MobileNew.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 18
+          }
+        },
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "Conheça",
+            "title": "Endurance Collection",
+            "title_size": 64,
+            "subheading": "Tecnologia e conforto para maximizar o resultado do seu treino",
+            "link": "shopify:\/\/collections\/linha-endurance",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-End01.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_MobileSubEndu.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 30
+          }
+        },
+        "image_bMUMh": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "Conheça",
+            "title": "Vintage Collection",
+            "title_size": 80,
+            "subheading": "Conforto e estilo inspirados no clássico do tênis.",
+            "link": "shopify:\/\/collections\/linha-vintage",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_DesktopUpdate.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_MobileVintage.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_UxmyM",
+        "image_qLj7f",
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1",
+        "image_bMUMh"
+      ]
+    },
+    "2ba1b168-7e1a-4818-8743-3c15841e3616": {
+      "type": "featured-collections",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 3,
+        "enable_gutter": true
+      },
+      "blocks": {
+        "template--14990080671809__2ba1b168-7e1a-4818-8743-3c15841e3616-collection-1": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "championship",
+            "title": "Linha Championship",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990080671809__2ba1b168-7e1a-4818-8743-3c15841e3616-collection-2": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "endurance",
+            "title": "Linha Endurance",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990080671809__2ba1b168-7e1a-4818-8743-3c15841e3616-collection-3": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "vintage-collection-range-plan",
+            "title": "Linha Vintage",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14990080671809__2ba1b168-7e1a-4818-8743-3c15841e3616-collection-1",
+        "template--14990080671809__2ba1b168-7e1a-4818-8743-3c15841e3616-collection-2",
+        "template--14990080671809__2ba1b168-7e1a-4818-8743-3c15841e3616-collection-3"
+      ]
+    },
+    "4902973c-faf4-4db0-881a-1b80701e6b28": {
+      "type": "featured-collections",
+      "disabled": false,
+      "custom_css": [
+        "img {-o-object-fit: cover; object-fit: cover;}"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      },
+      "blocks": {
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-1": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "masculino",
+            "title": "MASCULINO",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-2": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "feminino",
+            "title": "FEMININO",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-3": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "acessorios",
+            "title": "ACESSÓRIOS",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-4": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "linhas",
+            "title": "COMPRE POR LINHA",
+            "focal_point": "20% 100%"
+          }
+        }
+      },
+      "block_order": [
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-1",
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-2",
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-3",
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-4"
+      ]
+    },
+    "featured_collection_3dcBp": {
+      "type": "featured-collection",
+      "disabled": false,
+      "custom_css": [
+        ".section-header {margin-bottom: 15px; padding-top: 20px;}"
+      ],
+      "settings": {
+        "title": "Novidades",
+        "home_featured_products": "shop-all",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "rich_text_cQtJq": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false
+      },
+      "blocks": {
+        "heading_DJrLj": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "ATLETAS SLYCE"
+          }
+        },
+        "text_wPGVw": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Apoiar os atletas de tênis brasileiros é mais do que incentivar o esporte; é investir no desenvolvimento de talentos, na promoção da saúde e no orgulho nacional. Ao unirmos forças, não apenas elevamos o nível do jogo, mas também inspiramos futuras gerações a trilharem o mesmo caminho de excelência. Cada apoio é um passo em direção ao fortalecimento do tênis brasileiro e à criação de histórias de sucesso que ressoam além das quadras.<\/p>"
+          }
+        },
+        "button_qcMhG": {
+          "type": "button",
+          "disabled": false,
+          "settings": {
+            "link": "shopify:\/\/pages\/atletas",
+            "link_text": "VER MAIS"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DJrLj",
+        "text_wPGVw",
+        "button_qcMhG"
+      ]
+    },
+    "promo_grid_9KrmE": {
+      "type": "promo-grid",
+      "disabled": false,
+      "settings": {
+        "full_width": true,
+        "gutter_size": 3,
+        "space_above": false,
+        "space_below": false,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "advanced_Car7b": {
+          "type": "advanced",
+          "disabled": false,
+          "settings": {
+            "subheading": "ATLETAS MASCULINOS",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
+            "video_url": "",
+            "header-bedb935e6fd69d394413e313206c790d": null,
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "header-d6d4b25334afe74522079735ef47533b": null,
+            "text_align": "vertical-center horizontal-center",
+            "header-45c699caf34e16f8bb7f4fb8833755e0": null,
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "advanced_4chmP": {
+          "type": "advanced",
+          "disabled": false,
+          "settings": {
+            "subheading": "ATLETAS FEMININOS",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas_copiar-Fem2.jpg",
+            "video_url": "",
+            "header-a4e48dad74df568e1a27d6e8026990ce": null,
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "header-421a21afe9d65f1f8a45be6c848e9076": null,
+            "text_align": "vertical-center horizontal-center",
+            "header-89e9d356cb24d6f8f2f9450327b19561": null,
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_Car7b",
+        "advanced_4chmP"
+      ]
+    },
+    "rich_text_xRX4g": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false
+      },
+      "blocks": {
+        "heading_qwCQc": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "INSTITUTO PRÓXIMA GERAÇÃO"
+          }
+        },
+        "text_cQ6X6": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Visamos por um Brasil onde o tênis seja praticado no mais alto nível. Mas, do que adianta vendermos as melhores roupas e não apoiarmos a geração que elevará esse esporte no Brasil? É por isso que a Slyce apoia o Instituto Próxima Geração, Instituto que gera a transformação de jovens brasileiros através do tênis<\/p>"
+          }
+        },
+        "button_rJAgH": {
+          "type": "button",
+          "disabled": false,
+          "settings": {
+            "link": "shopify:\/\/pages\/sobre-nos",
+            "link_text": "SOBRE NÓS"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qwCQc",
+        "text_cQ6X6",
+        "button_rJAgH"
+      ]
+    },
+    "slideshow_n8PHJ": {
+      "type": "slideshow",
+      "disabled": false,
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_JPVwp": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/bannerIPG.jpg",
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_JPVwp"
+      ]
+    },
+    "featured_collection_XMmwp": {
+      "type": "featured-collection",
+      "disabled": false,
+      "custom_css": [
+        ".section-header {margin-bottom: 15px;}"
+      ],
+      "settings": {
+        "title": "Acessórios",
+        "home_featured_products": "acessorios",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "805e92c0-e08a-47ad-95f4-ee2f73ee6f7e": {
+      "type": "text-columns",
+      "disabled": false,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      },
+      "blocks": {
+        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-1": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/V-0011.jpg",
+            "image_mask": "portrait",
+            "image_width": 480,
+            "title": "",
+            "text": "",
+            "button_label": "Championship",
+            "button_link": "shopify:\/\/collections\/championship"
+          }
+        },
+        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-2": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas-Endurance.jpg",
+            "image_mask": "portrait",
+            "image_width": 480,
+            "title": "",
+            "text": "",
+            "button_label": "Endurance",
+            "button_link": "shopify:\/\/collections\/linha-endurance"
+          }
+        },
+        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-3": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Banner_Categorias_Vintage_Novo.jpg",
+            "image_mask": "portrait",
+            "image_width": 480,
+            "title": "",
+            "text": "",
+            "button_label": "Vintage",
+            "button_link": "shopify:\/\/collections\/linha-vintage"
+          }
+        }
+      },
+      "block_order": [
+        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-1",
+        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-2",
+        "template--14990080671809__805e92c0-e08a-47ad-95f4-ee2f73ee6f7e-text_block-3"
+      ]
+    },
+    "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "template--14990080671809__9eb46d0c-92fa-4b5f-a24e-1bb4549f0291-image-1": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "Rise to the Occasion",
+            "title_size": 51,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/SLYCE_ilustracao_01.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/SLYCE_ilustracao_01.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 32
+          }
+        },
+        "image_AednF": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "Rise to the Occasion",
+            "title_size": 51,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/SLYCE_ilustracao_02_78eaf336-b6b8-48bd-9644-dfa5fce8f2fa.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/SLYCE_ilustracao_02_78eaf336-b6b8-48bd-9644-dfa5fce8f2fa.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 32
+          }
+        }
+      },
+      "block_order": [
+        "template--14990080671809__9eb46d0c-92fa-4b5f-a24e-1bb4549f0291-image-1",
+        "image_AednF"
+      ]
+    }
+  },
+  "order": [
+    "08ae2f32-005a-424d-ad05-79c9c538ee9f",
+    "2ba1b168-7e1a-4818-8743-3c15841e3616",
+    "4902973c-faf4-4db0-881a-1b80701e6b28",
+    "featured_collection_3dcBp",
+    "rich_text_cQtJq",
+    "promo_grid_9KrmE",
+    "rich_text_xRX4g",
+    "slideshow_n8PHJ",
+    "featured_collection_XMmwp",
+    "805e92c0-e08a-47ad-95f4-ee2f73ee6f7e",
+    "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291"
+  ]
+}

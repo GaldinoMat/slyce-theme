@@ -1,0 +1,77 @@
+{
+  "parent": "product.pre-venda-oficial.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "sub": {
+      "settings": {
+      },
+      "blocks": {
+        "tab_Y7KCYf": {
+          "settings": {
+            "content": "{{ product.metafields.custom.caracter_stica | metafield_tag }}"
+          }
+        },
+        "tab_Gjg4hU": {
+          "settings": {
+            "content": "<p>{{ product.metafields.custom.composi_o | metafield_tag }}<\/p>"
+          }
+        },
+        "tab_A8KnNA": {
+          "settings": {
+            "content": "",
+            "page": "instrucoes-de-lavagem-a-seco"
+          }
+        },
+        "tab_PDbDFG": {
+          "settings": {
+            "content": "<p>Mudou de ideia? Se arrependeu ou o seu pedido não era o que você queria? Não se preocupe. Sua satisfação é prioridade para a <strong>Slyce<\/strong>. Aqui você tem o direito de troca gratuita!<\/p><p>Comprometidos com os princípios de excelência no atendimento, transparência e em conformidade com o Código de Defesa do Consumidor, a <strong>Slyce<\/strong> arca com todos os custos de troca, devolução e também da entrega de um novo produto.<\/p><p>Conforme lei do artigo 41 do Código de Defesa do Consumidor, na loja virtual da <strong>Slyce<\/strong>, o consumidor tem até 07 (sete) dias corridos após a entrega para se arrepender e comunicar a desistência do produto adquirido ao fornecedor.<\/p><p>O consumidor que comprar no site da <strong>Slyce <\/strong>tem até 30 dias corridos após a entrega para pedir a troca do produto, desde que o produto trocado respeite os índices de qualidade da equipe Slyce.<\/p><p>Leia mais sobre as trocas e devoluções <a href=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\">aqui<\/a>.<\/p><p>Para saber mais sobre nossos métodos de envio, <a href=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\">clique aqui.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_Y7KCYf",
+        "tab_Gjg4hU",
+        "tab_A8KnNA",
+        "tab_PDbDFG"
+      ]
+    },
+    "17024281419024b538": {
+      "settings": {
+      },
+      "blocks": {
+        "judge_me_reviews_review_widget_GY9db8": {
+          "disabled": true,
+          "settings": {
+          }
+        }
+      }
+    },
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+      },
+      "block_order": [
+        "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
+        "price",
+        "description",
+        "separator",
+        "variant_picker",
+        "inventory_status",
+        "buy_buttons",
+        "6bdad11c-2b78-418c-8aaa-087cc6c3fb01",
+        "complementary_products_aFgBzd"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "17024281419024b538",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
+}

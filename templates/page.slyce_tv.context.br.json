@@ -1,0 +1,31 @@
+{
+  "parent": "page.slyce_tv.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "23a0914b-5b4e-43b2-b0a0-4d84a0565eb0": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "de3a94af-b286-4274-bb30-0e51f5c5771c": {
+      "settings": {
+      },
+      "blocks": {
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-heading-1": {
+          "settings": {
+            "title": "SLYCE TV"
+          }
+        },
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-text-1": {
+          "settings": {
+            "text": "<p>Acompanhe os vídeos criados por nossa equipe, com uma curadoria exclusiva de vídeos sobre o esporte mais viciante: o tênis.<\/p><p>Veja nossos vídeos e incorpore o espírito <strong>It's Never Over<\/strong><\/p>"
+          }
+        }
+      }
+    }
+  }
+}

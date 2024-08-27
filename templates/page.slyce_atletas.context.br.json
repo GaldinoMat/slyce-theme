@@ -1,0 +1,109 @@
+{
+  "parent": "page.slyce_atletas.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "main": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "de3a94af-b286-4274-bb30-0e51f5c5771c": {
+      "disabled": false,
+      "custom_css": [
+        "p {font-size: 14px;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-heading-1": {
+          "disabled": false,
+          "settings": {
+            "title": "Atletas Slyce 2024"
+          }
+        },
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-text-1": {
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Para ser a marca do tênis brasileiro precisamos estar do lado dos melhores. Para isso a Slyce conta com um time de atletas que representam o espírito <strong>It's Never Over<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-heading-1",
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-text-1"
+      ]
+    },
+    "23a0914b-5b4e-43b2-b0a0-4d84a0565eb0": {
+      "disabled": false,
+      "custom_css": [
+        ".line-title {display: none;}",
+        "h3 {font-size: 25px; letter-spacing: 0.3em;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      },
+      "blocks": {
+        "template--15056045834305__23a0914b-5b4e-43b2-b0a0-4d84a0565eb0-text_block-1": {
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas-Gustavo.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "title": "GUSTAVO HEIDE",
+            "text": "",
+            "button_label": "VER BIO",
+            "button_link": "shopify:\/\/pages\/gustavo-heide"
+          }
+        },
+        "eb7e3d55-0530-4bd5-a9f6-32daf275565b": {
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas-Felipe.jpg",
+            "image_mask": "square",
+            "image_width": 650,
+            "title": "Felipe Meligeni",
+            "text": "",
+            "button_label": "VER BIO",
+            "button_link": "shopify:\/\/pages\/felipe-meligeni"
+          }
+        },
+        "text_block_xdbAF": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Quinta_Vertical-DaniRod.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "DANIEL RODRIGUES",
+            "text": "",
+            "button_label": "VER BIO",
+            "button_link": "shopify:\/\/pages\/daniel-rodrigues"
+          }
+        }
+      },
+      "block_order": [
+        "template--15056045834305__23a0914b-5b4e-43b2-b0a0-4d84a0565eb0-text_block-1",
+        "eb7e3d55-0530-4bd5-a9f6-32daf275565b",
+        "text_block_xdbAF"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "de3a94af-b286-4274-bb30-0e51f5c5771c",
+    "23a0914b-5b4e-43b2-b0a0-4d84a0565eb0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "cart.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "featured-collection": {
+      "settings": {
+        "title": "Popular"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

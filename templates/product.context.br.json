@@ -1,0 +1,285 @@
+{
+  "parent": "product.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "hero_video_G8d99": {
+      "type": "hero-video",
+      "disabled": false,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Performance \nIncomparável",
+        "title_size": 55,
+        "subheading": "Queremos que você se sinta no seu melhor dentro da quadra",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/edbeddd5c27f4f5fb7f612935fc89cd8.mp4",
+        "overlay_opacity": 24,
+        "section_height": "450px",
+        "mobile_height": "auto"
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "1701463453cab0894b": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      },
+      "blocks": {
+        "52983cba-720b-4879-890b-a746a66ba2fe": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "paragraph-ab5a26f9d0276f5100858c4f6461cab2": null,
+            "paragraph-3acbc484e00d7b42580166603f29ab15": null
+          }
+        }
+      },
+      "block_order": [
+        "52983cba-720b-4879-890b-a746a66ba2fe"
+      ]
+    },
+    "main": {
+      "disabled": false,
+      "custom_css": [
+        "a.icon-wishlist-heart-empty.wishlist-btn.heart-wishlist-animation.style_4.hulkapps-wishlist-btn-enabled {width: 100%;}",
+        ".icon-and-text {background-color: #e0d3b4; \/* Cor de fundo desejada *\/ padding: 10px; \/* Adiciona algum espaço dentro do elemento para o texto não ficar colado nas bordas *\/}",
+        ".icon.icon-package {display: none;}",
+        ".coming-soon-label {font-size: 15px; font-weight: bold;}",
+        ".product-block .rte p {font-size: 12px;}",
+        ".ga-product_price.ga-product_totalprice.money {font-size: 12px;}",
+        "#wigget_17281 span.ga-product_price {font-size: 12px;}"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "full"
+      },
+      "blocks": {
+        "sales_point_CCDcP": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "package",
+            "text": "{{ product.metafields.custom.tipo.value }}"
+          }
+        },
+        "aa264cb5-fcc9-4396-b988-0cd20ec46c3f": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": false,
+          "settings": {
+            "paragraph-f623beffcabaa651620e3ace1f7df64e": null,
+            "paragraph-729454b6802e74c098f29d5b90c9a6d1": null
+          }
+        },
+        "description": {
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "size_chart_y4AfJ": {
+          "type": "size_chart",
+          "disabled": false,
+          "settings": {
+            "size_chart": "tabela-de-medidas"
+          }
+        },
+        "variant_picker": {
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": true
+          }
+        },
+        "6ef4b302-ffb4-4f3e-86db-e9870c432df0": {
+          "type": "quantity_selector",
+          "disabled": false,
+          "settings": {
+          }
+        },
+        "glo_related_products_upsell_app_block_product_wEwVp": {
+          "type": "shopify:\/\/apps\/glo-related-products-upsell\/blocks\/app-block-product\/75cf2d86-3988-45e7-8f28-ada23c99704f",
+          "disabled": false,
+          "settings": {
+            "widget": "3",
+            "gashortcode": "<div class=\"globo_widget_17281\"><\/div>",
+            "paragraph-f2ce332c8ba24af35d59540523033db9": null
+          }
+        },
+        "inventory_status": {
+          "settings": {
+            "inventory_threshold": 20
+          }
+        },
+        "buy_buttons": {
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "c15cc61e-9df7-47cc-a19c-485fe663bc3a": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Características",
+            "content": "<p>Tecido: Polyester 90%, Elastano 10%<\/p>",
+            "page": ""
+          }
+        },
+        "309e1bb4-2a51-4fd6-ac29-0c3ad44f4069": {
+          "type": "complementary_products",
+          "disabled": true,
+          "settings": {
+            "paragraph-724873f15ae3587a19c6717f8fb32230": null,
+            "product_complementary_heading": "Compre junto",
+            "complementary_count": 2,
+            "per_slide": 3,
+            "control_type": "arrows",
+            "header-bc20aaea98dd36a0b9238fba43c65d4a": null,
+            "image_style": "default"
+          }
+        }
+      },
+      "block_order": [
+        "sales_point_CCDcP",
+        "aa264cb5-fcc9-4396-b988-0cd20ec46c3f",
+        "price",
+        "description",
+        "separator",
+        "size_chart_y4AfJ",
+        "variant_picker",
+        "6ef4b302-ffb4-4f3e-86db-e9870c432df0",
+        "glo_related_products_upsell_app_block_product_wEwVp",
+        "inventory_status",
+        "buy_buttons",
+        "c15cc61e-9df7-47cc-a19c-485fe663bc3a",
+        "309e1bb4-2a51-4fd6-ac29-0c3ad44f4069"
+      ]
+    },
+    "sub": {
+      "disabled": false,
+      "custom_css": [
+        "{padding-top: 40px;}"
+      ],
+      "settings": {
+        "max_width": false
+      },
+      "blocks": {
+        "f6c748a5-2652-41df-a6de-62e2b78b585d": {
+          "type": "tab",
+          "disabled": false,
+          "settings": {
+            "title": "Características",
+            "content": "{{ product.metafields.custom.caracter_stica | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "7779b98e-317c-479b-80f6-fddae7b51b36": {
+          "type": "tab",
+          "disabled": false,
+          "settings": {
+            "title": "Composição",
+            "content": "<p>{{ product.metafields.custom.composi_o | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "50312ad8-f4d0-48ee-82d7-37642c2861f2": {
+          "type": "tab",
+          "disabled": false,
+          "settings": {
+            "title": "Instruções de Lavagem",
+            "content": "",
+            "page": "{{ product.metafields.custom.tipo_de_lavagem.value }}"
+          }
+        },
+        "c547075d-2f93-4c02-8c00-6f8d2e66751c": {
+          "type": "tab",
+          "disabled": false,
+          "settings": {
+            "title": "Envios & Devolução",
+            "content": "<p>Mudou de ideia? Se arrependeu ou o seu pedido não era o que você queria? Não se preocupe. Sua satisfação é prioridade para a <strong>Slyce<\/strong>. Aqui você tem o direito de troca gratuita!<\/p><p>Comprometidos com os princípios de excelência no atendimento, transparência e em conformidade com o Código de Defesa do Consumidor, a <strong>Slyce<\/strong> arca com todos os custos de troca, devolução e também da entrega de um novo produto.<\/p><p>Conforme lei do artigo 41 do Código de Defesa do Consumidor, na loja virtual da <strong>Slyce<\/strong>, o consumidor tem até 07 (sete) dias corridos após a entrega para se arrepender e comunicar a desistência do produto adquirido ao fornecedor.<\/p><p>O consumidor que comprar no site da <strong>Slyce <\/strong>tem até 30 dias corridos após a entrega para pedir a troca do produto, desde que o produto trocado respeite os índices de qualidade da equipe Slyce.<\/p><p>Leia mais sobre as trocas e devoluções <a href=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\">aqui<\/a>.<\/p><p>Para saber mais sobre nossos métodos de envio, <a href=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\">clique aqui.<\/a><\/p><p><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "52944dd0-51f1-4605-b04b-64d3488a3982": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "paragraph-d20415c4493f9235cc275dea54ae33ff": null
+          }
+        },
+        "d80b9fc0-785d-473f-a6c4-a386f2230bc4": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "paragraph-5c2962aa7123a2deb7f9c302b28d716c": null,
+            "paragraph-1e8b49a1f5cd8fb5eedcadc0ea809d7f": null
+          }
+        }
+      },
+      "block_order": [
+        "f6c748a5-2652-41df-a6de-62e2b78b585d",
+        "7779b98e-317c-479b-80f6-fddae7b51b36",
+        "50312ad8-f4d0-48ee-82d7-37642c2861f2",
+        "c547075d-2f93-4c02-8c00-6f8d2e66751c",
+        "52944dd0-51f1-4605-b04b-64d3488a3982",
+        "d80b9fc0-785d-473f-a6c4-a386f2230bc4"
+      ]
+    },
+    "background-image-text": {
+      "disabled": true,
+      "settings": {
+        "subtitle": "Designs Sofisticados",
+        "title": "E Performance Incomparável",
+        "text": "<p>Queremos que você se sinta no seu melhor dentro da quadra, para que, quando a pressão chegar, possa executar o ponto no mais alto nível<\/p>",
+        "image": "shopify:\/\/shop_images\/Slyce_banner_08.jpg",
+        "layout": "right"
+      },
+      "blocks": {
+      }
+    },
+    "recently-viewed": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "product-recommendations": {
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "Complete o seu Kit",
+        "related_count": 3
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "hero_video_G8d99",
+    "1701463453cab0894b",
+    "recently-viewed",
+    "product-recommendations",
+    "collection-return"
+  ]
+}

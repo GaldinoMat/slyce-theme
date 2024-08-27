@@ -1,0 +1,86 @@
+<div class="site-nav">
+  <div class="site-nav__icons">
+
+
+    {%- if settings.search_enable -%}
+      <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header{% if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' %} medium-up--hide{% endif %}">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><title>icon-search</title><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58ZM54 54 41.94 42"/></svg>
+        <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
+      </a>
+    {%- endif -%}
+
+          
+    {%- if shop.customer_accounts_enabled -%}
+      <a class="site-nav__link site-nav__link--icon small--hide" href="{{ routes.account_url }}">
+        
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64"><title>account</title><path d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.41 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.75 2.7 9.51 6 11.41v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16Z"/></svg>
+        
+
+        {% comment %}
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewBox="0 0 64 64">
+          <path d="M24.608 34.2534C31.2732 34.2534 36.6765 28.8502 36.6765 22.185C36.6765 15.5197 31.2732 10.1165 24.608 10.1165C17.9428 10.1165 12.5395 15.5197 12.5395 22.185C12.5395 28.8502 17.9428 34.2534 24.608 34.2534Z" stroke="#1D4321" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+          <path d="M23.0387 34.2842C12.7738 34.2842 4.45312 42.6054 4.45312 52.8697C14.4531 55.2109 24.9843 53.728 33.9014 48.6323C52.7354 37.8701 65.7805 16.512 56.4666 16.512C47.1526 16.512 29.8061 43.4605 36.0621 49.3632C36.9203 50.1728 38.0474 50.4601 39.4752 50.5133" stroke="#1D4321" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+          </svg>
+        {% endcomment %}
+          
+          <span class="icon__fallback-text">
+          {%- if customer -%}
+            {{ 'layout.customer.account' | t }}
+          {%- else -%}
+            {{ 'layout.customer.log_in' | t }}
+          {%- endif -%}
+        </span>
+      </a>
+    {%- endif -%}
+
+    
+    {% render 'hulkapps-wishlist-header-icon' %}
+    
+
+    <a href="{{ routes.cart_url }}" class="site-nav__link site-nav__link--icon js-drawer-open-cart" aria-controls="CartDrawer" data-icon="{{ settings.cart_icon }}">
+      <span class="cart-link">
+        {%- if settings.cart_icon == 'cart' -%}
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64"><path style="stroke-miterlimit:10" d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3"/><circle cx="27" cy="53" r="2"/><circle cx="47" cy="53" r="2"/></svg>
+        {%- elsif settings.cart_icon == 'bag-minimal' -%}
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag-minimal" viewBox="0 0 64 64"><title>icon-bag-minimal</title><path stroke="null" fill-opacity="null" stroke-opacity="null" fill="null" d="M11.375 17.863h41.25v36.75h-41.25z"/><path stroke="null" d="M22.25 18c0-7.105 4.35-9 9.75-9s9.75 1.895 9.75 9"/></svg>
+        {%- else -%}
+
+
+          {%- if cart.item_count > 0 %}
+
+          <span class="cart-link__bubble--count">{{ cart.item_count }}</span>
+
+          {%- else -%}
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag" viewBox="0 0 64 64"><g fill="none" stroke="#000" stroke-width="2"><path d="M25 26c0-15.79 3.57-20 8-20s8 4.21 8 20"/><path d="M14.74 18h36.51l3.59 36.73h-43.7z"/></g></svg>
+          
+          
+            {% comment %}  
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-bag bag-custom" viewBox="0 0 64 64">
+              <path d="M21.3229 18.0826C21.3229 11.417 26.7264 6.01408 33.3914 6.01408C40.0563 6.01408 45.4598 11.4176 45.4598 18.0826" stroke="#1D4321" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+              <path d="M6.32 57.9571C28.1869 59.0573 50.327 28.5792 40.5619 28.5792C33.2243 28.5792 20.0211 49.3421 24.841 53.8899C25.5021 54.5139 26.3699 54.7962 27.4707 54.7763C33.929 54.6579 44.809 47.4899 52.745 32.1299L55.0707 19.0195H11.2019L14.8992 47.6038" stroke="#1D4321" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+              </svg>
+          {% endcomment %} 
+
+
+            <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
+            <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
+          
+          {%- endif -%}
+        
+
+        {%- endif -%}
+      </span>
+    </a>
+
+
+          {%- if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' or section.settings.main_menu_alignment == 'left-drawer' -%}
+          <button
+            type="button"
+            class="site-nav__link site-nav__link--icon js-drawer-open-nav{% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' %} medium-up--hide{% endif %}"
+            aria-controls="NavDrawer">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><title>icon-hamburger</title><path d="M7 15h51M7 32h43M7 49h51"/></svg>
+            <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+          </button>
+    {%- endif -%}
+  </div>
+</div>

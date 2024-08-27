@@ -1,0 +1,513 @@
+{%- liquid
+  assign show_selectors = false
+  assign currency_selector = false
+  assign locale_selector = false
+
+  if section.settings.show_currency_selector and shop.enabled_currencies.size > 1
+    assign currency_selector = true
+  endif
+
+  if section.settings.show_locale_selector and shop.enabled_locales.size > 1
+    assign locale_selector = true
+  endif
+
+  if currency_selector or locale_selector
+    assign show_selectors = true
+  endif
+-%}
+
+{%- if settings.color_footer == settings.color_body_bg -%}
+  {%- style -%}
+    .site-footer {
+      border-top: 1px solid {{ settings.color_borders }};
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
+  <div class="page-width">
+
+    <div class="grid">
+      {%- assign row_width = 0 -%}
+      {%- for block in section.blocks -%}
+        {%- assign row_width = row_width | plus: block.settings.container_width -%}
+        {%- if row_width > 100 -%}
+          <div class="footer__clear small--hide"></div>
+          {%- assign row_width = row_width | minus: 100 -%}
+        {%- endif -%}
+
+        <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
+          {%- style -%}
+            @media only screen and (min-width: 769px) and (max-width: 959px) {
+              .footer__item--{{ block.id }} {
+                width: 50%;
+                padding-top: 40px;
+              }
+              .footer__item--{{ block.id }}:nth-child(2n + 1) {
+                clear: left;
+              }
+            }
+            @media only screen and (min-width: 960px) {
+              .footer__item--{{ block.id }} {
+                width: {{ block.settings.container_width }}%;
+              }
+
+            }
+          {%- endstyle -%}
+
+          {%- liquid
+            case block.type
+              when 'logo_social'
+                render 'footer-logo', block: block
+              when 'custom'
+                render 'footer-custom-text', block: block, container_width: block.settings.container_width
+              when 'newsletter'
+                render 'footer-newsletter', block: block
+              when 'menu'
+                render 'footer-menu', block: block
+              when 'follow_shop_cta'
+                render 'follow-shop-cta', block: block
+            endcase
+          -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if show_selectors -%}
+      <div class="footer__section">
+        {%- render 'multi-selectors',
+          locale_selector: locale_selector,
+          currency_selector: currency_selector,
+          show_currency_flags: section.settings.show_currency_flags
+          location: 'footer'
+        -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.show_payment_icons -%}
+      {%- unless shop.enabled_payment_types == empty -%}
+        <ul class="inline-list payment-icons footer__section">
+          {% assign enabled_payment_types = 'visa,master,american_express,hypercard,elo,pix' | remove: ' ' | split: ',' %}
+          {% for type in enabled_payment_types %}
+            <li class="icon--payment">
+              {{ type | payment_type_svg_tag }}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endunless -%}
+    {%- endif -%}
+    
+    <!--Logo PAGBRASIL-->
+        <ul class="inline-list payment-icons footer__section"><li class="icon--payment"><svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 179.051743 39.8990451" height="39.8990451px" width="179.051743px">
+          <title>logo-pagbrasil-color-v4</title>
+            <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Page-1">
+              <g fill-rule="nonzero" transform="translate(0, 0)" id="logo-pagbrasil-color-v4">
+                <path fill="#ffffff" id="Fill-13" d="M111.570192,14.2088009 L109.110752,14.2088009 C107.803541,14.2088009 106.743698,15.2686437 106.743698,16.57456 L106.743698,30.0511844 L101.03911,30.0511844 L101.03911,16.2887694 C101.03911,12.2907229 104.279941,9.0490285 108.277988,9.0490285 L114.548544,9.0490285 L111.570192,14.2088009 Z M152.957593,17.1975144 C157.692565,17.9210568 159.993136,19.9617399 159.993136,23.4361248 C159.993136,25.590347 159.138786,27.3271077 157.455125,28.597624 C155.771896,29.8677085 153.404842,30.5118166 150.419582,30.5118166 C146.665451,30.5118166 143.419008,29.6799156 141.140022,28.1356966 L143.562766,23.938201 L143.584783,23.951584 C145.576252,25.2113075 147.890638,25.8498034 150.462753,25.8498034 C153.021917,25.8498034 154.319631,25.1892904 154.319631,23.8868278 C154.319631,23.3856149 154.044202,22.9789461 153.50025,22.6784775 C152.947664,22.3736917 152.082089,22.1410012 150.849995,21.9670229 L149.150361,21.730447 C144.30185,21.0656169 141.944294,18.9964411 141.944294,15.4067902 C141.944294,13.2810607 142.72957,11.5935147 144.276379,10.3946619 C145.826211,9.1966726 148.001587,8.5892596 150.742068,8.5892596 C153.756684,8.5892596 156.918513,9.3222996 159.542433,10.5660499 L157.133503,14.7393699 C156.462197,14.471711 155.153259,13.9631591 154.359348,13.7451467 C153.160496,13.4174804 152.000497,13.2443655 150.915183,13.2296875 C149.87304,13.2296875 149.06661,13.3997804 148.523953,13.7352174 C147.97957,14.0723812 147.703708,14.541216 147.703708,15.1274752 C147.703708,15.6645198 147.995111,16.0716203 148.546402,16.3043109 C149.104169,16.5400234 149.966289,16.7468114 151.107725,16.917336 L152.957593,17.1975144 L152.957593,17.1975144 Z M163.523211,30.0507527 L169.228662,30.0507527 L169.228662,9.0490285 L163.523211,9.0490285 L163.523211,30.0507527 Z M166.375073,6.25242498 C164.651264,6.25242498 163.24994,4.85023784 163.24994,3.12729176 C163.24994,1.40348226 164.651264,-1.77635684e-15 166.375073,-1.77635684e-15 C168.098883,-1.77635684e-15 169.50107,1.40261884 169.50107,3.12642834 C169.50107,4.85023784 168.098883,6.25242498 166.375073,6.25242498 L166.375073,6.25242498 Z M89.2124729,24.87069 L82.4527919,24.87069 L82.4527919,17.2346413 L88.4466229,17.2346413 L88.4483499,17.2346413 L89.2124729,17.2346413 C91.1599069,17.2346413 92.7434119,18.9476581 92.7434119,21.0539608 C92.7434119,23.1581049 91.1599069,24.87069 89.2124729,24.87069 L89.2124729,24.87069 Z M82.4527919,6.03527592 L88.4474869,6.03527592 C89.9485349,6.03527592 91.1698369,7.3860898 91.1698369,9.0460066 C91.1698369,10.7046282 89.9485349,12.0537152 88.4474869,12.0537152 L82.4527919,12.0537152 L82.4527919,6.03527592 Z M93.4293959,14.5964746 C95.7575959,13.2784705 96.6369849,10.9567456 96.6369849,9.0442797 C96.6369849,4.52127645 92.9704899,0.85434986 88.4466229,0.85434986 L76.7460449,0.85434986 L76.7460449,30.0516161 L89.2124729,30.0516161 C94.1822939,30.0516161 98.2109919,26.0220549 98.2109919,21.0530974 C98.2109919,18.2292962 96.3658729,15.452983 93.4293959,14.5964746 L93.4293959,14.5964746 Z M179.051743,30.0511844 L173.346292,30.0511844 L173.346292,0.00086341 C176.497328,0.00086341 179.051743,2.55527884 179.051743,5.70717795 L179.051743,30.0511844 Z M126.180481,25.9844963 C122.776896,25.9844963 120.007922,23.1598317 120.007922,19.6871737 C120.007922,16.2149473 122.776896,13.3902828 126.180481,13.3902828 C129.584929,13.3902828 132.353472,16.2149473 132.353472,19.6871737 C132.353472,23.1598317 129.584929,25.9844963 126.180481,25.9844963 L126.180481,25.9844963 Z M132.626743,9.0494602 L132.626743,11.2144752 C130.643045,9.5191584 128.127052,8.5888279 125.510902,8.5888279 C119.46656,8.5888279 114.548544,13.5064122 114.548544,19.550754 C114.548544,25.5950958 119.46656,30.5122484 125.510902,30.5122484 C128.127052,30.5122484 130.643045,29.5814862 132.626743,27.8861694 L132.626743,30.0511844 L137.787379,30.0511844 L137.787379,9.0494602 L132.626743,9.0494602 Z"/>
+                <path fill="#ffffff" id="Fill-15" d="M60.6307789,25.9842373 C57.2263309,25.9842373 54.4573569,23.1595727 54.4573569,19.6869147 C54.4573569,16.2146883 57.2263309,13.3900238 60.6307789,13.3900238 C64.0343639,13.3900238 66.8033379,16.2146883 66.8033379,19.6869147 C66.8033379,23.1595727 64.0343639,25.9842373 60.6307789,25.9842373 L60.6307789,25.9842373 Z M67.0766089,9.0487695 L67.0766089,11.2146478 C65.0924799,9.5188994 62.5760549,8.5894323 59.9611999,8.5894323 C53.9159949,8.5894323 48.9992739,13.5061532 48.9992739,19.550495 C48.9992739,25.5948368 53.9159949,30.5115576 59.9611999,30.5115576 C62.5760549,30.5115576 65.0924799,29.5812272 67.0766089,27.8854787 L67.0766089,29.9300471 C67.0766089,34.0748743 62.6641229,34.69308 60.0337269,34.69308 C57.7016409,34.69308 55.1990309,33.883196 53.0758919,32.6239042 L50.4588789,37.1568368 C54.5635569,39.5420227 58.6147039,39.8990451 60.4209689,39.8990451 C62.3856719,39.8990451 72.1470179,39.4202811 72.2329279,30.0509253 L72.2368129,30.0509253 L72.2368129,9.0487695 L67.0766089,9.0487695 Z M34.1325505,25.9842373 C30.7281023,25.9842373 27.9591281,23.1600044 27.9591281,19.6873464 C27.9591281,16.21512 30.7281023,13.3900238 34.1325505,13.3900238 C37.5361353,13.3900238 40.3051099,16.21512 40.3051099,19.6873464 C40.3051099,23.1600044 37.5361353,25.9842373 34.1325505,25.9842373 L34.1325505,25.9842373 Z M40.5779489,9.0492012 L40.5779489,11.2146478 C38.5942513,9.5193311 36.0778261,8.5890006 33.4621082,8.5890006 C27.4177664,8.5890006 22.5010456,13.5065849 22.5010456,19.5509267 C22.5010456,25.5952685 27.4177664,30.5119893 33.4621082,30.5119893 C36.0778261,30.5119893 38.5942513,29.5816589 40.5779489,27.8859104 L40.5779489,30.051357 L45.7385849,30.051357 L45.7385849,9.0492012 L40.5779489,9.0492012 Z M11.7972808,14.5064203 L5.6229949,14.5064203 L5.6229949,6.0350169 L11.7972808,6.0350169 C13.9743835,6.0350169 15.7461126,7.9353949 15.7461126,10.2713662 C15.7461126,12.6077691 13.9743835,14.5064203 11.7972808,14.5064203 L11.7972808,14.5064203 Z M11.7964174,0.85409083 L-2.13162821e-14,0.85409083 L-2.13162821e-14,30.0522205 L5.6229949,30.0522205 L5.6229949,19.6873464 L11.7964174,19.6873464 C16.997202,19.6873464 21.2123976,15.4708557 21.2123976,10.270071 C21.2123976,5.07058153 16.997202,0.85409083 11.7964174,0.85409083 L11.7964174,0.85409083 Z"/>
+              </g>
+            </g>
+        </svg></li></ul>
+    <!--Logo PAGBRASIL-->
+              
+    {%- if section.settings.show_copyright -%}
+      <p class="footer__small-text">
+        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+        {%- if section.settings.copyright_text != blank -%}
+          {{ section.settings.copyright_text }}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+    <p class="footer__small-text">Todos os direitos reservados</p>
+
+  </div>
+
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>WhatsApp</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/4.5.0/css/font-awesome.min.css">
+
+<style>
+.whatsapp-link {
+            position: fixed;
+            background-color: #203122;
+            color: #fff;
+            border-radius: 50px;
+            border: 3px solid #fff;
+            text-align: center;
+            font-size: 30px;
+            z-index: 1000;
+            padding: 8px;
+            -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,.5));
+            filter: drop-shadow(1px 1px 1px rgba(0,0,0,.5));
+        }
+
+        a.whatsapp-link:before {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: auto;
+            right: -14px;
+            bottom: 0px;
+            border: 14px solid;
+            border-color: transparent transparent #fff transparent;
+            z-index: 99;
+        }
+
+        a.whatsapp-link:after {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: auto;
+            right: -6px;
+            bottom: 3px;
+            border: 12px solid;
+            border-color: transparent transparent #203122 transparent;
+            z-index: 100;
+        }
+
+        .whatsapp-link svg {
+            z-index: 999;
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .fa-whatsapp {
+            margin-top: 16px;
+        }
+
+        /* Media query para dispositivos móveis */
+        @media screen and (max-width: 767px) {
+            .whatsapp-link {
+                width: 36px;
+                height: 36px;
+                font-size: 32px;
+                bottom: 18px;
+                right: 24px;
+                border: 2px solid #fff;
+            }
+             a.whatsapp-link:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -11px;
+                bottom: 1px;
+                border: 10px solid;
+                border-color: transparent transparent #fff transparent;
+                z-index: 99;
+        }
+
+            a.whatsapp-link:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -6px;
+                bottom: 3px;
+                border: 8px solid;
+                border-color: transparent transparent #203122 transparent;
+                z-index: 100;
+        }
+        }
+
+        /* Media query para desktop */
+        @media screen and (min-width: 768px) {
+            .whatsapp-link {
+                width: 48px;
+                height: 48px;
+                font-size: 30px;
+                bottom: 32px;
+                right: 32px;
+                border: 3px solid #fff;
+            }
+             a.whatsapp-link:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -14px;
+                bottom: 0px;
+                border: 14px solid;
+                border-color: transparent transparent #fff transparent;
+                z-index: 99;
+        }
+
+            a.whatsapp-link:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -7px;
+                bottom: 3px;
+                border: 12px solid;
+                border-color: transparent transparent #203122 transparent;
+                z-index: 100;
+        }
+        }
+  
+</style>
+</head>
+ <body>
+ <a class="whatsapp-link" href="https://api.whatsapp.com/send/?phone=5511971602243&amptext&amptype=phone_number&ampapp_absent=0"
+target="_blank">
+
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M26.9,12L26.9,12c1.6-2.6,3.3-6.1,2.1-8.3c-0.4-0.7-1.2-1.5-3-1.5c-1.3,0-2.7,0.5-4,1.3c-1-1.4-2.7-2.5-4.7-2.7
+  C13,0.4,9.4,4.1,9.8,8.3c0.2,2.3,1.5,4,3.1,5c-2,3.2-3.6,6.9-3.6,9.9c0,0.8,0.1,1.6,0.4,2.2C7.4,26.8,4.8,28.1,2,29l0.8,2.2
+  c2.9-0.9,5.7-2.3,8.4-3.9c0.8,0.5,1.7,0.7,2.9,0.8c0.5,0,4.4,0,9.9-3.7l-1.4-1.9c-1.2,0.8-2.4,1.5-3.6,2c-2.9,1.3-4.8,1.2-4.8,1.2
+  l-0.1,0c-0.2,0-0.3,0-0.5,0C19.4,21.6,24.2,16.4,26.9,12z M22.2,6.1c0.9,2,0.6,4.4-1.1,6.1l0,0c-1.4,1.4-3.7,2-5.6,1.3c0,0,0,0,0,0
+  c0.4-0.7,0.9-1.3,1.4-1.9C18.7,9.2,20.5,7.3,22.2,6.1z M13.4,4.5c1.5-1.5,3.9-2,5.9-1.2c0.6,0.2,1.1,0.6,1.6,1
+  c-2.7,1.9-4.9,4.7-5.8,5.9c-0.5,0.7-1,1.4-1.5,2.2c0,0,0,0,0,0C11.4,10.3,11.2,6.7,13.4,4.5z M12,23.9L12,23.9
+  c-0.1,0.1-0.2,0.2-0.3,0.2c-0.1-0.3-0.1-0.6-0.1-0.9c0-2.2,1.3-5.7,3.5-9.1c2.1,0.4,4.4-0.1,6.2-1.8c1.9-1.9,2.4-4.5,1.7-6.7
+  c0,0,0,0,0,0c1.1-0.7,2.1-1.1,3-1.1c0.5,0,0.9,0.1,1,0.3c0.3,0.5,0.2,2.4-2,5.9C22.1,15.4,17.2,20.3,12,23.9z"/>
+</svg>
+
+</a>
+</body>
+</html>
+
+</footer>
+
+{% schema %}
+{
+  "name": "t:sections.footer.name",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_language_selector",
+      "info": "t:sections.footer.settings.header_language_selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "t:sections.footer.settings.show_locale_selector.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_currency_selector",
+      "info": "t:sections.footer.settings.header_currency_selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_selector",
+      "label": "t:sections.footer.settings.show_currency_selector.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_flags",
+      "label": "t:sections.footer.settings.show_currency_flags.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_additional_footer_content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_icons",
+      "label": "t:sections.footer.settings.show_payment_icons.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_copyright",
+      "label": "t:sections.footer.settings.show_copyright.label"
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "t:sections.footer.settings.copyright_text.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo_social",
+      "name": "t:sections.footer.blocks.logo.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "t:sections.footer.blocks.logo.settings.logo.label"
+        },
+        {
+          "type": "range",
+          "id": "desktop_logo_height",
+          "label": "t:sections.footer.blocks.logo.settings.desktop_logo_height.label",
+          "default": 50,
+          "min": 20,
+          "max": 120,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "container_width",
+          "label": "t:sections.footer.blocks.logo.settings.container_width.label",
+          "default": 25,
+          "min": 15,
+          "max": 95,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "t:sections.footer.blocks.navigation.name",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_footer_title",
+          "label": "t:sections.footer.blocks.navigation.settings.show_footer_title.label"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "t:sections.footer.blocks.navigation.settings.menu.label",
+          "default": "footer",
+          "info": "t:sections.footer.blocks.navigation.settings.menu.info"
+        },
+        {
+          "type": "range",
+          "id": "container_width",
+          "label": "t:sections.footer.blocks.navigation.settings.container_width.label",
+          "default": 25,
+          "min": 15,
+          "max": 95,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "t:sections.footer.blocks.newsletter_and_social.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_footer_title",
+          "label": "t:sections.footer.blocks.newsletter_and_social.settings.show_footer_title.label",
+          "default": true
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.footer.blocks.newsletter_and_social.settings.content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.footer.blocks.newsletter_and_social.settings.title.label",
+          "default": "Sign up and save"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.footer.blocks.newsletter_and_social.settings.text.label",
+          "info": "t:sections.footer.blocks.newsletter_and_social.settings.text.info",
+          "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+        },
+        {
+          "type": "range",
+          "id": "container_width",
+          "label": "t:sections.footer.blocks.newsletter_and_social.settings.container_width.label",
+          "default": 25,
+          "min": 15,
+          "max": 95,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "name": "t:sections.footer.blocks.custom_text.name",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_footer_title",
+          "label": "t:sections.footer.blocks.custom_text.settings.show_footer_title.label",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.footer.blocks.custom_text.settings.title.label",
+          "default": "Custom text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.footer.blocks.custom_text.settings.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.footer.blocks.custom_text.settings.text.label",
+          "default": "<p>Add your own custom text here.</p>"
+        },
+        {
+          "type": "range",
+          "id": "container_width",
+          "label": "t:sections.footer.blocks.custom_text.settings.container_width.label",
+          "default": 25,
+          "min": 15,
+          "max": 95,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "type": "follow_shop_cta",
+      "name": "t:common.follow_shop_cta.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:common.follow_shop_cta.paragraph.content"
+        },
+        {
+          "type": "range",
+          "id": "container_width",
+          "label": "t:sections.footer.blocks.custom_text.settings.container_width.label",
+          "default": 25,
+          "min": 20,
+          "max": 95,
+          "unit": "%"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "settings": {},
+    "blocks": [
+      {
+        "type": "menu",
+        "settings": {}
+      },
+      {
+        "type": "logo_social",
+        "settings": {}
+      }
+    ]
+  },
+  "disabled_on": {
+    "groups": ["header", "custom.popups"]
+  }
+}
+{% endschema %}

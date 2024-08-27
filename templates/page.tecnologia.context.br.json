@@ -1,0 +1,200 @@
+{
+  "parent": "page.tecnologia.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "532c0c90-1352-485c-b2f4-3b244cb7a330": {
+      "settings": {
+        "section_height": "650px",
+        "autoplay_speed": 10
+      },
+      "blocks": {
+        "template--14993005871169__532c0c90-1352-485c-b2f4-3b244cb7a330-image-1": {
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "subheading": ""
+          }
+        }
+      }
+    },
+    "f9caa3b5-eacd-453e-8f7c-5643c6ce09bb": {
+      "settings": {
+        "narrow_column": true
+      },
+      "blocks": {
+        "cb56ae2f-7229-4f23-a1a8-e9e8de3d4aff": {
+          "settings": {
+            "title": "Soma POCKET"
+          }
+        },
+        "text_xDPtB": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "cb56ae2f-7229-4f23-a1a8-e9e8de3d4aff",
+        "text_xDPtB"
+      ]
+    },
+    "slideshow_pUC6H": {
+      "type": "slideshow",
+      "disabled": false,
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_c8iBb": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-Munhequeira.jpg",
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_c8iBb"
+      ]
+    },
+    "rich_text_4J4nB": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "heading_YphgE": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_nEbnX": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YphgE",
+        "text_nEbnX"
+      ]
+    },
+    "slideshow_iR7m7": {
+      "type": "slideshow",
+      "disabled": false,
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_NJwLD": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": null,
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_NJwLD"
+      ]
+    },
+    "rich_text_3NQGq": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "heading_i7A4A": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_4hFae": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i7A4A",
+        "text_4hFae"
+      ]
+    },
+    "31fecfae-4ee2-4e76-8641-7cb7f8835770": {
+      "settings": {
+        "title": ""
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "532c0c90-1352-485c-b2f4-3b244cb7a330",
+    "f9caa3b5-eacd-453e-8f7c-5643c6ce09bb",
+    "slideshow_pUC6H",
+    "rich_text_4J4nB",
+    "slideshow_iR7m7",
+    "rich_text_3NQGq",
+    "31fecfae-4ee2-4e76-8641-7cb7f8835770"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "page.contact.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "rich-text": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+        "heading": {
+          "settings": {
+            "title": "Entre em Contato"
+          }
+        },
+        "text": {
+          "settings": {
+            "text": ""
+          }
+        }
+      }
+    }
+  }
+}

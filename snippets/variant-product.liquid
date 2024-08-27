@@ -1,0 +1,24 @@
+<div class="variant-colors">
+  {% comment %} Criar metafield no produto como lista de produtos {% endcomment %}
+  {% assign productVariants = product.metafields.custom.variantes_de_produto %}
+  {% for item in productVariants %}
+    {% if item.featured_image %}
+      <a href="{{ item.url }}">
+        <div class="color-swatch" style="background-image: url('{{ item.featured_image.src | img_url: '100x' }}');">
+          a
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+<style>
+  .color-swatch {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: 1px solid red;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+  }
+</style>

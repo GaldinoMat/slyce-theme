@@ -1,0 +1,53 @@
+{
+  "parent": "collection.colecao-linhas.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "background_video_text_Dn7Tg": {
+      "type": "background-video-text",
+      "disabled": false,
+      "settings": {
+        "subtitle": "{{ collection.metafields.custom.sub_heading_colecao_linhas.value }}",
+        "title": "{{ collection.metafields.custom.heading_colecao_linhas.value }}",
+        "text": "{{ collection.metafields.custom.texto_colecao_linhas | metafield_tag }}",
+        "button_label": "",
+        "button_link": "",
+        "video_url": "{{ collection.metafields.custom.url_video_colecao_linhas.value }}",
+        "color_border": "#f4f4f4",
+        "layout": "left",
+        "height": 550
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "featured_collections_FjmC3J": {
+      "settings": {
+      },
+      "blocks": {
+        "collection_AepTiY": {
+          "settings": {
+            "collection": "bones"
+          }
+        }
+      },
+      "block_order": [
+        "collection_4HLyLJ",
+        "collection_BJKEVd",
+        "collection_HY7Rch",
+        "collection_AepTiY"
+      ]
+    }
+  },
+  "order": [
+    "background_video_text_Dn7Tg",
+    "collection-header",
+    "promo-grid",
+    "main-collection",
+    "featured_collections_FjmC3J",
+    "rich_text_mKWUHz"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "parent": "blog.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "blog_posts_hVmXX": {
+      "type": "blog-posts",
+      "disabled": false,
+      "settings": {
+        "title": "Na mídia",
+        "blog": "news",
+        "post_limit": 6,
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": false,
+        "blog_image_size": "square",
+        "divider": false
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "main": {
+      "disabled": true,
+      "custom_css": [
+        "h1.section-header__title {font-size: 25px; letter-spacing: 0.3em;}",
+        ".article__title {font-size: 20px; font-weight: bold;}"
+      ],
+      "settings": {
+        "blog_show_tag_filter": true,
+        "blog_show_rss": false,
+        "blog_show_tags": true,
+        "blog_image_size": "square"
+      },
+      "blocks": {
+      }
+    },
+    "featured-collections": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "blog_posts_hVmXX",
+    "main",
+    "featured-collections"
+  ]
+}

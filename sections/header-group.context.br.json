@@ -1,0 +1,79 @@
+{
+  "parent": "header-group.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "announcement": {
+      "disabled": false,
+      "custom_css": [
+        ".announcement-bar {color: #e0d3b4 !important;}",
+        ".announcement-bar a {color: #e0d3b4 !important;}"
+      ],
+      "settings": {
+        "announcement_compact": true
+      },
+      "blocks": {
+        "announcement_czXnbt": {
+          "disabled": false,
+          "settings": {
+            "text": "Seja bem-vindo à Slyce"
+          }
+        },
+        "announcement_WCmEp": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "text": "FRETE GRÁTIS ACIMA DE R$ 799",
+            "link_text": "",
+            "link": ""
+          }
+        },
+        "announcement-0": {
+          "disabled": true,
+          "settings": {
+            "text": "CUPOM DE PRIMEIRA COMPRA 10%: WELCOME",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_czXnbt",
+        "announcement_WCmEp",
+        "announcement-0"
+      ]
+    },
+    "header": {
+      "disabled": false,
+      "custom_css": [
+        ".site-header {padding: 0 !important;}",
+        ".site-header__logo {margin: 0 !important;}"
+      ],
+      "settings": {
+        "main_menu_link_list": "main-menu-new",
+        "hover_menu": true,
+        "mega_menu_images": true,
+        "main_menu_alignment": "center-left",
+        "header_style": "sticky",
+        "sticky_index": false,
+        "sticky_collection": false,
+        "toolbar_social": false,
+        "show_locale_selector": false
+      },
+      "blocks": {
+        "header-0": {
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/SLYCE_logo_verde_ec245a2e-555a-4dc0-ac24-f6c75c4cec32.svg",
+            "logo-inverted": "shopify:\/\/shop_images\/SLYCE_logo_branco.svg",
+            "desktop_logo_width": 120,
+            "mobile_logo_width": 110
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

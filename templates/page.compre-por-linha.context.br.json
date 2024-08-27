@@ -1,0 +1,74 @@
+{
+  "parent": "page.compre-por-linha.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "de3a94af-b286-4274-bb30-0e51f5c5771c": {
+      "settings": {
+      },
+      "blocks": {
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-heading-1": {
+          "settings": {
+            "title": "Linhas slyce"
+          }
+        },
+        "template--15056045834305__de3a94af-b286-4274-bb30-0e51f5c5771c-text-1": {
+          "settings": {
+            "text": "<p>Para ser a marca do tênis brasileiro precisamos pensar em cada detalhe. Por isso criamos três linhas de roupas para vocês e nossos atletas que representam o espírito <strong>It's Never Over<\/strong><\/p>"
+          }
+        }
+      }
+    },
+    "23a0914b-5b4e-43b2-b0a0-4d84a0565eb0": {
+      "settings": {
+      },
+      "blocks": {
+        "template--15056045834305__23a0914b-5b4e-43b2-b0a0-4d84a0565eb0-text_block-1": {
+          "settings": {
+            "image": "shopify:\/\/shop_images\/556D5999-507E-4B05-B1A9-245C2BDA4183-526-0000015F88F58CD2.jpg",
+            "image_mask": "portrait",
+            "title": "CHAMPIONSHIP",
+            "text": "<p><strong>Eleve sua Performance no Tênis<\/strong><\/p><p>Você já imaginou se vestir como um verdadeiro campeão, sentindo-se imparável em cada movimento na quadra de tênis? Com Slyce Championship, essa visão está ao seu alcance. Nossa linha de roupas para jogo é projetada para atender às demandas dos atletas mais dedicados, oferecendo não apenas estilo, mas também um desempenho superior.<\/p><p>Ao escolher Slyce Championship, você está optando por tecidos especialmente selecionados, reconhecidos por sua rigidez e capacidade de resposta. Não importa o quão intensa seja a partida, suas roupas permanecerão firmes, permitindo que você se concentre totalmente no jogo. A respirabilidade é uma prioridade, garantindo que você se sinta fresco e confortável, mesmo nos momentos mais desafiadores.<\/p><p>Nossas cores foram cuidadosamente escolhidas para refletir a tradição e a grandeza do tênis. Do azul clássico ao branco puro e ao verde vibrante, cada tonalidade evoca o espírito dos campeonatos lendários. Quando você veste Slyce Championship, está incorporando a história do esporte e se preparando para escrever seu próprio capítulo de sucesso.<\/p>",
+            "button_label": "VER PRODUTOS",
+            "button_link": "shopify:\/\/collections\/championship"
+          }
+        },
+        "eb7e3d55-0530-4bd5-a9f6-32daf275565b": {
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_endurance.jpg",
+            "image_mask": "portrait",
+            "title": "ENDURANCE",
+            "text": "<p><strong>Descubra o Conforto Inabalável com Slyce Endurance<br\/><br\/><\/strong>Quando se trata de treinar, o conforto é fundamental. Com Slyce Endurance, você experimentará uma sensação de conforto incomparável que o impulsionará em cada sessão de treino. Nossa linha é meticulosamente projetada para proporcionar liberdade de movimento e suavidade ao toque, permitindo que você se concentre totalmente em aprimorar suas habilidades.<\/p><p>Feita com tecidos de poliamida e elastano, Slyce Endurance abraça seu corpo de forma gentil, oferecendo flexibilidade e respirabilidade excepcionais. Cada peça é cuidadosamente construída para acompanhar seus movimentos, garantindo que nada o impeça de atingir seus objetivos.<\/p><p>As cores neutras, como bege e preto, definem o visual da coleção Endurance, oferecendo versatilidade e elegância atemporal. Do treino à rua, você estará sempre pronto para enfrentar o dia com confiança.<\/p>",
+            "button_label": "VER PRODUTOS",
+            "button_link": "shopify:\/\/collections\/endurance"
+          }
+        },
+        "text_block_GG7Yr": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/F85427B5-0022-49C8-B0C1-0FAC45E5D831-526-00000178DDC2B86A.jpg",
+            "image_mask": "portrait",
+            "image_width": 650,
+            "title": "VINTAGE",
+            "text": "<p><strong>Explore o Estilo Clássico com Slyce Vintage<\/strong><\/p><p>Reviva a elegância intemporal do tênis com Slyce Vintage, uma linha que une a nostalgia dos grandes campeonatos com a moda contemporânea. Nossa coleção casual oferece uma ampla gama de peças, desde casacos e camisetas de algodão até ecobags e bonés sofisticados, todos projetados para incorporar o charme inconfundível do esporte.<\/p><p>Mantendo a mesma identidade de cores dos principais campeonatos de tênis - azul, branco e verde -, Slyce Vintage permite que você entre no mundo da moda com confiança e estilo. Cada peça é cuidadosamente elaborada para oferecer conforto e elegância, seja você relaxando fora da quadra ou explorando a cidade.<\/p><p>Com Slyce Vintage, você não apenas veste uma roupa, mas sim uma declaração de estilo que transcende tendências passageiras. Celebre a história do tênis enquanto incorpora um toque de sofisticação ao seu guarda-roupa diário.<\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p>",
+            "button_label": "VER PRODUTOS",
+            "button_link": "shopify:\/\/collections\/vintage-collection-range-plan"
+          }
+        }
+      },
+      "block_order": [
+        "template--15056045834305__23a0914b-5b4e-43b2-b0a0-4d84a0565eb0-text_block-1",
+        "eb7e3d55-0530-4bd5-a9f6-32daf275565b",
+        "text_block_GG7Yr"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "de3a94af-b286-4274-bb30-0e51f5c5771c",
+    "23a0914b-5b4e-43b2-b0a0-4d84a0565eb0"
+  ]
+}

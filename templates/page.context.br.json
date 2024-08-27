@@ -1,0 +1,332 @@
+{
+  "parent": "page.json",
+  "context": {
+    "market": "br"
+  },
+  "sections": {
+    "86e670d6-8e96-40a6-9539-9d0cde0791cf": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "template--14993475928129__86e670d6-8e96-40a6-9539-9d0cde0791cf-image-1": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": null,
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14993475928129__86e670d6-8e96-40a6-9539-9d0cde0791cf-image-1"
+      ]
+    },
+    "01e03834-90fd-4475-8e56-6cf873f00d2b": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "template--14993475928129__01e03834-90fd-4475-8e56-6cf873f00d2b-heading-1": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "SLYCE, sua segunda assinatura!"
+          }
+        },
+        "template--14993475928129__01e03834-90fd-4475-8e56-6cf873f00d2b-text-1": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Construímos uma marca para que esta seja uma extensão da paixão e dedicação ao esporte, transcendendo esses conceitos por meio de produtos que agregam valor no cotidiano dos que o possuem.<\/p><p>Esta é a nossa primeira tacada: continuamente desenvolver o melhor para garantir que nosso público esteja sempre confortável e entregando seu melhor nas quadras. Com esse compromisso, transformamos a Slyce em sua segunda assinatura.<br\/><br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14993475928129__01e03834-90fd-4475-8e56-6cf873f00d2b-heading-1",
+        "template--14993475928129__01e03834-90fd-4475-8e56-6cf873f00d2b-text-1"
+      ]
+    },
+    "d4d0317e-7cfc-4754-82f8-02162216fdbd": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "e698f0d1-7ff3-4459-8872-aae1b7b0ef61": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Elegante  |  Líder  |  Disciplinada"
+          }
+        },
+        "78530dfd-ab03-484b-8538-074c1cfc4b5e": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Tudo o que desenvolvemos na Slyce acompanha uma equipe de profissionais extremamente qualificados e que vivencia o tênis em seu dia a dia, baseados em estudos e percepções de necessidade, além do desejo de trazer ao mercado brasileiro a qualidade de produtos - até o momento restrito -, mas de forma acessível, pura e original.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e698f0d1-7ff3-4459-8872-aae1b7b0ef61",
+        "78530dfd-ab03-484b-8538-074c1cfc4b5e"
+      ]
+    },
+    "fd18de4a-7383-4752-9426-8352dffeb7e5": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "Porque criamos a Slyce?",
+        "text": "<p>Queremos criar momentos de vitórias e conquistas para serem compartilhados, fazendo do esporte uma essência pessoal e conjunta do modo de viver.<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Slyce_banner_06.jpg",
+        "layout": "right",
+        "height": 450,
+        "framed": false,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": false
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "fcc522bb-bd0c-4ccd-b7e2-38f959820e7c": {
+      "type": "text-with-icons",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#bb5929",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      },
+      "blocks": {
+        "template--14993475928129__fcc522bb-bd0c-4ccd-b7e2-38f959820e7c-text_block-1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "icon": "ribbon",
+            "title": "Missão",
+            "text": "<p>Transformar a paixão e dedicação pelo esporte no melhor produto possível tanto em termos de design quanto de qualidade.<br\/><\/p>"
+          }
+        },
+        "template--14993475928129__fcc522bb-bd0c-4ccd-b7e2-38f959820e7c-text_block-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "icon": "sales-tag",
+            "title": "Visão",
+            "text": "<p>Ser a empresa referencia de vestuário para performance nos esportes de raquete na América Latina.<br\/><\/p>"
+          }
+        },
+        "template--14993475928129__fcc522bb-bd0c-4ccd-b7e2-38f959820e7c-text_block-3": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "icon": "charity",
+            "title": "Valores",
+            "text": "<p>- Ser transformadora.<br\/>- Performance sempre, desde a roupa ao desempenho do cliente\/atleta.<br\/>- Elevar o tênis brasileiro – por meio de roupas de alta qualidade e patrocínios para atletas.<br\/>- Colaboradora e apoiadora de atletas.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14993475928129__fcc522bb-bd0c-4ccd-b7e2-38f959820e7c-text_block-1",
+        "template--14993475928129__fcc522bb-bd0c-4ccd-b7e2-38f959820e7c-text_block-2",
+        "template--14993475928129__fcc522bb-bd0c-4ccd-b7e2-38f959820e7c-text_block-3"
+      ]
+    },
+    "1c0b0c1b-c9ff-4067-abf4-3230c48a2aa3": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": false
+      },
+      "blocks": {
+        "template--14993475928129__1c0b0c1b-c9ff-4067-abf4-3230c48a2aa3-image-1": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "Com a marca Slyce ativa no mercado, construiremos um novo olhar para o segmento, classificado-a além de uma marca de roupas. Queremos que seja interpretada pelo público como uma marca registrada do seu desempenho dentro das quadras, ou seja, cada treino, golpe, defesa, início e fim de em uma partida, a Slyce estará assinando seu conforto e desempenhando seu papel de auxiliar a performance do jogador.",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": null,
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14993475928129__1c0b0c1b-c9ff-4067-abf4-3230c48a2aa3-image-1"
+      ]
+    },
+    "a3d3d00e-561d-4e25-b25b-072d6cfbcd7f": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "template--14993475928129__a3d3d00e-561d-4e25-b25b-072d6cfbcd7f-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--14993475928129__a3d3d00e-561d-4e25-b25b-072d6cfbcd7f-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14993475928129__a3d3d00e-561d-4e25-b25b-072d6cfbcd7f-heading-1",
+        "template--14993475928129__a3d3d00e-561d-4e25-b25b-072d6cfbcd7f-text-1"
+      ]
+    },
+    "a3c7df8c-2a75-4789-9912-28a760d8c609": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "template--14993475928129__a3c7df8c-2a75-4789-9912-28a760d8c609-heading-1": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": "SLYCE APOIA O incentivo AO ESPORTE"
+          }
+        }
+      },
+      "block_order": [
+        "template--14993475928129__a3c7df8c-2a75-4789-9912-28a760d8c609-heading-1"
+      ]
+    },
+    "1518dbbf-7ae5-4e95-aaa8-bd1e515e9f83": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "INSTITUTO",
+        "title": "PRÓXIMA GERAÇÃO",
+        "text": "<p>Visamos por um Brasil onde o tênis seja praticado no mais alto nível. Mas, do que adianta vendermos as melhores roupas e não apoiarmos a geração que elevará esse esporte no Brasil? É por isso que a Slyce apoia o Instituto Próxima Geração, Instituto que gera a transformação de jovens brasileiros através do tênis<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/20230815105336_IMG_0432.jpg",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    },
+    "9fae3b86-87c8-4d71-9cb1-56e175ede1e1": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      },
+      "blocks": {
+        "debfdc72-8b4c-49e7-99d2-a6a333c33152": {
+          "type": "heading",
+          "disabled": false,
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "debfdc72-8b4c-49e7-99d2-a6a333c33152"
+      ]
+    },
+    "main": {
+      "disabled": false,
+      "custom_css": [
+        "p {font-size: 15px; text-align: justify;}"
+      ],
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "86e670d6-8e96-40a6-9539-9d0cde0791cf",
+    "main",
+    "01e03834-90fd-4475-8e56-6cf873f00d2b",
+    "d4d0317e-7cfc-4754-82f8-02162216fdbd",
+    "fd18de4a-7383-4752-9426-8352dffeb7e5",
+    "fcc522bb-bd0c-4ccd-b7e2-38f959820e7c",
+    "1c0b0c1b-c9ff-4067-abf4-3230c48a2aa3",
+    "a3d3d00e-561d-4e25-b25b-072d6cfbcd7f",
+    "a3c7df8c-2a75-4789-9912-28a760d8c609",
+    "1518dbbf-7ae5-4e95-aaa8-bd1e515e9f83",
+    "9fae3b86-87c8-4d71-9cb1-56e175ede1e1"
+  ]
+}
