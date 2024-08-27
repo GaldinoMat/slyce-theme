@@ -293,7 +293,7 @@
           "type": "advanced",
           "disabled": false,
           "settings": {
-            "subheading": "ATLETAS MASCULINOS",
+            "subheading": "",
             "heading": "",
             "textarea": "",
             "cta_text1": "",
@@ -318,7 +318,7 @@
           "type": "advanced",
           "disabled": false,
           "settings": {
-            "subheading": "ATLETAS FEMININOS",
+            "subheading": "",
             "heading": "",
             "textarea": "",
             "cta_text1": "",
