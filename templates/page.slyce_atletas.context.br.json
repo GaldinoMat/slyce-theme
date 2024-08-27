@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "parent": "page.slyce_atletas.json",
   "context": {
@@ -92,9 +101,24 @@
             "button_label": "VER BIO",
             "button_link": "shopify:\/\/pages\/daniel-rodrigues"
           }
+        },
+        "text_block_LBTA6": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Quarta_Vertical-Ingrid.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "INGRID MARTINS",
+            "text": "",
+            "button_label": "VER BIO",
+            "button_link": "shopify:\/\/pages\/ingrid-martins"
+          }
         }
       },
       "block_order": [
+        "text_block_LBTA6",
         "template--15056045834305__23a0914b-5b4e-43b2-b0a0-4d84a0565eb0-text_block-1",
         "eb7e3d55-0530-4bd5-a9f6-32daf275565b",
         "text_block_xdbAF"
