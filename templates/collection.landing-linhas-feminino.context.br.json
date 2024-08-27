@@ -13,5 +13,66 @@
     "market": "br"
   },
   "sections": {
-  }
+    "promo-grid": {
+      "settings": {
+        "full_width": false
+      },
+      "blocks": {
+        "banner": {
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "advanced": {
+          "settings": {
+            "text_align": "vertical-center horizontal-left",
+            "subheading": "LINHAS FEMININAS SLYCE",
+            "heading": "PREPARE SEU CLOSET",
+            "textarea": "Prepare seu closet para os produtos de cada linha Slyce, pensados para cada ocasião da sua pixão pelo tênis",
+            "cta_text1": "",
+            "cta_text2": "",
+            "image": "shopify:\/\/shop_images\/Captura_de_tela_2024-08-16_112435.png"
+          }
+        }
+      }
+    },
+    "featured-collection": {
+      "settings": {
+        "title": "LINHA CHAMPIONSHIP",
+        "home_featured_products": "championship-feminino"
+      },
+      "blocks": {
+      }
+    },
+    "featured-collection2": {
+      "disabled": true,
+      "settings": {
+        "title": "LINHA ENDURANCE"
+      },
+      "blocks": {
+      }
+    },
+    "featured-collection3": {
+      "settings": {
+        "title": "LINHA VINTAGE",
+        "home_featured_products": "vintage-feminino"
+      },
+      "blocks": {
+      }
+    },
+    "main-collection": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "promo-grid",
+    "featured-collection",
+    "featured-collection2",
+    "featured-collection3",
+    "main-collection"
+  ]
 }
