@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-3da0c3bff3f4a28b1bb158ed07cc16a4": null,
+            "header-1fc09ece2e8debd344071efdc8193cc7": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-fbfcd69f932451182cd07f5e62e2775c": null,
+            "header-4e1f45474a409de4a8c797b949d1f5e2": null,
             "text_align": "vertical-center horizontal-center",
-            "header-0848583fcefd6052aee7a990723e7238": null,
+            "header-cc8be7f99bec27c296479c607e96b524": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Categorias_e_Linhas_copiar-Fem2.jpg",
             "video_url": "",
-            "header-7258f1625a05f0f6aa53d02674d3e3a7": null,
+            "header-7ff44300db7cbe52658bf329ff86a20b": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-cd0429823eb0506d14d4ad77a013e5b3": null,
+            "header-e0b9d402356f03f6b7e8820e0223926d": null,
             "text_align": "vertical-center horizontal-center",
-            "header-7c3c6f7332b77334e927f809bd588439": null,
+            "header-cf4723b70a2616ab64a96511bf8478f4": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -343,6 +343,27 @@
       "block_order": [
         "advanced_Car7b",
         "advanced_4chmP"
+      ]
+    },
+    "featured_collection_XMmwp": {
+      "type": "featured-collection",
+      "disabled": false,
+      "custom_css": [
+        ".section-header {margin-bottom: 15px;}"
+      ],
+      "settings": {
+        "title": "novidades para ele",
+        "home_featured_products": "masculino",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      },
+      "blocks": {
+      },
+      "block_order": [
+
       ]
     },
     "rich_text_xRX4g": {
@@ -422,27 +443,6 @@
         "image_JPVwp"
       ]
     },
-    "featured_collection_XMmwp": {
-      "type": "featured-collection",
-      "disabled": false,
-      "custom_css": [
-        ".section-header {margin-bottom: 15px;}"
-      ],
-      "settings": {
-        "title": "novidades para ele",
-        "home_featured_products": "masculino",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": false,
-        "divider": false
-      },
-      "blocks": {
-      },
-      "block_order": [
-
-      ]
-    },
     "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291": {
       "type": "slideshow",
       "disabled": true,
@@ -501,6 +501,37 @@
         "template--14990080671809__9eb46d0c-92fa-4b5f-a24e-1bb4549f0291-image-1",
         "image_AednF"
       ]
+    },
+    "172479158736fa24d8": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      },
+      "blocks": {
+        "instafeed_app_block_6dwEQ": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "disabled": false,
+          "settings": {
+            "header-a72112052e81f30a549b4202bdb9d910": null,
+            "title": "",
+            "title_color": "",
+            "title_size": null,
+            "alignment": "center",
+            "header-e303ba6836c52c8a6993581f82560f31": null,
+            "margin_top": null,
+            "margin_bottom": null,
+            "margin_sides": null,
+            "header-581a42cf8308704886b7cd8f35171d9c": null,
+            "background_color": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_6dwEQ"
+      ]
     }
   },
   "order": [
@@ -513,6 +544,7 @@
     "featured_collection_XMmwp",
     "rich_text_xRX4g",
     "slideshow_n8PHJ",
-    "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291"
+    "9eb46d0c-92fa-4b5f-a24e-1bb4549f0291",
+    "172479158736fa24d8"
   ]
 }
