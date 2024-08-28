@@ -8281,7 +8281,8 @@ document.addEventListener("DOMContentLoaded", function() {
 document.querySelector('form[action="/cart/add"]').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  var mainProductId = {{ product.selected_or_first_available_variant.id }};
+  // Captura o ID da variante atualmente selecionada no produto principal
+  var mainProductId = document.querySelector('input[name="id"]').value;
   var includeRelatedProduct = document.getElementById('include-related-product').checked;
   var relatedProductId = document.getElementById('related-variant-select').value;
 
@@ -8309,7 +8310,6 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
     if (cartDrawerToggle) {
       cartDrawerToggle.click(); // Abre o cart drawer
     } else {
-      // Se o seletor estiver errado, imprime uma mensagem de erro
       console.error('Cart drawer toggle não encontrado.');
     }
   })
