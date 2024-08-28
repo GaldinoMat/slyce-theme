@@ -8278,9 +8278,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
   // Produto relacionado
-document.getElementById('add-related-to-cart').addEventListener('click', function() {
+document.querySelector('form[action="/cart/add"]').addEventListener('submit', function(event) {
+  event.preventDefault();
+
   var mainProductId = {{ product.selected_or_first_available_variant.id }};
-  var relatedProductId = document.getElementById('related-variant-select').value;
+  var includeRelatedProduct = document.getElementById('include-related-product').checked;
+  var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
+
+  if (includeRelatedProduct) {
+    var relatedProductId = document.getElementById('related-variant-select').value;
+    itemsToAdd.push({ id: relatedProductId, quantity: 1 });
+  }
 
   fetch('/cart/add.js', {
     method: 'POST',
@@ -8288,10 +8296,7 @@ document.getElementById('add-related-to-cart').addEventListener('click', functio
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      items: [
-        { id: mainProductId, quantity: 1 },
-        { id: relatedProductId, quantity: 1 }
-      ]
+      items: itemsToAdd
     })
   })
   .then(response => response.json())
@@ -8303,6 +8308,7 @@ document.getElementById('add-related-to-cart').addEventListener('click', functio
     console.error('Erro ao adicionar os produtos ao carrinho:', error);
   });
 });
+
   
 
   
