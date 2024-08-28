@@ -289,28 +289,37 @@
                       </div>
                     </div>
 
-                 {% assign related_product = product.metafields.produto.relacionado %}
+                {% assign related_product_handle = product.metafields.produto.relacionado_handle %}
 
-{% if related_product %}
-  {% assign related_product_obj = all_products[related_product.handle] %}
+{% if related_product_handle %}
+  {% assign related_product = all_products[related_product_handle] %}
   <div class="complete-the-set">
     <h3>Complete o Conjunto</h3>
     <div class="related-product">
       <input type="checkbox" id="include-related-product" name="include_related_product">
       <label for="include-related-product">
-        <img src="{{ related_product_obj.featured_image | img_url: 'medium' }}" alt="{{ related_product_obj.title }}">
+        {% if related_product.featured_image %}
+          <img src="{{ related_product.featured_image | img_url: 'medium' }}" alt="{{ related_product.title }}">
+        {% else %}
+          <p>Imagem não disponível</p>
+        {% endif %}
         <div class="related-product-details">
-          <h4>{{ related_product_obj.title }}</h4>
-          <select id="related-variant-select">
-            {% for variant in related_product_obj.variants %}
-            <option value="{{ variant.id }}">{{ variant.title }}</option>
-            {% endfor %}
-          </select>
+          <h4>{{ related_product.title }}</h4>
+          {% if related_product.variants.size > 1 %}
+            <select id="related-variant-select">
+              {% for variant in related_product.variants %}
+                <option value="{{ variant.id }}">{{ variant.title }}</option>
+              {% endfor %}
+            </select>
+          {% else %}
+            <p>Produto sem variantes</p>
+          {% endif %}
         </div>
       </label>
     </div>
   </div>
 {% endif %}
+
 
 
                   {%- when 'size_chart' -%}
