@@ -292,23 +292,24 @@
                  {% assign related_product = product.metafields.produto.relacionado %}
 
 {% if related_product %}
-<div class="complete-the-set">
-  <h3>Complete o Conjunto</h3>
-  <div class="related-product">
-    <input type="checkbox" id="include-related-product" name="include_related_product">
-    <label for="include-related-product">
-      <img src="{{ related_product.featured_image | img_url: 'medium' }}" alt="{{ related_product.title }}">
-      <div class="related-product-details">
-        <h4>{{ related_product.title }}</h4>
-        <select id="related-variant-select">
-          {% for variant in related_product.variants %}
-          <option value="{{ variant.id }}">{{ variant.title }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </label>
+  {% assign related_product_obj = all_products[related_product.handle] %}
+  <div class="complete-the-set">
+    <h3>Complete o Conjunto</h3>
+    <div class="related-product">
+      <input type="checkbox" id="include-related-product" name="include_related_product">
+      <label for="include-related-product">
+        <img src="{{ related_product_obj.featured_image | img_url: 'medium' }}" alt="{{ related_product_obj.title }}">
+        <div class="related-product-details">
+          <h4>{{ related_product_obj.title }}</h4>
+          <select id="related-variant-select">
+            {% for variant in related_product_obj.variants %}
+            <option value="{{ variant.id }}">{{ variant.title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </label>
+    </div>
   </div>
-</div>
 {% endif %}
 
 
