@@ -289,27 +289,28 @@
                       </div>
                     </div>
 
-                  {% assign related_product = product.metafields.produto.relacionado %}
+                 {% assign related_product = product.metafields.produto.relacionado %}
 
 {% if related_product %}
 <div class="complete-the-set">
   <h3>Complete o Conjunto</h3>
   <div class="related-product">
-    <a href="{{ related_product.url }}">
-      <img width="100px" height="200px" src="{{ related_product.featured_image | img_url: 'medium' }}" alt="{{ related_product.title }}">
-    </a>
-    <div class="related-product-details">
-      <h4>{{ related_product.title }}</h4>
-      <select id="related-variant-select">
-        {% for variant in related_product.variants %}
-        <option value="{{ variant.id }}">{{ variant.title }}</option>
-        {% endfor %}
-      </select>
-    </div>
-    <button type="button" id="add-related-to-cart">Adicionar Conjunto ao Carrinho</button>
+    <input type="checkbox" id="include-related-product" name="include_related_product">
+    <label for="include-related-product">
+      <img src="{{ related_product.featured_image | img_url: 'medium' }}" alt="{{ related_product.title }}">
+      <div class="related-product-details">
+        <h4>{{ related_product.title }}</h4>
+        <select id="related-variant-select">
+          {% for variant in related_product.variants %}
+          <option value="{{ variant.id }}">{{ variant.title }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </label>
   </div>
 </div>
 {% endif %}
+
 
                   {%- when 'size_chart' -%}
                     {% if connect_to_sizechart == false %}
