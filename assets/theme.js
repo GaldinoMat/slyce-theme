@@ -8283,26 +8283,38 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
 
   var mainProductId = {{ product.selected_or_first_available_variant.id }};
   var includeRelatedProduct = document.getElementById('include-related-product').checked;
-  var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
-
-  if (includeRelatedProduct) {
-    var relatedProductId = document.getElementById('related-variant-select').value;
-    itemsToAdd.push({ id: relatedProductId, quantity: 1 });
-  }
-
+  var relatedProductId = document.getElementById('related-variant-select').value;
+  
+  // Adiciona o produto principal ao carrinho
   fetch('/cart/add.js', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      items: itemsToAdd
+      items: [{ id: mainProductId, quantity: 1 }]
     })
   })
   .then(response => response.json())
   .then(data => {
-    console.log('Produtos adicionados ao carrinho:', data);
-    // Aqui, ao invés de redirecionar, vamos acionar o cart drawer
+    if (includeRelatedProduct) {
+      // Se o checkbox estiver marcado, adiciona o produto relacionado ao carrinho
+      return fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          items: [{ id: relatedProductId, quantity: 1 }]
+        })
+      });
+    } else {
+      return data;
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Aqui acionamos a abertura do cart drawer
     var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
     if (cartDrawerToggle) {
       cartDrawerToggle.click(); // Abre o cart drawer
@@ -8312,6 +8324,7 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
     console.error('Erro ao adicionar os produtos ao carrinho:', error);
   });
 });
+
 
   
 
