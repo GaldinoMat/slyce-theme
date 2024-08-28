@@ -8302,7 +8302,11 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
   .then(response => response.json())
   .then(data => {
     console.log('Produtos adicionados ao carrinho:', data);
-    window.location.href = '/cart';
+    // Aqui, ao invés de redirecionar, vamos acionar o cart drawer
+    var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
+    if (cartDrawerToggle) {
+      cartDrawerToggle.click(); // Abre o cart drawer
+    }
   })
   .catch(error => {
     console.error('Erro ao adicionar os produtos ao carrinho:', error);
