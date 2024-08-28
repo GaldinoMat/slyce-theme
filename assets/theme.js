@@ -8284,40 +8284,33 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
   var mainProductId = {{ product.selected_or_first_available_variant.id }};
   var includeRelatedProduct = document.getElementById('include-related-product').checked;
   var relatedProductId = document.getElementById('related-variant-select').value;
-  
-  // Adiciona o produto principal ao carrinho
+
+  var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
+
+  if (includeRelatedProduct) {
+    itemsToAdd.push({ id: relatedProductId, quantity: 1 });
+  }
+
   fetch('/cart/add.js', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      items: [{ id: mainProductId, quantity: 1 }]
+      items: itemsToAdd
     })
   })
   .then(response => response.json())
   .then(data => {
-    if (includeRelatedProduct) {
-      // Se o checkbox estiver marcado, adiciona o produto relacionado ao carrinho
-      return fetch('/cart/add.js', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          items: [{ id: relatedProductId, quantity: 1 }]
-        })
-      });
-    } else {
-      return data;
-    }
-  })
-  .then(response => response.json())
-  .then(data => {
+    console.log('Produtos adicionados ao carrinho:', data);
+
     // Aqui acionamos a abertura do cart drawer
     var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
     if (cartDrawerToggle) {
       cartDrawerToggle.click(); // Abre o cart drawer
+    } else {
+      // Se o seletor estiver errado, imprime uma mensagem de erro
+      console.error('Cart drawer toggle não encontrado.');
     }
   })
   .catch(error => {
