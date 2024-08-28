@@ -8316,6 +8316,8 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
   .catch(error => {
     console.error('Erro ao adicionar os produtos ao carrinho:', error);
   });
+  console.log('Include Related Product:', includeRelatedProduct);
+console.log('Related Product ID:', relatedProductId);
 });
 
 
