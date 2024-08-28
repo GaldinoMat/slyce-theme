@@ -8278,49 +8278,76 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
   // Produto relacionado
-document.querySelector('form[action="/cart/add"]').addEventListener('submit', function(event) {
-  event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('form[action="/cart/add"]');
+  
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
 
-  // Captura o ID da variante do produto principal selecionado
-  var mainProductId = document.querySelector('input[name="id"]').value;
-  var includeRelatedProduct = document.getElementById('include-related-product').checked;
-  var relatedProductId = document.getElementById('related-variant-select').value;
+      // Captura o ID da variante do produto principal selecionado
+      var variantSelect = document.querySelector('input[name="id"]');
+      if (!variantSelect) {
+        console.error('Elemento de seleção de variante do produto principal não encontrado.');
+        return;
+      }
+      var mainProductId = variantSelect.value;
 
-  console.log('Produto principal ID:', mainProductId);
-  console.log('Produto relacionado está incluído:', includeRelatedProduct);
-  console.log('Produto relacionado ID da variante:', relatedProductId);
+      // Verifica se o checkbox do produto relacionado está marcado
+      var includeRelatedProduct = document.getElementById('include-related-product');
+      if (!includeRelatedProduct) {
+        console.error('Checkbox do produto relacionado não encontrado.');
+        return;
+      }
+      var relatedProductChecked = includeRelatedProduct.checked;
 
-  var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
+      // Captura o ID da variante do produto relacionado selecionado
+      var relatedProductSelect = document.getElementById('related-variant-select');
+      if (!relatedProductSelect) {
+        console.error('Elemento de seleção de variante do produto relacionado não encontrado.');
+        return;
+      }
+      var relatedProductId = relatedProductSelect.value;
 
-  if (includeRelatedProduct && relatedProductId) {
-    itemsToAdd.push({ id: relatedProductId, quantity: 1 });
+      console.log('Produto principal ID:', mainProductId);
+      console.log('Produto relacionado está incluído:', relatedProductChecked);
+      console.log('Produto relacionado ID da variante:', relatedProductId);
+
+      var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
+
+      if (relatedProductChecked && relatedProductId) {
+        itemsToAdd.push({ id: relatedProductId, quantity: 1 });
+      }
+
+      console.log('Itens a serem adicionados:', itemsToAdd);
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          items: itemsToAdd
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Resposta do servidor:', data);
+
+        var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
+        if (cartDrawerToggle) {
+          cartDrawerToggle.click(); // Abre o cart drawer
+        } else {
+          console.error('Cart drawer toggle não encontrado.');
+        }
+      })
+      .catch(error => {
+        console.error('Erro ao adicionar os produtos ao carrinho:', error);
+      });
+    });
+  } else {
+    console.error('Formulário de adição ao carrinho não encontrado.');
   }
-
-  console.log('Itens a serem adicionados:', itemsToAdd);
-
-  fetch('/cart/add.js', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      items: itemsToAdd
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Resposta do servidor:', data);
-
-    var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
-    if (cartDrawerToggle) {
-      cartDrawerToggle.click();
-    } else {
-      console.error('Cart drawer toggle não encontrado.');
-    }
-  })
-  .catch(error => {
-    console.error('Erro ao adicionar os produtos ao carrinho:', error);
-  });
 });
 
 
