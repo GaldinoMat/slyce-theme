@@ -8277,6 +8277,35 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+  // Produto relacionado
+document.getElementById('add-related-to-cart').addEventListener('click', function() {
+  var mainProductId = {{ product.selected_or_first_available_variant.id }};
+  var relatedProductId = document.getElementById('related-variant-select').value;
+
+  fetch('/cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      items: [
+        { id: mainProductId, quantity: 1 },
+        { id: relatedProductId, quantity: 1 }
+      ]
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Produtos adicionados ao carrinho:', data);
+    window.location.href = '/cart';
+  })
+  .catch(error => {
+    console.error('Erro ao adicionar os produtos ao carrinho:', error);
+  });
+});
+  
+
+  
   /*============================================================================
     Things that require DOM to be ready
   ==============================================================================*/
