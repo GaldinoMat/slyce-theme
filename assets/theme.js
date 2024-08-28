@@ -8281,14 +8281,14 @@ document.addEventListener("DOMContentLoaded", function() {
 document.querySelector('form[action="/cart/add"]').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  // Captura o ID da variante do produto principal selecionado
+  // Captura o ID da variante atualmente selecionada no produto principal
   var mainProductId = document.querySelector('input[name="id"]').value;
   var includeRelatedProduct = document.getElementById('include-related-product').checked;
   var relatedProductId = document.getElementById('related-variant-select').value;
 
   var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
 
-  if (includeRelatedProduct && relatedProductId) {
+  if (includeRelatedProduct) {
     itemsToAdd.push({ id: relatedProductId, quantity: 1 });
   }
 
