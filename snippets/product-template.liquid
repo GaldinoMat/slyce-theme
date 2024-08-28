@@ -288,6 +288,29 @@
                         {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
                       </div>
                     </div>
+
+                  {% assign related_product = product.metafields.relacionado.produto %}
+
+{% if related_product %}
+<div class="complete-the-set">
+  <h3>Complete o Conjunto</h3>
+  <div class="related-product">
+    <a href="{{ related_product.url }}">
+      <img src="{{ related_product.featured_image | img_url: 'medium' }}" alt="{{ related_product.title }}">
+    </a>
+    <div class="related-product-details">
+      <h4>{{ related_product.title }}</h4>
+      <select id="related-variant-select">
+        {% for variant in related_product.variants %}
+        <option value="{{ variant.id }}">{{ variant.title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="button" id="add-related-to-cart">Adicionar Conjunto ao Carrinho</button>
+  </div>
+</div>
+{% endif %}
+
                   {%- when 'size_chart' -%}
                     {% if connect_to_sizechart == false %}
                       {%- capture size_chart_title -%}
