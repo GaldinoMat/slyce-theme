@@ -288,11 +288,11 @@
                         {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
                       </div>
                     </div>
-
-                {% assign related_product_handle = product.metafields.produto.relacionado_handle %}
+{% assign related_product_handle = product.metafields.produto.relacionado %}
 
 {% if related_product_handle %}
   {% assign related_product = all_products[related_product_handle] %}
+  {% if related_product %}
   <div class="complete-the-set">
     <h3>Complete o Conjunto</h3>
     <div class="related-product">
@@ -318,6 +318,11 @@
       </label>
     </div>
   </div>
+  {% else %}
+    <p>Produto relacionado não encontrado</p>
+  {% endif %}
+{% else %}
+  <p>Nenhum produto relacionado configurado</p>
 {% endif %}
 
 
