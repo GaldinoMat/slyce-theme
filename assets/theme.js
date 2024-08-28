@@ -8281,16 +8281,22 @@ document.addEventListener("DOMContentLoaded", function() {
 document.querySelector('form[action="/cart/add"]').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  // Captura o ID da variante atualmente selecionada no produto principal
+  // Captura o ID da variante do produto principal selecionado
   var mainProductId = document.querySelector('input[name="id"]').value;
   var includeRelatedProduct = document.getElementById('include-related-product').checked;
   var relatedProductId = document.getElementById('related-variant-select').value;
 
+  console.log('Produto principal ID:', mainProductId);
+  console.log('Produto relacionado está incluído:', includeRelatedProduct);
+  console.log('Produto relacionado ID da variante:', relatedProductId);
+
   var itemsToAdd = [{ id: mainProductId, quantity: 1 }];
 
-  if (includeRelatedProduct) {
+  if (includeRelatedProduct && relatedProductId) {
     itemsToAdd.push({ id: relatedProductId, quantity: 1 });
   }
+
+  console.log('Itens a serem adicionados:', itemsToAdd);
 
   fetch('/cart/add.js', {
     method: 'POST',
@@ -8303,12 +8309,11 @@ document.querySelector('form[action="/cart/add"]').addEventListener('submit', fu
   })
   .then(response => response.json())
   .then(data => {
-    console.log('Produtos adicionados ao carrinho:', data);
+    console.log('Resposta do servidor:', data);
 
-    // Aqui acionamos a abertura do cart drawer
     var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
     if (cartDrawerToggle) {
-      cartDrawerToggle.click(); // Abre o cart drawer
+      cartDrawerToggle.click();
     } else {
       console.error('Cart drawer toggle não encontrado.');
     }
