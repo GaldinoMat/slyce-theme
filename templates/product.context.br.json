@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "parent": "product.json",
   "context": {
@@ -41,8 +50,8 @@
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-ab5a26f9d0276f5100858c4f6461cab2": null,
-            "paragraph-3acbc484e00d7b42580166603f29ab15": null
+            "paragraph-daa62f50e41f3973650e71ec8a023fa1": null,
+            "paragraph-dad58d72b0ae936e639345ea733c69be": null
           }
         }
       },
@@ -84,8 +93,8 @@
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": false,
           "settings": {
-            "paragraph-f623beffcabaa651620e3ace1f7df64e": null,
-            "paragraph-729454b6802e74c098f29d5b90c9a6d1": null
+            "paragraph-8f4cb0c0a5f64720d3936ec6a54064b6": null,
+            "paragraph-39f4dd442f27eb26d28f8bbdca6ff9c6": null
           }
         },
         "description": {
@@ -115,11 +124,11 @@
         },
         "glo_related_products_upsell_app_block_product_wEwVp": {
           "type": "shopify:\/\/apps\/glo-related-products-upsell\/blocks\/app-block-product\/75cf2d86-3988-45e7-8f28-ada23c99704f",
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "widget": "3",
             "gashortcode": "<div class=\"globo_widget_17281\"><\/div>",
-            "paragraph-f2ce332c8ba24af35d59540523033db9": null
+            "paragraph-2e645744b625a9b7038b2a82eba3bc1c": null
           }
         },
         "inventory_status": {
@@ -147,12 +156,12 @@
           "type": "complementary_products",
           "disabled": true,
           "settings": {
-            "paragraph-724873f15ae3587a19c6717f8fb32230": null,
+            "paragraph-d93218ef98900ebac47b277888c5b1bb": null,
             "product_complementary_heading": "Compre junto",
             "complementary_count": 2,
             "per_slide": 3,
             "control_type": "arrows",
-            "header-bc20aaea98dd36a0b9238fba43c65d4a": null,
+            "header-7c85d9d08094e9f62964de14ca329d60": null,
             "image_style": "default"
           }
         }
@@ -222,15 +231,15 @@
           "type": "share",
           "disabled": true,
           "settings": {
-            "paragraph-d20415c4493f9235cc275dea54ae33ff": null
+            "paragraph-dddf55671218f5df9b25965adddec9df": null
           }
         },
         "d80b9fc0-785d-473f-a6c4-a386f2230bc4": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-5c2962aa7123a2deb7f9c302b28d716c": null,
-            "paragraph-1e8b49a1f5cd8fb5eedcadc0ea809d7f": null
+            "paragraph-62a64a2a96110d49f45cd44d29156e74": null,
+            "paragraph-16d710ae46fe986ecce60ca3c5e2f1ef": null
           }
         }
       },
