@@ -13314,10 +13314,19 @@ html[dir=rtl] .product-single__meta .rte{
   cursor: pointer;
 }
 
-#include-related-product input {
-  backgroung-color: #203122;
-  color: #fff;
+input[type="checkbox"] {
+  /* Estilo padrão do checkbox */
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
+
+input[type="checkbox"]:checked {
+  /* Estilo do checkbox quando estiver selecionado */
+  background-color: #203122; /* Cor de fundo quando selecionado */
+  border-color: #203122; /* Cor da borda quando selecionado */
+}
+
 
 
 
