@@ -8291,10 +8291,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedValue = document.getElementById("related-variant-select")
 
         if (selectedValue !== null) {
-          const numberPattern = /\d+/g;
-          const mainId = Number(window.location.search.match(numberPattern))
+          const mainId = document.getElementsByName("id")["0"].value
 
-          const mainProductQuantity = document.getElementsByName("id")["0"].value
+          const mainProductQuantity = document.querySelector(".js-qty__num").value
 
           const itemsToAdd = [{id: selectedValue.value, quantity: 1}, {id: mainId, quantity: mainProductQuantity}]
 
