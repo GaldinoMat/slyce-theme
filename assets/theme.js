@@ -8285,8 +8285,8 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      // Captura o ID da variante do produto principal selecionado
-      var variantSelect = document.querySelector('input[name="id"]');
+      // Tenta capturar o ID da variante do produto principal selecionado
+      var variantSelect = document.querySelector('input[name="id"]:checked') || document.querySelector('input[name="id"]');
       if (!variantSelect) {
         console.error('Elemento de seleção de variante do produto principal não encontrado.');
         return;
@@ -8354,6 +8354,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('Formulário de adição ao carrinho não encontrado.');
   }
 });
+
 
 
   
