@@ -8294,7 +8294,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const numberPattern = /\d+/g;
           const mainId = Number(window.location.search.match(numberPattern))
 
-          const mainProductQuantity = document.querySelector(".js-qty__num").value
+          const mainProductQuantity = document.getElementsByName("id")["0"].value
 
           const itemsToAdd = [{id: selectedValue.value, quantity: 1}, {id: mainId, quantity: mainProductQuantity}]
 
