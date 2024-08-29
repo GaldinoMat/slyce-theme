@@ -13277,11 +13277,23 @@ html[dir=rtl] .product-single__meta .rte{
 .related-product {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .related-product img {
   max-width: 100px;
-  margin-right: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .related-product {
+    justify-content: flex-start;
+  }
+  
+  .related-product img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
 }
 
 .related-product-details {
