@@ -8334,6 +8334,11 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(data => {
         console.log('Resposta do servidor:', data);
 
+        if (data.status && data.status === 422) {
+          console.error('Erro ao adicionar os produtos ao carrinho:', data.message);
+          return;
+        }
+
         var cartDrawerToggle = document.querySelector('[data-cart-toggle]');
         if (cartDrawerToggle) {
           cartDrawerToggle.click(); // Abre o cart drawer
