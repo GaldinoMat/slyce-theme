@@ -13321,6 +13321,19 @@ input[type="checkbox"]:checked {
   border-color: #203122; /* Cor da borda quando selecionado */
 }
 
+input[type="checkbox"]:checked:after {
+  /* Personalização adicional, como o símbolo de check */
+  content: '';
+  display: block;
+  position: relative;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
 
 
 
