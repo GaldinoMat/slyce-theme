@@ -13315,25 +13315,48 @@ html[dir=rtl] .product-single__meta .rte{
 }
 
 
-input[type="checkbox"]:checked {
-  /* Estilo do checkbox quando estiver selecionado */
-  background-color: #203122; /* Cor de fundo quando selecionado */
-  border-color: #203122; /* Cor da borda quando selecionado */
+/* Oculta o checkbox padrão */
+input[type="checkbox"] {
+  opacity: 0;
+  position: relative;
+  width: 0;
+  height: 0;
 }
 
-input[type="checkbox"]:checked:after {
-  /* Personalização adicional, como o símbolo de check */
+/* Estiliza o checkbox customizado */
+input[type="checkbox"] + label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Adiciona um quadrado que simula o checkbox */
+input[type="checkbox"] + label::before {
   content: '';
-  display: block;
-  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc; /* Cor do checkbox não selecionado */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-right: 10px; /* Espaço entre o checkbox e o texto */
+}
+
+/* Muda a cor ao ser selecionado */
+input[type="checkbox"]:checked + label::before {
+  background-color: #203122; /* Cor do checkbox selecionado */
+  border: 2px solid #203122;
+}
+
+/* Adiciona um ícone de check ao ser selecionado */
+input[type="checkbox"]:checked + label::after {
+  content: '✔'; /* Ícone de check */
+  color: white; /* Cor do ícone */
+  position: absolute;
   left: 5px;
   top: 2px;
-  width: 6px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  font-size: 14px;
 }
+
 
 
 
