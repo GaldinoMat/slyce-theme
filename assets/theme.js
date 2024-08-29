@@ -8285,13 +8285,13 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      // Tenta capturar o ID da variante do produto principal selecionado
+      // Captura o ID da variante do produto principal selecionado
       var variantSelect = document.querySelector('input[name="id"]:checked') || document.querySelector('input[name="id"]');
-      if (!variantSelect) {
-        console.error('Elemento de seleção de variante do produto principal não encontrado.');
-        return;
+      var mainProductId = variantSelect ? variantSelect.value : null;
+
+      if (!mainProductId) {
+        console.warn('ID da variante do produto principal não encontrado, mas o produto principal está sendo adicionado.');
       }
-      var mainProductId = variantSelect.value;
 
       // Verifica se o checkbox do produto relacionado está marcado
       var includeRelatedProduct = document.getElementById('include-related-product');
@@ -8317,6 +8317,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (relatedProductChecked && relatedProductId) {
         itemsToAdd.push({ id: relatedProductId, quantity: 1 });
+      } else if (relatedProductChecked && !relatedProductId) {
+        console.error('Produto relacionado marcado, mas nenhuma variante foi selecionada.');
+        return;
       }
 
       console.log('Itens a serem adicionados:', itemsToAdd);
@@ -8354,6 +8357,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error('Formulário de adição ao carrinho não encontrado.');
   }
 });
+
 
 
 
