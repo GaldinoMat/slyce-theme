@@ -288,49 +288,53 @@
                         {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
                       </div>
                     </div>
-                    {% assign related_product_handle = product.metafields.produto.relacionado %}
+                    
+                  {% assign related_product_handle = product.metafields.produto.relacionado %}
 
-                    {% if related_product_handle %}
-                      {% assign related_product = all_products[related_product_handle] %}
-                      {% if related_product %}
-                        <div class="complete-the-set">
-                          <h3>Complete o Conjunto</h3>
-                          <div class="related-product">
-                            <input type="checkbox" id="include-related-product" name="include_related_product">
-                            <label for="include-related-product">
-                              {% if related_product.featured_image %}
-                                <img
-                                  src="{{ related_product.featured_image | img_url: 'medium' }}"
-                                  alt="{{ related_product.title }}"
-                                  width="60"
-                                  height="85"
-                                >
-                              {% else %}
-                                <p>Imagem não disponível</p>
-                              {% endif %}
-                              <div class="related-product-details">
-                                <h4>{{ related_product.title }}</h4>
-                                {% if related_product.variants.size > 1 %}
-                                  <select id="related-variant-select">
-                                    {% for variant in related_product.variants %}
-                                      {% if variant.available == true %}
-                                        <option value="{{ variant.id }}">{{ variant.title }}</option>                                        
-                                      {% endif %}
-                                    {% endfor %}
-                                  </select>
-                                {% else %}
-                                  <p>Produto sem variantes</p>
-                                {% endif %}
-                              </div>
-                            </label>
-                          </div>
-                        </div>
-                      {% else %}
-                        <p>Produto relacionado não encontrado</p>
-                      {% endif %}
-                    {% else %}
-                      <p></p>
-                    {% endif %}
+{% if related_product_handle %}
+  {% assign related_product = all_products[related_product_handle] %}
+  {% if related_product %}
+    <div class="complete-the-set">
+      <h3>Complete o Conjunto</h3>
+      <div class="related-product">
+        <input type="checkbox" id="include-related-product" name="include_related_product">
+        <label for="include-related-product" style="display: flex; align-items: center;">
+          {% if related_product.featured_image %}
+            <img
+              src="{{ related_product.featured_image | img_url: 'medium' }}"
+              alt="{{ related_product.title }}"
+              width="60"
+              height="85"
+              style="margin-right: 10px;" <!-- Espaço entre a imagem e o texto -->
+            >
+          {% else %}
+            <p>Imagem não disponível</p>
+          {% endif %}
+          <div class="related-product-details">
+            <h4>{{ related_product.title }}</h4>
+            {% if related_product.variants.size > 1 %}
+              <select id="related-variant-select">
+                {% for variant in related_product.variants %}
+                  {% if variant.available == true %}
+                    <option value="{{ variant.id }}">{{ variant.title }}</option>
+                  {% endif %}
+                {% endfor %}
+              </select>
+            {% else %}
+              <p>Produto sem variantes</p>
+            {% endif %}
+          </div>
+        </label>
+      </div>
+    </div>
+  {% else %}
+    <p>Produto relacionado não encontrado</p>
+  {% endif %}
+{% else %}
+  <p></p>
+{% endif %}
+
+
 
                   {%- when 'size_chart' -%}
                     {% if connect_to_sizechart == false %}
