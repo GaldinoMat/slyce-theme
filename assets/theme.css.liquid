@@ -13315,48 +13315,6 @@ html[dir=rtl] .product-single__meta .rte{
 }
 
 
-/* Oculta o checkbox padrão */
-input[type="checkbox"] {
-  opacity: 0;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-/* Estiliza o checkbox customizado */
-input[type="checkbox"] + label {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-/* Adiciona um quadrado que simula o checkbox */
-input[type="checkbox"] + label::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #ccc; /* Cor do checkbox não selecionado */
-  border-radius: 4px; /* Cantos arredondados */
-  margin-right: 10px; /* Espaço entre o checkbox e o texto */
-}
-
-/* Muda a cor ao ser selecionado */
-input[type="checkbox"]:checked + label::before {
-  background-color: #203122; /* Cor do checkbox selecionado */
-  border: 2px solid #203122;
-}
-
-/* Adiciona o ícone de check dentro do checkbox */
-input[type="checkbox"]:checked + label::after {
-  content: '✔'; /* Ícone de check */
-  color: white; /* Cor do ícone */
-  position: absolute;
-  left: 4px;
-  top: 1px;
-  font-size: 14px;
-  font-weight: bold;
-}
 
 
 
