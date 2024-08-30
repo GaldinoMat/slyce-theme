@@ -203,10 +203,10 @@
         },
         "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-4": {
           "type": "collection",
-          "disabled": true,
+          "disabled": false,
           "settings": {
-            "collection": "linhas",
-            "title": "COMPRE POR LINHA",
+            "collection": "shop-all",
+            "title": "VER TUDO",
             "focal_point": "20% 100%"
           }
         }
@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-4ff6338e580a849b003adb34be2b5755": null,
+            "header-c52e60327467df52cbac4ce2a8c66a35": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-50dffd00d8d7865f27652b1e9039ebee": null,
+            "header-82104595a4f391426ba74f7d6559b5b8": null,
             "text_align": "vertical-center horizontal-center",
-            "header-bc2e091011d459e4ec62ffa431443b9a": null,
+            "header-3bde187a0347e3c1a62a799eadc5d82c": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-063adf55d8673b81417bcde7b9e1c2c0": null,
+            "header-a30b5262889183f590adb41095338182": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-c8130bd867aedb367bf910588ad9f3b2": null,
+            "header-8e044f30a326a15a57ecbc5d441f7b6d": null,
             "text_align": "vertical-center horizontal-center",
-            "header-8274882c871a7d31353bdf4b911bff5e": null,
+            "header-2bd4f61005dc2df778282b4f50ed1197": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -514,16 +514,16 @@
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-1f47efef65b8c50e3c86e0358addad98": null,
+            "header-d070c4cd7e650688b0583600dc9c32c1": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-3943feb21859d1311af5e7325f97ff2f": null,
+            "header-01dab20576c1a0d6560d4343d104c919": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-633405d888577943bb29b47e0a846c01": null,
+            "header-3dcfbfb3008c4d7c8ac377aa38cc989e": null,
             "background_color": "",
             "html_area": ""
           }
