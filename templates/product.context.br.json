@@ -50,8 +50,8 @@
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-daa62f50e41f3973650e71ec8a023fa1": null,
-            "paragraph-dad58d72b0ae936e639345ea733c69be": null
+            "paragraph-1dd316abe1bb126e29bb8422281b0993": null,
+            "paragraph-67259b50ffe236cc21249609761dc18b": null
           }
         }
       },
@@ -93,8 +93,8 @@
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": false,
           "settings": {
-            "paragraph-8f4cb0c0a5f64720d3936ec6a54064b6": null,
-            "paragraph-39f4dd442f27eb26d28f8bbdca6ff9c6": null
+            "paragraph-9a622af950ed6df95a18b093bd8eba93": null,
+            "paragraph-68bfd3260f037088a2f2414e8b87aff9": null
           }
         },
         "description": {
@@ -104,7 +104,7 @@
         },
         "size_chart_y4AfJ": {
           "type": "size_chart",
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "size_chart": "tabela-de-medidas"
           }
@@ -128,7 +128,7 @@
           "settings": {
             "widget": "3",
             "gashortcode": "<div class=\"globo_widget_17281\"><\/div>",
-            "paragraph-2e645744b625a9b7038b2a82eba3bc1c": null
+            "paragraph-9672996579e23bbd0d9d89a73a76acc8": null
           }
         },
         "inventory_status": {
@@ -156,12 +156,12 @@
           "type": "complementary_products",
           "disabled": true,
           "settings": {
-            "paragraph-d93218ef98900ebac47b277888c5b1bb": null,
+            "paragraph-d8bf787c271d0c5290357ff03f611bb9": null,
             "product_complementary_heading": "Compre junto",
             "complementary_count": 2,
             "per_slide": 3,
             "control_type": "arrows",
-            "header-7c85d9d08094e9f62964de14ca329d60": null,
+            "header-20e615a09caadd4628485a123672f77e": null,
             "image_style": "default"
           }
         }
@@ -231,15 +231,15 @@
           "type": "share",
           "disabled": true,
           "settings": {
-            "paragraph-dddf55671218f5df9b25965adddec9df": null
+            "paragraph-bc2cb2ee4fefde10b4f6b14a1f8dbf22": null
           }
         },
         "d80b9fc0-785d-473f-a6c4-a386f2230bc4": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-62a64a2a96110d49f45cd44d29156e74": null,
-            "paragraph-16d710ae46fe986ecce60ca3c5e2f1ef": null
+            "paragraph-8d50cd1758f1b3451c90142d2c3660b6": null,
+            "paragraph-47b454ce7fac47f7e758d82ce62d778d": null
           }
         }
       },
