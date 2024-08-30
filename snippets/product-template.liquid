@@ -310,6 +310,15 @@
                               {% endif %}
                               <div class="related-product-details">
                                 <h4>{{ related_product.title }}</h4>
+                                <span data-product-price-wrap>
+                                  <h4 data-compare-price class="product__price">
+                                    {%- if related_product.compare_at_price > related_product.price -%}
+                                      {{ related_product.compare_at_price | money }}
+                                    {% else %}
+                                      {{ related_product.price | money }}                                    
+                                    {%- endif -%}
+                                  </h4>
+                                </span>
                                 {% if related_product.variants.size > 1 %}
                                   <select id="related-variant-select">
                                     {% for variant in related_product.variants %}
@@ -321,7 +330,7 @@
                                 {% else %}
                                   <p>Produto sem variantes</p>
                                 {% endif %}
-                              </div>
+                              </div>                              
                             </label>
                           </div>
                         </div>

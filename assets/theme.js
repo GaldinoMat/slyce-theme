@@ -4405,7 +4405,30 @@ theme.recentlyViewed = {
         this.cartForm = new theme.CartForm(this.form);
         this.cartForm.buildCart();
   
-        document.addEventListener('ajaxProduct:added', function(evt) {
+        document.addEventListener('ajaxProduct:added', async function(evt) {
+          const productCheckbox = document.getElementById("include-related-product")         
+          if (productCheckbox.checked) {
+            console.log("hello")
+
+            const selectedValue = document.getElementById("related-variant-select")
+            
+            const itemsToAddPlus = [{id: selectedValue.value, quantity: 1}]
+                    
+            await fetch('/cart/add.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                items: itemsToAddPlus
+              })
+            })
+            .then(response => response.json())
+            .catch(error => {
+              console.error('Erro ao adicionar os produtos ao carrinho:', error);
+            });
+          }
+
           this.cartForm.buildCart();
           this.open();
         }.bind(this));
@@ -8276,99 +8299,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
-// Produto relacionado
-document.addEventListener('DOMContentLoaded', function() {
-  const addToCartGroup = document.querySelector('.add-to-cart-group');
-  const productCheckbox = document.getElementById("include-related-product")
-  
-  if (addToCartGroup !== null || productCheckbox !== null) {
-    addToCartGroup.addEventListener('click', async function() {
-      if (productCheckbox.checked) {
-        const selectedValue = document.getElementById("related-variant-select")
-        
-        if (selectedValue !== null) {
-          const mainProductQuantity = document.querySelector(".js-qty__num").value
-          const mainId = document.getElementsByName("id")["0"].value
-          const itemsToAddPlus = [{id: selectedValue.value, quantity: 1}]
-          const itemsToAddMain = [{id: mainId, quantity: mainProductQuantity}]
-          
-          await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              items: itemsToAddMain,
-              sections: "cart-drawer,cart-icon-bubble",
-            })
-          })
-          .then(response => response.json())
-          .catch(error => {
-            console.error('Erro ao adicionar os produtos ao carrinho:', error);
-          });          
-          await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              items: itemsToAddPlus
-            })
-          })
-          .then(response => response.json())
-          .catch(error => {
-            console.error('Erro ao adicionar os produtos ao carrinho:', error);
-          }); 
-          
-          const data = await fetch('/cart?t=&view=ajax', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-          })
-          .then(response => response.text())
-          .catch(error => {
-            console.error('Erro ao adicionar os produtos ao carrinho:', error);
-          });
-          const div = document.createElement('div');
-	        div.innerHTML = data;
-            
-          const elem = document.querySelector(".drawer__inner")
-          const innerDrawer = elem.querySelector(".drawer__scrollable")
-          innerDrawer.innerHTML = div.innerHTML
-
-          const emptyElem = document.querySelector(".drawer__cart-empty")
-
-          if (emptyElem !== null) {
-            emptyElem.style.display = "none"
-            elem.style.display = "flex"
-          }
-        }
-      }
-    });
-
-    const addToCart = document.querySelector(".add-to-cart")
-    productCheckbox.addEventListener("change", () => {
-      if (productCheckbox.checked) {
-        addToCartGroup.classList.add("show")
-        addToCart.classList.add("hidden")
-      } else {
-        addToCartGroup.classList.remove("show")
-        addToCart.classList.remove("hidden")
-      }
-    })
-  } else {
-    console.error('Formulário de adição ao carrinho não encontrado.');
-  }
-
-});
-
-
-
-
-  
-
   
   /*============================================================================
     Things that require DOM to be ready
