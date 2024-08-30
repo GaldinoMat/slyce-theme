@@ -8279,53 +8279,78 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Produto relacionado
 document.addEventListener('DOMContentLoaded', function() {
-  var form = document.querySelector('form[action="/cart/add"]');
+  const addToCartGroup = document.querySelector('.add-to-cart-group');
+  const productCheckbox = document.getElementById("include-related-product")
   
-  if (form) {
-    form.addEventListener('submit', async function(event) {
-      event.preventDefault();
-
-      const productCheckbox = document.getElementById("include-related-product")
-
-      if (productCheckbox !== null && productCheckbox.checked) {
+  if (addToCartGroup !== null || productCheckbox !== null) {
+    addToCartGroup.addEventListener('click', async function() {
+      if (productCheckbox.checked) {
         const selectedValue = document.getElementById("related-variant-select")
-
+        
         if (selectedValue !== null) {
-          const mainId = document.getElementsByName("id")["0"].value
-
           const mainProductQuantity = document.querySelector(".js-qty__num").value
-
-          const itemsToAdd = [{id: selectedValue.value, quantity: 1}, {id: mainId, quantity: mainProductQuantity}]
-
+          const mainId = document.getElementsByName("id")["0"].value
+          const itemsToAddPlus = [{id: selectedValue.value, quantity: 1}]
+          const itemsToAddMain = [{id: mainId, quantity: mainProductQuantity}]
+          
           await fetch('/cart/add.js', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-              items: itemsToAdd,
+              items: itemsToAddMain,
               sections: "cart-drawer,cart-icon-bubble",
             })
           })
           .then(response => response.json())
-          .then(data => {  
-            console.log(data)
-            const cartDrawerToggle = document.querySelector('[data-cart-toggle]');
-            if (cartDrawerToggle) {
-              cartDrawerToggle.click(); // Abre o cart drawer
-            } else {
-              console.error('Cart drawer toggle não encontrado.');
-            }
-          })
           .catch(error => {
             console.error('Erro ao adicionar os produtos ao carrinho:', error);
           });          
+          await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              items: itemsToAddPlus
+            })
+          })
+          .then(response => response.json())
+          .catch(error => {
+            console.error('Erro ao adicionar os produtos ao carrinho:', error);
+          }); 
+          
+          const newHTML = await fetch('/cart?t=&view=ajax', {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          })
+          .then(response => response.text())
+          .catch(error => {
+            console.error('Erro ao adicionar os produtos ao carrinho:', error);
+          });          
+          document.querySelector(".drawer__scrollable").innerHTML = newHTML
+          document.querySelector(".js-drawer-open-cart").click()
         }
       }
     });
+
+    const addToCart = document.querySelector(".add-to-cart")
+    productCheckbox.addEventListener("change", () => {
+      if (productCheckbox.checked) {
+        addToCartGroup.classList.add("show")
+        addToCart.classList.add("hidden")
+      } else {
+        addToCartGroup.classList.remove("show")
+        addToCart.classList.remove("hidden")
+      }
+    })
   } else {
     console.error('Formulário de adição ao carrinho não encontrado.');
   }
+
 });
 
 
