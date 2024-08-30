@@ -294,43 +294,87 @@
                       {% assign related_product = all_products[related_product_handle] %}
                       {% if related_product %}
                         <div class="complete-the-set">
-                          <h3>Complete o Conjunto</h3>
+                          <h3>
+                            Complete o Conjunto
+                            {% if product.title contains 'Vestido Gola Polo Championship'
+                              or product.title contains 'Shorts Ballpocket Championship'
+                            %}
+                              e ganhe R$100 de desconto
+                            {% endif %}
+                          </h3>
                           <div class="related-product">
-                            <input type="checkbox" id="include-related-product" name="include_related_product">
+                            <input
+                              type="checkbox"
+                              style="accent-color: #203122;"
+                              id="include-related-product"
+                              name="include_related_product"
+                            >
                             <label for="include-related-product">
-                              {% if related_product.featured_image %}
-                                <img
-                                  src="{{ related_product.featured_image | img_url: 'medium' }}"
-                                  alt="{{ related_product.title }}"
-                                  width="100"
-                                  height="138"
-                                >
-                              {% else %}
-                                <p>Imagem não disponível</p>
-                              {% endif %}
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                {% if related_product.featured_image %}
+                                  <img
+                                    src="{{ related_product.featured_image | image_url: width: 100, height: 138 }}"
+                                    alt="{{ related_product.title }}"
+                                    width="100"
+                                    height="138"
+                                  >
+                                {% else %}
+                                  <p>Imagem não disponível</p>
+                                {% endif %}
+                                <div style="display: flex; flex-direction:column;">
+                                  <h4 class="related-products-title-price">{{ related_product.title }}</h4>
+                                  <span data-product-price-wrap>
+                                    <h4 data-compare-price class="product__price related-products-title-price">
+                                      {% if product.title contains 'Vestido Gola Polo Championship'
+                                        or product.title contains 'Shorts Ballpocket Championship'
+                                      %}
+                                        <div style="display: flex; flex-direction: column;">
+                                          {%- if related_product.compare_at_price > related_product.price -%}
+                                            <p class="dashed-price">
+                                              {{ related_product.compare_at_price | money }}
+                                            </p>
+                                            <p>
+                                              {% liquid
+                                                assign new_price = related_product.compare_at_price | minus: 10000
+                                              %}
+                                              {{ new_price | money }}
+                                            </p>
+                                          {% else %}
+                                            <p class="dashed-price">
+                                              {{ related_product.price | money }}
+                                            </p>
+                                            <p>
+                                              {% liquid
+                                                assign new_price = related_product.price | minus: 10000
+                                              %}
+                                              {{ new_price | money }}
+                                            </p>
+                                          {%- endif -%}
+                                        </div>
+                                      {% else %}
+                                        {%- if related_product.compare_at_price > related_product.price -%}
+                                          {{ related_product.compare_at_price | money }}
+                                        {% else %}
+                                          {{ related_product.price | money }}
+                                        {%- endif -%}
+                                      {% endif %}
+                                    </h4>
+                                  </span>
+                                </div>
+                              </div>
                               <div class="related-product-details">
-                                <h4>{{ related_product.title }}</h4>
-                                <span data-product-price-wrap>
-                                  <h4 data-compare-price class="product__price">
-                                    {%- if related_product.compare_at_price > related_product.price -%}
-                                      {{ related_product.compare_at_price | money }}
-                                    {% else %}
-                                      {{ related_product.price | money }}                                    
-                                    {%- endif -%}
-                                  </h4>
-                                </span>
                                 {% if related_product.variants.size > 1 %}
                                   <select id="related-variant-select">
                                     {% for variant in related_product.variants %}
                                       {% if variant.available == true %}
-                                        <option value="{{ variant.id }}">{{ variant.title }}</option>                                        
+                                        <option value="{{ variant.id }}">{{ variant.title }}</option>
                                       {% endif %}
                                     {% endfor %}
                                   </select>
                                 {% else %}
                                   <p>Produto sem variantes</p>
                                 {% endif %}
-                              </div>                              
+                              </div>
                             </label>
                           </div>
                         </div>
