@@ -947,8 +947,7 @@ p#pq-branding {
 
 @media (min-width: 1024px) {
   .product-grid {
-    min-height: 836px;
-    height: 836px;
+    min-height: 860px;
   }
 }
 
