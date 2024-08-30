@@ -8321,7 +8321,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Erro ao adicionar os produtos ao carrinho:', error);
           }); 
           
-          const newHTML = await fetch('/cart?t=&view=ajax', {
+          const data = await fetch('/cart?t=&view=ajax', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json'
@@ -8330,9 +8330,20 @@ document.addEventListener('DOMContentLoaded', function() {
           .then(response => response.text())
           .catch(error => {
             console.error('Erro ao adicionar os produtos ao carrinho:', error);
-          });          
-          document.querySelector(".drawer__scrollable").innerHTML = newHTML
-          document.querySelector(".js-drawer-open-cart").click()
+          });
+          const div = document.createElement('div');
+	        div.innerHTML = data;
+            
+          const elem = document.querySelector(".drawer__inner")
+          const innerDrawer = elem.querySelector(".drawer__scrollable")
+          innerDrawer.innerHTML = div.innerHTML
+
+          const emptyElem = document.querySelector(".drawer__cart-empty")
+
+          if (emptyElem !== null) {
+            emptyElem.style.display = "none"
+            elem.style.display = "flex"
+          }
         }
       }
     });
