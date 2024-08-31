@@ -32,11 +32,11 @@
 
           {%- if is_megamenu -%}
             <div class="site-nav__dropdown megamenu text-left">
-              <div class="page-width" style="display: flex;">
+              <div class="page-width" style="display: flex; gap: 20px;">
                 <!-- Links das categorias -->
-                <div style="flex: 3; display: flex; flex-wrap: wrap;">
+                <div style="flex: 3; display: flex; flex-wrap: wrap; gap: 10px;">
                   {%- for childlink in link.links -%}
-                    <div style="flex: 1 1 33.33%; padding-right: 20px;">
+                    <div style="flex: 1 1 30%; padding-right: 10px;">
                       <div class="h5">
                         <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                       </div>
@@ -51,7 +51,7 @@
 
                 <!-- Imagem à direita -->
                 {%- if collections[link.object.handle].image != blank -%}
-                  <div style="flex-shrink: 0; max-width: 300px;">
+                  <div style="flex-shrink: 0; max-width: 250px;">
                     <a href="{{ link.url }}">
                       <img src="{{ collections[link.object.handle].image | img_url: '300x300' }}" alt="{{ collections[link.object.handle].title }}" class="megamenu__collection-image" style="width: 100%;">
                     </a>
