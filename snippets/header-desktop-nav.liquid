@@ -32,16 +32,16 @@
 
           {%- if is_megamenu -%}
             <div class="site-nav__dropdown megamenu text-left">
-              <div class="page-width" style="display: flex; gap: 10px;">
+              <div class="page-width" style="display: flex;">
                 <!-- Links das categorias -->
-                <div style="flex: 2; display: flex; flex-wrap: wrap; gap: 10px;">
+                <div style="flex: 2; display: flex; flex-wrap: wrap;">
                   {%- for childlink in link.links -%}
-                    <div style="flex: 1 1 32%; padding-right: 5px;">
-                      <div class="h5" style="margin-bottom: 5px;">
+                    <div style="flex: 1 1 32%; padding-right: 0;">
+                      <div class="h5" style="margin-bottom: 2px;">
                         <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                       </div>
                       {%- for grandchildlink in childlink.links -%}
-                        <div style="margin-bottom: 3px;">
+                        <div style="margin-bottom: 2px;">
                           <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
                         </div>
                       {%- endfor -%}
@@ -51,7 +51,7 @@
 
                 <!-- Imagem à direita -->
                 {%- if collections[link.object.handle].image != blank -%}
-                  <div style="flex: 1; max-width: 250px;">
+                  <div style="flex: 1; max-width: 250px; margin-left: 10px;">
                     <a href="{{ link.url }}">
                       <img src="{{ collections[link.object.handle].image | img_url: '400x400' }}" alt="{{ collections[link.object.handle].title }}" class="megamenu__collection-image" style="width: 100%;">
                     </a>
