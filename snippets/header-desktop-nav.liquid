@@ -31,26 +31,24 @@
           </summary>
 
           {%- if is_megamenu -%}
-            <div class="site-nav__dropdown megamenu text-left" style="display: flex; justify-content: space-between;">
-              <div class="page-width" style="display: flex;">
-                <div style="flex: 1;">
+            <div class="site-nav__dropdown megamenu text-left" style="position: relative;">
+              <div class="page-width">
+                <div class="grid__item medium-up--four-fifths">
                   {%- for childlink in link.links -%}
-                    <div class="grid__item appear-animation appear-delay-{{ forloop.index }}">
-                      <div class="h5">
-                        <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
-                      </div>
-                      {%- for grandchildlink in childlink.links -%}
-                        <div>
-                          <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
-                        </div>
-                      {%- endfor -%}
+                    <div class="h5">
+                      <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                     </div>
+                    {%- for grandchildlink in childlink.links -%}
+                      <div>
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
+                      </div>
+                    {%- endfor -%}
                   {%- endfor -%}
                 </div>
 
                 <!-- Imagem à direita -->
                 {%- if collections[link.object.handle].image != blank -%}
-                  <div style="flex-shrink: 0;">
+                  <div class="grid__item medium-up--one-fifth" style="position: absolute; right: 0; top: 0;">
                     <a href="{{ link.url }}">
                       <img src="{{ collections[link.object.handle].image | img_url: '300x300' }}" alt="{{ collections[link.object.handle].title }}" class="megamenu__collection-image" style="max-width: 300px;">
                     </a>
