@@ -34,24 +34,26 @@
             <div class="site-nav__dropdown megamenu text-left">
               <div class="page-width" style="display: flex;">
                 <!-- Links das categorias -->
-                <div style="flex: 3;">
+                <div style="flex: 3; display: flex; flex-wrap: wrap;">
                   {%- for childlink in link.links -%}
-                    <div class="h5">
-                      <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
-                    </div>
-                    {%- for grandchildlink in childlink.links -%}
-                      <div>
-                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
+                    <div style="flex: 1 1 33.33%; padding-right: 20px;">
+                      <div class="h5">
+                        <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                       </div>
-                    {%- endfor -%}
+                      {%- for grandchildlink in childlink.links -%}
+                        <div>
+                          <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
+                        </div>
+                      {%- endfor -%}
+                    </div>
                   {%- endfor -%}
                 </div>
 
                 <!-- Imagem à direita -->
                 {%- if collections[link.object.handle].image != blank -%}
-                  <div style="flex: 1; text-align: right;">
+                  <div style="flex-shrink: 0; max-width: 300px;">
                     <a href="{{ link.url }}">
-                      <img src="{{ collections[link.object.handle].image | img_url: '300x300' }}" alt="{{ collections[link.object.handle].title }}" class="megamenu__collection-image" style="max-width: 100%;">
+                      <img src="{{ collections[link.object.handle].image | img_url: '300x300' }}" alt="{{ collections[link.object.handle].title }}" class="megamenu__collection-image" style="width: 100%;">
                     </a>
                   </div>
                 {%- endif -%}
