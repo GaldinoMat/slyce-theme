@@ -545,7 +545,7 @@
         "text": {
           "settings": {
             "enlarge_text": true,
-            "text": "<h1>IT'S<br\/>NEVER<br\/>OVER<\/h1>"
+            "text": "<h1><strong>IT'S<br\/>NEVER<br\/>OVER<\/strong><\/h1>"
           }
         }
       }
