@@ -288,6 +288,8 @@
                         {%- render 'quantity-input', form_id: form_id, id: qty_id, qty: 1, min: 1 -%}
                       </div>
                     </div>
+
+                  
                     {% assign related_product_handle = product.metafields.produto.relacionado %}
 
 {% if related_product_handle %}
@@ -352,7 +354,7 @@
               <select id="related-variant-select" onchange="updateRelatedProductImage(this)">
                 {% for variant in related_product.variants %}
                   {% if variant.available == true %}
-                    <option value="{{ variant.id }}" data-image="{{ variant.featured_image | img_url: 'medium' }}">
+                    <option value="{{ variant.id }}" data-image="{{ variant.image.src | img_url: 'medium' }}">
                       {{ variant.title }}
                     </option>
                   {% endif %}
