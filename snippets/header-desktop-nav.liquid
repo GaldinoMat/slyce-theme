@@ -20,7 +20,7 @@
       endif
 
       assign collection_handle = link.object.handle
-      assign collection_image = collections[collection_handle].metafields.custom.collection_image
+      assign collection_image = collections[collection_handle].metafields.custom.collection_image | img_url: '400x400'
     -%}
 
     <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}">
@@ -56,7 +56,7 @@
                 {%- if collection_image != blank -%}
                   <div style="flex-shrink: 0; max-width: 300px;">
                     <a href="{{ link.url }}">
-                      <img src="{{ collection_image | img_url: '400x400' }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
+                      <img src="{{ collection_image }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
                     </a>
                   </div>
                 {%- endif -%}
