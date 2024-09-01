@@ -535,8 +535,7 @@
     },
     "rich-text": {
       "custom_css": [
-        "h1 {color: #203122;}",
-        " .element.style {margin: 0;}"
+
       ],
       "settings": {
         "align_text": "center",
