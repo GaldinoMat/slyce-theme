@@ -539,6 +539,12 @@
         "narrow_column": true
       },
       "blocks": {
+        "text": {
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h1>IT'S<br\/>NEVER<br\/>OVER<\/h1>"
+          }
+        }
       }
     }
   },
