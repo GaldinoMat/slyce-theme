@@ -51,6 +51,7 @@
                     </div>
                   {%- endfor -%}
                 </div>
+                {{ collections[collection_handle].metafields.custom.collection_image }}
 
                 <!-- Imagem à direita, usando a URL do metacampo -->
                 {%- if collection_image_url != blank -%}
