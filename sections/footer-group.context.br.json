@@ -127,7 +127,8 @@
         "d46c97fc-b310-43b1-b505-5bc49e4286a6": {
           "disabled": false,
           "settings": {
-            "menu": "shop-new"
+            "menu": "shop-new",
+            "show_footer_title": true
           }
         },
         "7d0d8a6c-29d1-4834-97de-5952fd0c1b68": {
