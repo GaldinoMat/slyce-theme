@@ -34,12 +34,12 @@
           </summary>
 
           {%- if is_megamenu -%}
-            <div class="site-nav__dropdown megamenu text-left">
+            <div class="site-nav__dropdown megamenu text-left" style="padding: 0; display: flex; gap: 5px;">
               <div class="page-width" style="display: flex; align-items: flex-start;">
                 <!-- Links das categorias -->
-                <div style="flex: 2; display: flex; flex-wrap: wrap;">
+                <div style="flex: 2; display: flex; flex-wrap: wrap; padding: 0; margin: 0;">
                   {%- for childlink in link.links -%}
-                    <div style="flex: 0 0 15%; padding-right: 10px;">
+                    <div style="flex: 0 0 15%; padding-right: 5px; margin: 0;">
                       <div class="h5" style="margin-bottom: 5px;">
                         <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                       </div>
@@ -54,7 +54,7 @@
 
                 <!-- Imagem à direita, usando a URL do metacampo -->
                 {%- if collection_image_url != blank -%}
-                  <div style="flex-shrink: 0; max-width: 300px;">
+                  <div style="flex-shrink: 0; max-width: 300px; margin-left: 5px;">
                     <a href="{{ link.url }}">
                       <img src="{{ collection_image_url | escape }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
                     </a>
