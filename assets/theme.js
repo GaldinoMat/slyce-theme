@@ -8315,6 +8315,7 @@ function updateRelatedProductImage(selectElement) {
 }
 
 
+
   
   /*============================================================================
     Things that require DOM to be ready
