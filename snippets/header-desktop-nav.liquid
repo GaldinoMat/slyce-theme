@@ -54,9 +54,9 @@
 
                 <!-- Imagem à direita, vinda do metacampo -->
                 {%- if collection_image != blank -%}
-                  <div style="flex-shrink: 0; max-width: 600px;">
+                  <div style="flex-shrink: 0; max-width: 450px;">
                     <a href="{{ link.url }}">
-                      <img src="{{ collection_image | img_url: '800x800' }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 600px;">
+                      <img src="{{ collection_image | img_url: '800x800' }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 450px;">
                     </a>
                   </div>
                 {%- endif -%}
