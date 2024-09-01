@@ -56,7 +56,8 @@
       "disabled": false,
       "custom_css": [
         ".site-header {padding: 0 !important;}",
-        ".site-header__logo {margin: 0 !important;}"
+        ".site-header__logo {margin: 0 !important;}",
+        "@media only screen and (min-width: 768px){.site-nav__link {font-size: 10px;}}"
       ],
       "settings": {
         "main_menu_link_list": "main-menu-new",
