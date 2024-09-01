@@ -51,13 +51,12 @@
                     </div>
                   {%- endfor -%}
                 </div>
-                {{ collections[collection_handle].metafields.custom.collection_image }}
 
                 <!-- Imagem à direita, usando a URL do metacampo -->
                 {%- if collection_image_url != blank -%}
                   <div style="flex-shrink: 0; max-width: 300px;">
                     <a href="{{ link.url }}">
-                      <img src="{{ collection_image_url }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
+                      <img src="{{ collection_image_url | escape }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
                     </a>
                   </div>
                 {%- endif -%}
