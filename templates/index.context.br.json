@@ -205,8 +205,8 @@
           "type": "collection",
           "disabled": false,
           "settings": {
-            "collection": "linhas",
-            "title": "COMPRE POR LINHA",
+            "collection": "shop-all",
+            "title": "VER TUDO",
             "focal_point": "20% 100%"
           }
         }
@@ -226,7 +226,7 @@
       ],
       "settings": {
         "title": "Novidades para ela",
-        "home_featured_products": "para-elas",
+        "home_featured_products": "vestuario-feminino",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-1fc09ece2e8debd344071efdc8193cc7": null,
+            "header-c52e60327467df52cbac4ce2a8c66a35": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-4e1f45474a409de4a8c797b949d1f5e2": null,
+            "header-82104595a4f391426ba74f7d6559b5b8": null,
             "text_align": "vertical-center horizontal-center",
-            "header-cc8be7f99bec27c296479c607e96b524": null,
+            "header-3bde187a0347e3c1a62a799eadc5d82c": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-7ff44300db7cbe52658bf329ff86a20b": null,
+            "header-a30b5262889183f590adb41095338182": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-e0b9d402356f03f6b7e8820e0223926d": null,
+            "header-8e044f30a326a15a57ecbc5d441f7b6d": null,
             "text_align": "vertical-center horizontal-center",
-            "header-cf4723b70a2616ab64a96511bf8478f4": null,
+            "header-2bd4f61005dc2df778282b4f50ed1197": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -353,7 +353,7 @@
       ],
       "settings": {
         "title": "novidades para ele",
-        "home_featured_products": "masculino",
+        "home_featured_products": "vestuario",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
@@ -514,16 +514,16 @@
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-a72112052e81f30a549b4202bdb9d910": null,
+            "header-d070c4cd7e650688b0583600dc9c32c1": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-e303ba6836c52c8a6993581f82560f31": null,
+            "header-01dab20576c1a0d6560d4343d104c919": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-581a42cf8308704886b7cd8f35171d9c": null,
+            "header-3dcfbfb3008c4d7c8ac377aa38cc989e": null,
             "background_color": "",
             "html_area": ""
           }
