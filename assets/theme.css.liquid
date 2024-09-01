@@ -13318,14 +13318,38 @@ html[dir=rtl] .product-single__meta .rte{
 }
 
 .related-products-title-price {
-  font-size: 12px;
+  font-size: 10px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .related-products-title-price {
+    font-size: 12px;
+  }
+}
+
+.related-product-price-container {
+  display: flex; 
+  flex-direction:column;
+  margin-left: 12px;
+}
+
+.discount-price-container {
+  display: flex; 
+  align-items: center;
+  gap: 12px;
+}
+
+.discount-price-container p{
   margin-bottom: 0px;
 }
 
 .dashed-price {
   text-decoration: line-through;
-  font-size: 11px;
+  font-size: 10px;
   margin-bottom: 0px;
+  color: red;
 }
 
 #related-variant-select {
