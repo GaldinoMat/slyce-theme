@@ -13,5 +13,39 @@
     "market": "br"
   },
   "sections": {
-  }
+    "main": {
+      "settings": {
+      },
+      "blocks": {
+        "size_chart_3gPAt": {
+          "type": "size_chart",
+          "disabled": false,
+          "settings": {
+            "size_chart": "{{ product.metafields.custom.tabela_de_medidas_fem.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "fe5979da-c325-4d0a-b2f3-4e3c801eed9a",
+        "price",
+        "description",
+        "separator",
+        "size_chart_3gPAt",
+        "variant_picker",
+        "inventory_status",
+        "buy_buttons",
+        "6bdad11c-2b78-418c-8aaa-087cc6c3fb01",
+        "complementary_products_aFgBzd"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "background-image-text",
+    "17024281419024b538",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return"
+  ]
 }
