@@ -289,8 +289,7 @@
                       </div>
                     </div>
 
-                  
-                    {% assign related_product_handle = product.metafields.produto.relacionado %}
+               {% assign related_product_handle = product.metafields.produto.relacionado %}
 
 {% if related_product_handle %}
   {% assign related_product = all_products[related_product_handle] %}
@@ -373,6 +372,7 @@
 {% else %}
   <p>Nenhum produto relacionado configurado</p>
 {% endif %}
+
 
                   {%- when 'size_chart' -%}
                     {% if connect_to_sizechart == false %}
@@ -752,3 +752,17 @@
     </div>
   </div>
 </div>
+                                      <script>
+  function updateRelatedProductImage(selectElement) {
+    var selectedOption = selectElement.options[selectElement.selectedIndex];
+    var newImageUrl = selectedOption.getAttribute('data-image');
+
+    var relatedProductImage = document.getElementById('related-product-image');
+
+    if (relatedProductImage && newImageUrl) {
+      relatedProductImage.src = newImageUrl;
+    } else {
+      console.error('Imagem da variante não encontrada ou URL da imagem inválida.');
+    }
+  }
+</script>
