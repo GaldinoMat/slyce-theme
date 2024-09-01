@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-a897b2cfcc0c6dd54fa207f3ea97fbb8": null,
+            "header-2da3c91cc7e0bdcad1d240d557002e71": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-5ae3c9ea950e9656d60785379a497746": null,
+            "header-e707fd0ae93ee158d167d6d749b56be0": null,
             "text_align": "vertical-center horizontal-center",
-            "header-1527b65266d852b9fcd0240ed504906e": null,
+            "header-ebddc9b8d74556cb4053a651b0efe11a": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-9bb24512d71f3333d9c121123fffd142": null,
+            "header-591f0ad581fe96ce01f26b7d0d6eaade": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-29f7039bfe1d7acdd1faf39e2c9bbcbd": null,
+            "header-fe5aeb95a103c47ac2a73fce60d08af8": null,
             "text_align": "vertical-center horizontal-center",
-            "header-044dcf1091a004220550775615e65f31": null,
+            "header-134ebac7439dea3889d5410c9785687c": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -514,16 +514,16 @@
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-29823445948461938d777122fbe60f4b": null,
+            "header-b026121e4c2621a09d788c0ab79f7bdf": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-941569d78f4391a7637e98acbeeae1ef": null,
+            "header-f74a50081448066344e4a1ce36f21134": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-95696fb66295bb90ca471da3b16f199d": null,
+            "header-5435bd4f061d4fce3f6fc0b14c3cf46f": null,
             "background_color": "",
             "html_area": ""
           }
@@ -532,10 +532,19 @@
       "block_order": [
         "instafeed_app_block_6dwEQ"
       ]
+    },
+    "rich-text": {
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true
+      },
+      "blocks": {
+      }
     }
   },
   "order": [
     "08ae2f32-005a-424d-ad05-79c9c538ee9f",
+    "rich-text",
     "2ba1b168-7e1a-4818-8743-3c15841e3616",
     "4902973c-faf4-4db0-881a-1b80701e6b28",
     "featured_collection_3dcBp",
