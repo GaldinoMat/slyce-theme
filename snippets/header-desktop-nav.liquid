@@ -34,36 +34,34 @@
           </summary>
 
           {%- if is_megamenu -%}
-            <div class="site-nav__dropdown megamenu text-left" style="padding: 0; display: flex; gap: 15px; margin-top: 10px;">
-              <div class="page-width" style="display: flex; align-items: flex-start; justify-content: flex-start;">
-                <!-- Links das categorias -->
-                <div style="flex: 2; display: flex; flex-wrap: wrap; padding: 0; margin: 0; justify-content: flex-start;">
-                  {%- for childlink in link.links -%}
-                    <div style="flex: 0 0 15%; padding-right: 10px; margin: 0;">
-                      <div class="h5" style="margin-bottom: 5px;">
-                        <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
-                      </div>
-                      {%- for grandchildlink in childlink.links -%}
-                        <div style="margin-bottom: 3px;">
-                          <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
-                        </div>
-                      {%- endfor -%}
+            <div class="site-nav__dropdown megamenu text-left" style="padding: 0; display: flex; gap: 15px; margin-top: 10px; align-items: flex-start;">
+              <!-- Links das categorias -->
+              <div style="flex: 1 1 auto; display: flex; flex-wrap: wrap; margin-right: auto;">
+                {%- for childlink in link.links -%}
+                  <div style="flex: 0 0 15%; padding-right: 10px;">
+                    <div class="h5" style="margin-bottom: 5px;">
+                      <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                     </div>
-                  {%- endfor -%}
-                </div>
-
-                <!-- Imagem à direita, usando a URL do metacampo -->
-                {%- if collection_image_url != blank -%}
-                  <div style="flex-shrink: 0; max-width: 300px; margin-left: 10px;">
-                    <a href="{{ link.url }}">
-                      <img src="{{ collection_image_url | escape }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
-                    </a>
+                    {%- for grandchildlink in childlink.links -%}
+                      <div style="margin-bottom: 3px;">
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title }}</a>
+                      </div>
+                    {%- endfor -%}
                   </div>
-                {%- endif -%}
+                {%- endfor -%}
               </div>
+
+              <!-- Imagem à direita, usando a URL do metacampo -->
+              {%- if collection_image_url != blank -%}
+                <div style="flex-shrink: 0; max-width: 300px;">
+                  <a href="{{ link.url }}">
+                    <img src="{{ collection_image_url | escape }}" alt="{{ link.title }}" class="megamenu__collection-image" style="width: 100%; max-width: 300px;">
+                  </a>
+                </div>
+              {%- endif -%}
             </div>
           {%- elsif has_dropdown -%}
-            <ul class="site-nav__dropdown text-left" style="padding-top: 10px;">
+            <ul class="site-nav__dropdown text-left" style="margin-top: 10px;">
               {%- for childlink in link.links -%}
                 <li class="{% if childlink.links != blank %} site-nav__deep-dropdown-trigger{% endif %}">
                   <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if childlink.links != blank %} site-nav__dropdown-link--has-children{% endif %}">
