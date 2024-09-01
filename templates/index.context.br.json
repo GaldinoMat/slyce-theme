@@ -187,7 +187,7 @@
           "type": "collection",
           "disabled": false,
           "settings": {
-            "collection": "feminino",
+            "collection": "feminino-1",
             "title": "FEMININO",
             "focal_point": "center center"
           }
@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-2da3c91cc7e0bdcad1d240d557002e71": null,
+            "header-43311a4a0ffcad2c932dbb9d16ae147d": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-e707fd0ae93ee158d167d6d749b56be0": null,
+            "header-b4898b480210bd2b448d09f115964119": null,
             "text_align": "vertical-center horizontal-center",
-            "header-ebddc9b8d74556cb4053a651b0efe11a": null,
+            "header-8b1586914bd5560548195de86a761fa3": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-591f0ad581fe96ce01f26b7d0d6eaade": null,
+            "header-7a9a8e717d1784e2fa118cc95b262d2c": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-fe5aeb95a103c47ac2a73fce60d08af8": null,
+            "header-ccbf3ea1b671462bcfe67c2d64443945": null,
             "text_align": "vertical-center horizontal-center",
-            "header-134ebac7439dea3889d5410c9785687c": null,
+            "header-df43dbb8f07a7950112f1ee0a285011d": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -514,16 +514,16 @@
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-b026121e4c2621a09d788c0ab79f7bdf": null,
+            "header-fbfcbfa702e4b771c4b1c0a0529c72eb": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-f74a50081448066344e4a1ce36f21134": null,
+            "header-427dca2c5e13e2ba4b5234f8c7ebf4e6": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-5435bd4f061d4fce3f6fc0b14c3cf46f": null,
+            "header-70c442b57c0d7481fbdcc3782e01d0d3": null,
             "background_color": "",
             "html_area": ""
           }
