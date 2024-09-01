@@ -34,7 +34,7 @@
           </summary>
 
           {%- if is_megamenu -%}
-            <div class="site-nav__dropdown megamenu text-left" style="padding: 0; display: flex; gap: 15px;">
+            <div class="site-nav__dropdown megamenu text-left" style="padding: 0; display: flex; gap: 15px; margin-top: 10px;">
               <div class="page-width" style="display: flex; align-items: flex-start;">
                 <!-- Links das categorias -->
                 <div style="flex: 2; display: flex; flex-wrap: wrap; padding: 0; margin: 0;">
@@ -63,7 +63,7 @@
               </div>
             </div>
           {%- elsif has_dropdown -%}
-            <ul class="site-nav__dropdown text-left">
+            <ul class="site-nav__dropdown text-left" style="margin-top: 10px;">
               {%- for childlink in link.links -%}
                 <li class="{% if childlink.links != blank %} site-nav__deep-dropdown-trigger{% endif %}">
                   <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if childlink.links != blank %} site-nav__dropdown-link--has-children{% endif %}">
