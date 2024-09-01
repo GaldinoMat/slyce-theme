@@ -8305,12 +8305,15 @@ function updateRelatedProductImage(selectElement) {
   var selectedOption = selectElement.options[selectElement.selectedIndex];
   var newImageUrl = selectedOption.getAttribute('data-image');
 
-  var relatedProductImage = document.querySelector('.related-product img');
+  var relatedProductImage = document.getElementById('related-product-image');
 
   if (relatedProductImage && newImageUrl) {
     relatedProductImage.src = newImageUrl;
+  } else {
+    console.error('Imagem da variante não encontrada ou URL da imagem inválida.');
   }
 }
+
 
   
   /*============================================================================
