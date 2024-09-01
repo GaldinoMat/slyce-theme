@@ -321,42 +321,26 @@
                                 {% else %}
                                   <p>Imagem não disponível</p>
                                 {% endif %}
-                                <div style="display: flex; flex-direction:column;">
+                                <div class="related-product-price-container">
                                   <h4 class="related-products-title-price">{{ related_product.title }}</h4>
                                   <span data-product-price-wrap>
                                     <h4 data-compare-price class="product__price related-products-title-price">
                                       {% if product.title contains 'Vestido Gola Polo Championship'
                                         or product.title contains 'Shorts Ballpocket Championship'
                                       %}
-                                        <div style="display: flex; flex-direction: column;">
-                                          {%- if related_product.compare_at_price > related_product.price -%}
-                                            <p class="dashed-price">
-                                              {{ related_product.compare_at_price | money }}
-                                            </p>
-                                            <p>
-                                              {% liquid
-                                                assign new_price = related_product.compare_at_price | minus: 10000
-                                              %}
-                                              {{ new_price | money }}
-                                            </p>
-                                          {% else %}
-                                            <p class="dashed-price">
-                                              {{ related_product.price | money }}
-                                            </p>
-                                            <p>
-                                              {% liquid
-                                                assign new_price = related_product.price | minus: 10000
-                                              %}
-                                              {{ new_price | money }}
-                                            </p>
-                                          {%- endif -%}
+                                        <div class="discount-price-container">
+                                          <p class="dashed-price">
+                                            {{ related_product.price | money }}
+                                          </p>
+                                          <p>
+                                            {% liquid
+                                              assign new_price = related_product.price | minus: 10000
+                                            %}
+                                            {{ new_price | money }}
+                                          </p>
                                         </div>
                                       {% else %}
-                                        {%- if related_product.compare_at_price > related_product.price -%}
-                                          {{ related_product.compare_at_price | money }}
-                                        {% else %}
-                                          {{ related_product.price | money }}
-                                        {%- endif -%}
+                                        {{ related_product.price | money }}
                                       {% endif %}
                                     </h4>
                                   </span>
