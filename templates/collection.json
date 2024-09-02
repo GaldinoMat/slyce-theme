@@ -89,7 +89,7 @@
           "settings": {
             "enable_collection_count": false,
             "per_row": 3,
-            "rows_per_page": 5,
+            "rows_per_page": 4,
             "mobile_flush_grid": false
           }
         }
