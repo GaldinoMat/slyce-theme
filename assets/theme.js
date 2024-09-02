@@ -8305,18 +8305,17 @@ document.addEventListener("DOMContentLoaded", function() {
   var addToCartButton = document.querySelector('button[type="submit"]');
 
   variantSelect.addEventListener('change', function () {
-    var selectedVariant = this.options[this.selectedIndex].getAttribute('data-variant-id');
+    var selectedVariant = this.options[this.selectedIndex];
+    var isDisabled = addToCartButton.classList.contains('disabled');
 
-    // Verifica se a variante selecionada está disponível
-    if (selectedVariant && selectedVariant.available) {
-      addToCartButton.disabled = false;
-      addToCartButton.textContent = 'ADICIONAR AO CARRINHO';
-    } else {
-      addToCartButton.disabled = true;
+    if (isDisabled) {
       addToCartButton.textContent = 'ESGOTADO';
+    } else {
+      addToCartButton.textContent = 'ADICIONAR AO CARRINHO';
     }
   });
 });
+
 
 
 
