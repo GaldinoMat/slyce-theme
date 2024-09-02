@@ -250,7 +250,7 @@
                           {%- endunless -%}
                         </span>
                       {%- endif -%}
-
+                    </div>
                       <div
                         data-unit-price-wrapper
                         class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}"
@@ -752,7 +752,7 @@
     </div>
   </div>
 </div>
-                                      <script>
+  <script>
   function updateRelatedProductImage(selectElement) {
     var selectedOption = selectElement.options[selectElement.selectedIndex];
     var newImageUrl = selectedOption.getAttribute('data-image');
