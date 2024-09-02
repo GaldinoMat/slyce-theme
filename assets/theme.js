@@ -8300,21 +8300,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
- document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   var variantSelect = document.querySelector('select[name="id"]');
-  var addToCartButton = document.querySelector('button[type="submit"]');
+  var addToCartButton = document.querySelector('button.btn.add-to-cart');
 
   variantSelect.addEventListener('change', function () {
-    var selectedVariant = this.options[this.selectedIndex];
-    var isDisabled = addToCartButton.classList.contains('disabled');
-
-    if (isDisabled) {
+    // Verifica se o botão tem a classe 'disabled'
+    if (addToCartButton.classList.contains('disabled')) {
       addToCartButton.textContent = 'ESGOTADO';
     } else {
       addToCartButton.textContent = 'ADICIONAR AO CARRINHO';
     }
   });
 });
+
 
 
 
