@@ -37,12 +37,6 @@
       "settings": {
       },
       "blocks": {
-        "collection_AepTiY": {
-          "settings": {
-            "collection": "shop-all",
-            "title": "VEJA TUDO"
-          }
-        },
         "collection_4HLyLJ": {
           "settings": {
             "collection": "masculino"
@@ -51,6 +45,17 @@
         "collection_HY7Rch": {
           "settings": {
             "collection": "acessorios"
+          }
+        },
+        "collection_AepTiY": {
+          "settings": {
+            "collection": "shop-all",
+            "title": "VEJA TUDO"
+          }
+        },
+        "collection_BJKEVd": {
+          "settings": {
+            "collection": "feminino-1"
           }
         }
       },
