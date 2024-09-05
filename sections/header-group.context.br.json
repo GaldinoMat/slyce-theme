@@ -39,7 +39,7 @@
           }
         },
         "announcement-0": {
-          "disabled": false,
+          "disabled": true,
           "settings": {
             "text": "Same-day delivery em São Paulo",
             "link_text": ""
