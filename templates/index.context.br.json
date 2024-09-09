@@ -49,6 +49,26 @@
             "overlay_opacity": 0
           }
         },
+        "image_bMUMh": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "Lançamento EM BREVE",
+            "title": "Linha Vintage Feminina",
+            "title_size": 80,
+            "subheading": "Dia 18 de Setembro, conheça a nossa linha casual feminina",
+            "link": "shopify:\/\/pages\/newsletter",
+            "link_text": "Não perca o lançamento",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/2708_Slyce-53.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/2708_Slyce-53.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 20
+          }
+        },
         "image_qLj7f": {
           "type": "image",
           "disabled": false,
@@ -88,33 +108,13 @@
             "parallax_direction": "top",
             "overlay_opacity": 30
           }
-        },
-        "image_bMUMh": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "Conheça",
-            "title": "Vintage Collection",
-            "title_size": 80,
-            "subheading": "Conforto e estilo inspirados no clássico do tênis.",
-            "link": "shopify:\/\/collections\/linha-vintage",
-            "link_text": "SHOP NOW",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Banners_Horizontais_DesktopUpdate.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_MobileVintage.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 20
-          }
         }
       },
       "block_order": [
         "image_UxmyM",
+        "image_bMUMh",
         "image_qLj7f",
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1",
-        "image_bMUMh"
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1"
       ]
     },
     "2ba1b168-7e1a-4818-8743-3c15841e3616": {
@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-9b0a546e772b0027ad792a22534010df": null,
+            "header-c768ebd7e19924050e5162d112747231": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-1ee3cc6c82e105ceab9272596303163a": null,
+            "header-d086b4024b8ca1ccd70182c4632698de": null,
             "text_align": "vertical-center horizontal-center",
-            "header-c9412edf2a5e07b415a1ff76234d21d7": null,
+            "header-ea5f65c07c2ae47d188616340bd1a579": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-7e1af5bcafacc7ca0136a5908707b13f": null,
+            "header-97c3cdd027654d1b8487bfb344126cfb": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-a9007d640bea35118330fbfc305e9f3f": null,
+            "header-45f956f5360495d096ab4fc97911478d": null,
             "text_align": "vertical-center horizontal-center",
-            "header-439a0a3698dd878ddd1797455f807e5a": null,
+            "header-420a0ec179a4fdc9e640a3dd01b79b25": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -514,16 +514,16 @@
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-853f5f88ab969629749e115824bf87ef": null,
+            "header-a06e67be79bca890520cae9fe9a4904d": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-57b91e970dfc643676aa8715bd4bc61d": null,
+            "header-60525c40738c5c89ddaeca13bc42407a": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-6fd09c8ac1eb0cb189fab6b67763a94b": null,
+            "header-399cb5db0ebf88edf0cb825efa967481": null,
             "background_color": "",
             "html_area": ""
           }
