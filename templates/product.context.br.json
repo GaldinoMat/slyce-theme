@@ -69,8 +69,7 @@
         ".product-block .rte p {font-size: 12px;}",
         ".ga-product_price.ga-product_totalprice.money {font-size: 12px;}",
         "#wigget_17281 span.ga-product_price {font-size: 12px;}",
-        ".jdgm--done-setup {font-size: 9px;}",
-        ".gPreorderPoweredBy {display: none;}"
+        ".jdgm--done-setup {font-size: 9px;}"
       ],
       "settings": {
         "sku_enable": false,
