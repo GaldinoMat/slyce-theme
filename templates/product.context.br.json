@@ -144,12 +144,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "preorder_now_pre_order_pq_app_block_4YxMV": {
-          "type": "shopify:\/\/apps\/preorder-now-pre-order-pq\/blocks\/app-block\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
-          "disabled": false,
-          "settings": {
-          }
-        },
         "c15cc61e-9df7-47cc-a19c-485fe663bc3a": {
           "type": "tab",
           "disabled": true,
@@ -171,12 +165,6 @@
             "header-1dbeddd95ab3efbcb0759f4af6b4aa0d": null,
             "image_style": "default"
           }
-        },
-        "preorder_now_pre_order_pq_app_block_notify_ziaC3": {
-          "type": "shopify:\/\/apps\/preorder-now-pre-order-pq\/blocks\/app-block-notify\/551fab2c-3af6-4a8f-ba21-736a71cb4540",
-          "disabled": false,
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -191,8 +179,6 @@
         "glo_related_products_upsell_app_block_product_wEwVp",
         "inventory_status",
         "buy_buttons",
-        "preorder_now_pre_order_pq_app_block_4YxMV",
-        "preorder_now_pre_order_pq_app_block_notify_ziaC3",
         "c15cc61e-9df7-47cc-a19c-485fe663bc3a",
         "309e1bb4-2a51-4fd6-ac29-0c3ad44f4069"
       ]
