@@ -13,5 +13,119 @@
     "market": "br"
   },
   "sections": {
-  }
+    "main-collection": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "text_columns_BJzyi": {
+      "type": "text-columns",
+      "disabled": false,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      },
+      "blocks": {
+        "text_block_f3z3i": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": null,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "text_block_LGzBw": {
+          "type": "text_block",
+          "disabled": false,
+          "settings": {
+            "enable_image": true,
+            "image": null,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_f3z3i",
+        "text_block_LGzBw"
+      ]
+    },
+    "slideshow_PeYc8": {
+      "type": "slideshow",
+      "disabled": false,
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      },
+      "blocks": {
+        "image_zbb7D": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "Endless\npossibilities.",
+            "title_size": 80,
+            "subheading": "Bring your brand to life",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": null,
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_YVz6K": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": null,
+            "image_mobile": null,
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_zbb7D",
+        "image_YVz6K"
+      ]
+    }
+  },
+  "order": [
+    "slideshow_PeYc8",
+    "text_columns_BJzyi",
+    "main-collection"
+  ]
 }
