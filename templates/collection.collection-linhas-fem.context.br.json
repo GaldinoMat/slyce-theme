@@ -63,47 +63,32 @@
         "text_block_LGzBw"
       ]
     },
-    "slideshow_PeYc8": {
-      "type": "slideshow",
-      "disabled": false,
+    "promo-grid2": {
       "settings": {
-        "section_height": "650px",
-        "mobile_height": "auto",
-        "parallax": true,
-        "style": "bars",
-        "autoplay": true,
-        "autoplay_speed": 5,
-        "lazyload_images": true
+        "full_width": true,
+        "space_above": false
       },
       "blocks": {
-        "image_YVz6K": {
-          "type": "image",
-          "disabled": false,
+        "advanced": {
           "settings": {
-            "top_subheading": "LINHAS FEMININAS SLYCE",
-            "title": "PREPARE SEU CLOSET",
-            "title_size": 80,
-            "subheading": "Abra espaço para os produtos de cada linha Slyce, pensados para cada ocasião da sua paixão pelo tênis.",
-            "link": "",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
+            "subheading": "LINHAS FEMININAS SLYCE",
+            "heading": "PREPARE SEU CLOSET",
+            "textarea": "Abra espaço para os produtos de cada linha Slyce, pensados para cada ocasião da sua paixão pelo tênis.",
+            "cta_text1": "",
+            "cta_text2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-VintagePreL.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_Mobile-VintagePreL.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 10
+            "width": "100",
+            "height": 800
           }
         }
       },
       "block_order": [
-        "image_YVz6K"
+        "advanced"
       ]
     }
   },
   "order": [
-    "slideshow_PeYc8",
+    "promo-grid2",
     "text_columns_BJzyi",
     "main-collection"
   ]
