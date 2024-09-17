@@ -76,49 +76,28 @@
         "lazyload_images": true
       },
       "blocks": {
-        "image_zbb7D": {
-          "type": "image",
-          "disabled": false,
-          "settings": {
-            "top_subheading": "",
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
-            "link": "",
-            "link_text": "Optional button",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": null,
-            "image_mobile": null,
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
         "image_YVz6K": {
           "type": "image",
           "disabled": false,
           "settings": {
-            "top_subheading": "",
-            "title": "Two line\ntitle slide.",
+            "top_subheading": "LINHAS FEMININAS SLYCE",
+            "title": "PREPARE SEU CLOSET",
             "title_size": 80,
-            "subheading": "And big, beautiful imagery",
+            "subheading": "Abra espaço para os produtos de cada linha Slyce, pensados para cada ocasião da sua paixão pelo tênis.",
             "link": "",
-            "link_text": "Optional button",
+            "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": null,
-            "image_mobile": null,
+            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-VintagePreL.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_Mobile-VintagePreL.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 0
+            "overlay_opacity": 10
           }
         }
       },
       "block_order": [
-        "image_zbb7D",
         "image_YVz6K"
       ]
     }
