@@ -13,13 +13,6 @@
     "market": "br"
   },
   "sections": {
-    "main-collection": {
-      "disabled": true,
-      "settings": {
-      },
-      "blocks": {
-      }
-    },
     "text_columns_BJzyi": {
       "type": "text-columns",
       "disabled": false,
@@ -38,7 +31,7 @@
             "image_mask": "none",
             "image_width": 650,
             "title": "CHAMPIONSHIP",
-            "text": "<p>Sinta-se confiante com a Slyce Championship, nossa linha de roupas para jogo, projetada para atender às demandas das atletas, com alta performance e estilo.<br\/>Nossos tecidos foram desenvolvidos e testados especialmente para tenistas. Não importa o quão intensa seja a partida, suas roupas permanecerão firmes, permitindo que você se concentre totalmente no jogo. A respirabilidade é uma prioridade, garantindo que você se sinta fresca e confortável, mesmo nos momentos mais desafiadores.<br\/>Nossas cores foram cuidadosamente escolhidas para refletir a tradição e a grandeza do tênis. Do azul clássico ao branco puro e ao verde vibrante, cada tonalidade evoca o espírito dos campeonatos lendários. Quando você veste Slyce Championship, está incorporando a história do esporte e se preparando para escrever seu próprio capítulo de sucesso.<\/p>",
+            "text": "<p>Sinta-se confiante com a Slyce Championship, nossa linha de roupas para jogo, projetada para atender às demandas das atletas, com alta performance e estilo.<br\/>Nossos tecidos foram desenvolvidos e testados especialmente para as tenistas. Não importa o quão intensa seja a partida, suas roupas permanecerão firmes, permitindo que você se concentre totalmente no jogo. A respirabilidade é uma prioridade, garantindo que você se sinta fresca e confortável, mesmo nos momentos mais desafiadores.<br\/>Nossas cores foram cuidadosamente escolhidas para refletir a tradição e a grandeza do tênis. Do azul clássico ao branco puro e ao verde vibrante, cada tonalidade evoca o espírito dos campeonatos lendários. Quando você veste Slyce Championship, está incorporando a história do esporte e se preparando para escrever seu próprio capítulo de sucesso.<\/p>",
             "button_label": "",
             "button_link": "shopify:\/\/collections\/championship-feminino"
           }
@@ -85,6 +78,13 @@
       "block_order": [
         "advanced"
       ]
+    },
+    "main-collection": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
     }
   },
   "order": [
