@@ -638,6 +638,7 @@ label.sort-label {
     font-size: 12.5px;
     word-break: auto-phrase;
     width: 80%;
+    font-weight: 500;
   }
 }
 
