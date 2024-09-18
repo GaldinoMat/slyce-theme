@@ -839,7 +839,7 @@ a.jdgm-write-rev-link {
   }
 
   .collection-content .grid__item.medium-up--four-fifths.grid__item--content {
-    padding: 0px;
+    padding: 0px !important;
   }
 }
 
