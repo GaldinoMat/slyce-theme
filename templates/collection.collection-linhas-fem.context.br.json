@@ -71,7 +71,8 @@
             "cta_text2": "",
             "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-VintagePreL.jpg",
             "width": "100",
-            "height": 800
+            "height": 800,
+            "text_align": "vertical-center horizontal-left"
           }
         }
       },
