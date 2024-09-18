@@ -857,7 +857,7 @@ a.jdgm-write-rev-link {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .grid__item {
         padding: 0 17px !important;
     }
