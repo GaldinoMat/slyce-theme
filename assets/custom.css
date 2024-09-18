@@ -633,7 +633,7 @@ label.sort-label {
   word-break: auto-phrase;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .grid-product__meta .grid-product__title {
     font-size: 12.5px;
     word-break: auto-phrase;
