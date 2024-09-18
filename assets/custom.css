@@ -833,6 +833,10 @@ a.jdgm-write-rev-link {
     justify-content: center;
     grid-template-columns: 1fr 1fr;
   }
+
+  .collection-grid__wrapper .grid--uniform .grid__item {
+        padding: 0px !important;
+  }
 }
 
 @media (min-width: 720px) and (max-width: 768px) {
