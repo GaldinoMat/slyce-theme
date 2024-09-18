@@ -624,7 +624,7 @@ label.sort-label {
 }
 
 .grid-product__meta .grid-product__title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   hyphens: none;
   -moz-hyphens: none;
@@ -819,15 +819,11 @@ a.jdgm-write-rev-link {
 
 @media (max-width: 425px) {
   .grid--uniform {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px 0;
     padding: 10px 0;
     justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .grid__item {
-    padding: 0px !important;
   }
 }
 
@@ -857,7 +853,7 @@ a.jdgm-write-rev-link {
   }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .grid__item {
         padding: 0 17px !important;
     }
