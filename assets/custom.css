@@ -827,7 +827,7 @@ a.jdgm-write-rev-link {
   }
 
   .grid__item {
-    padding: 0px;
+    padding: 0px !important;
   }
 }
 
