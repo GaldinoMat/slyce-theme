@@ -768,7 +768,7 @@ a.jdgm-write-rev-link {
 
   .grid-product__price {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .grid-product__meta {
