@@ -825,6 +825,14 @@ a.jdgm-write-rev-link {
     padding: 10px 0;
     justify-content: center;
   }
+
+  .collection-grid__wrapper .grid--uniform {
+    display: grid;
+    gap: 6px;
+    padding: 10px 0;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 720px) and (max-width: 768px) {
