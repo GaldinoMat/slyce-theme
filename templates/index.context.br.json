@@ -88,12 +88,33 @@
             "parallax_direction": "top",
             "overlay_opacity": 30
           }
+        },
+        "image_MPncm": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "CONHEÇA",
+            "title": "LINHA CHAMPIONSHIP FEMININA",
+            "title_size": 80,
+            "subheading": "Meticulosamente desenvolvida para otimizar a performance e a beleza dentro e fora das quadras",
+            "link": "shopify:\/\/collections\/championship-feminino",
+            "link_text": "shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/CapaSite_Banners_Horizontais_Desktop_6edb589e-2f55-409c-86f9-0e4b7b41a67a.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/CapaSite_Banners_Horizontais_Mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
         "image_bMUMh",
         "image_qLj7f",
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1"
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1",
+        "image_MPncm"
       ]
     },
     "2ba1b168-7e1a-4818-8743-3c15841e3616": {
