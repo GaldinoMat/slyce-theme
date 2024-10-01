@@ -29,44 +29,24 @@
         "lazyload_images": true
       },
       "blocks": {
-        "image_bMUMh": {
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
           "type": "image",
           "disabled": false,
           "settings": {
-            "top_subheading": "Conheça",
-            "title": "Linha Vintage Feminina",
-            "title_size": 80,
-            "subheading": "Experimente  a nossa linha casual feminina",
-            "link": "shopify://collections/vintage-feminino",
-            "link_text": "SHOP NOW",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/2708_Slyce-53.jpg",
-            "image_mobile": "shopify://shop_images/2708_Slyce-53.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 20
-          }
-        },
-        "image_qLj7f": {
-          "type": "image",
-          "disabled": false,
-          "settings": {
-            "top_subheading": "Conheça",
-            "title": "Coleção Masculina",
+            "top_subheading": "Lançamento 07/10",
+            "title": "Linha Endurance Feminina",
             "title_size": 64,
-            "subheading": "Desenvolvido para máxima performance e estilo dentro e fora das quadras",
-            "link": "shopify://collections/masculino",
-            "link_text": "Shop Now",
+            "subheading": "Se prepare para a linha de treino feminina",
+            "link": "shopify://pages/newsletter",
+            "link_text": "Não Perca o Lançamento",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Banners_Horizontais_DesktopNew.jpg",
-            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileNew.jpg",
+            "image": "shopify://shop_images/Banners_Horizontais_DesktopENDU.jpg",
+            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileENDU.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 18
+            "overlay_opacity": 30
           }
         },
         "image_MPncm": {
@@ -89,32 +69,52 @@
             "overlay_opacity": 0
           }
         },
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
+        "image_qLj7f": {
           "type": "image",
           "disabled": false,
           "settings": {
-            "top_subheading": "Lançamento 07/10",
-            "title": "Linha Endurance Feminina",
+            "top_subheading": "Conheça",
+            "title": "Coleção Masculina",
             "title_size": 64,
-            "subheading": "Se prepare para a linha de treino feminina",
-            "link": "shopify://pages/newsletter",
-            "link_text": "Não Perca o Lançamento",
+            "subheading": "Desenvolvido para máxima performance e estilo dentro e fora das quadras",
+            "link": "shopify://collections/masculino",
+            "link_text": "Shop Now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Banners_Horizontais_DesktopENDU.jpg",
-            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileENDU.jpg",
+            "image": "shopify://shop_images/Banners_Horizontais_DesktopNew.jpg",
+            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileNew.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 30
+            "overlay_opacity": 18
+          }
+        },
+        "image_bMUMh": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "Conheça",
+            "title": "Linha Vintage Feminina",
+            "title_size": 80,
+            "subheading": "Experimente  a nossa linha casual feminina",
+            "link": "shopify://collections/vintage-feminino",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/2708_Slyce-53.jpg",
+            "image_mobile": "shopify://shop_images/2708_Slyce-53.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 20
           }
         }
       },
       "block_order": [
-        "image_bMUMh",
-        "image_qLj7f",
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1",
         "image_MPncm",
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1"
+        "image_qLj7f",
+        "image_bMUMh"
       ]
     },
     "2ba1b168-7e1a-4818-8743-3c15841e3616": {
