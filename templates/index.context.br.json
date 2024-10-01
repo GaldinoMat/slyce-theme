@@ -33,18 +33,18 @@
           "type": "image",
           "disabled": false,
           "settings": {
-            "top_subheading": "Lançamento",
+            "top_subheading": "Conheça",
             "title": "Linha Vintage Feminina",
             "title_size": 80,
-            "subheading": "Conheça a nossa linha casual feminina",
-            "link": "shopify:\/\/collections\/vintage-feminino",
+            "subheading": "Experimente  a nossa linha casual feminina",
+            "link": "shopify://collections/vintage-feminino",
             "link_text": "SHOP NOW",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/2708_Slyce-53.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/2708_Slyce-53.jpg",
+            "image": "shopify://shop_images/2708_Slyce-53.jpg",
+            "image_mobile": "shopify://shop_images/2708_Slyce-53.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 20
           }
@@ -57,36 +57,16 @@
             "title": "Coleção Masculina",
             "title_size": 64,
             "subheading": "Desenvolvido para máxima performance e estilo dentro e fora das quadras",
-            "link": "shopify:\/\/collections\/masculino",
+            "link": "shopify://collections/masculino",
             "link_text": "Shop Now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Banners_Horizontais_DesktopNew.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Banners_Horizontais_MobileNew.jpg",
+            "image": "shopify://shop_images/Banners_Horizontais_DesktopNew.jpg",
+            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileNew.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 18
-          }
-        },
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "top_subheading": "It's Never Over",
-            "title": "Conheça mais sobre a Slyce",
-            "title_size": 64,
-            "subheading": "Criamos produtos de excelência para quem vive e respira o mundo do tênis",
-            "link": "shopify:\/\/pages\/sobre-nos",
-            "link_text": "Conheça",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/CapaAcessorios_Banners_Horizontais_Desktop.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/CapaAcessorios_Banners_Horizontais_Mobile.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 30
           }
         },
         "image_MPncm": {
@@ -97,24 +77,44 @@
             "title": "LINHA CHAMPIONSHIP FEMININA",
             "title_size": 80,
             "subheading": "Meticulosamente desenvolvida para otimizar a performance e a beleza dentro e fora das quadras",
-            "link": "shopify:\/\/collections\/championship-feminino",
+            "link": "shopify://collections/championship-feminino",
             "link_text": "shop now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/CapaSite_Banners_Horizontais_Desktop_6edb589e-2f55-409c-86f9-0e4b7b41a67a.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/CapaSite_Banners_Horizontais_Mobile.jpg",
+            "image": "shopify://shop_images/CapaSite_Banners_Horizontais_Desktop_6edb589e-2f55-409c-86f9-0e4b7b41a67a.jpg",
+            "image_mobile": "shopify://shop_images/CapaSite_Banners_Horizontais_Mobile.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
+          }
+        },
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "Lançamento 07/10",
+            "title": "Linha Endurance Feminina",
+            "title_size": 64,
+            "subheading": "Se prepare para a linha de treino feminina",
+            "link": "shopify://pages/newsletter",
+            "link_text": "Não Perca o Lançamento",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/Banners_Horizontais_DesktopENDU.jpg",
+            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileENDU.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 30
           }
         }
       },
       "block_order": [
         "image_bMUMh",
         "image_qLj7f",
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1",
-        "image_MPncm"
+        "image_MPncm",
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1"
       ]
     },
     "2ba1b168-7e1a-4818-8743-3c15841e3616": {
@@ -260,14 +260,14 @@
           "disabled": false,
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Apoiar os atletas de tênis brasileiros é mais do que incentivar o esporte; é investir no desenvolvimento de talentos, na promoção da saúde e no orgulho nacional. Ao unirmos forças, não apenas elevamos o nível do jogo, mas também inspiramos futuras gerações a trilharem o mesmo caminho de excelência. Cada apoio é um passo em direção ao fortalecimento do tênis brasileiro e à criação de histórias de sucesso que ressoam além das quadras.<\/p>"
+            "text": "<p>Apoiar os atletas de tênis brasileiros é mais do que incentivar o esporte; é investir no desenvolvimento de talentos, na promoção da saúde e no orgulho nacional. Ao unirmos forças, não apenas elevamos o nível do jogo, mas também inspiramos futuras gerações a trilharem o mesmo caminho de excelência. Cada apoio é um passo em direção ao fortalecimento do tênis brasileiro e à criação de histórias de sucesso que ressoam além das quadras.</p>"
           }
         },
         "button_qcMhG": {
           "type": "button",
           "disabled": false,
           "settings": {
-            "link": "shopify:\/\/pages\/atletas",
+            "link": "shopify://pages/atletas",
             "link_text": "VER MAIS"
           }
         }
@@ -297,18 +297,18 @@
             "heading": "",
             "textarea": "",
             "cta_text1": "",
-            "cta_link1": "shopify:\/\/pages\/atletas",
+            "cta_link1": "shopify://pages/atletas",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Banners_Horizontais_Desktop-ATLETAS3.jpg",
+            "image": "shopify://shop_images/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-aa7bdfdf409db341706cdf9267e62f07": null,
+            "header-a1cafe4a0a1fa682d2f2f68e2238aa82": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-568cc7d03029dda507692e2c7c21bccf": null,
+            "header-3025cca2df8d57b9c2da9b56bf623d2e": null,
             "text_align": "vertical-center horizontal-center",
-            "header-cc87fbac88d951f1505e860f8b5f4f89": null,
+            "header-f73dc4b8e2b0baadfad54e81b1484a1f": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -322,18 +322,18 @@
             "heading": "",
             "textarea": "",
             "cta_text1": "",
-            "cta_link1": "shopify:\/\/pages\/atletas",
+            "cta_link1": "shopify://pages/atletas",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/Primeira-Ingrid.jpg",
+            "image": "shopify://shop_images/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-2733a8bd703f3a52731ca27f15a3017d": null,
+            "header-3523ad043243338cd023f2fb4fc72dc3": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-af8c1d030242fddb7d378eff1761bb0e": null,
+            "header-0ea7e737f8ef2b2b51e79bb8623e6932": null,
             "text_align": "vertical-center horizontal-center",
-            "header-8a96c48ffa2c76e7f4d3ead55d999304": null,
+            "header-d4a6e6a18a60b9cf27fb49398ed7f977": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -387,14 +387,14 @@
           "disabled": false,
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Visamos por um Brasil onde o tênis seja praticado no mais alto nível. Mas, do que adianta vendermos as melhores roupas e não apoiarmos a geração que elevará esse esporte no Brasil? É por isso que a Slyce apoia o Instituto Próxima Geração, Instituto que gera a transformação de jovens brasileiros através do tênis<\/p>"
+            "text": "<p>Visamos por um Brasil onde o tênis seja praticado no mais alto nível. Mas, do que adianta vendermos as melhores roupas e não apoiarmos a geração que elevará esse esporte no Brasil? É por isso que a Slyce apoia o Instituto Próxima Geração, Instituto que gera a transformação de jovens brasileiros através do tênis</p>"
           }
         },
         "button_rJAgH": {
           "type": "button",
           "disabled": false,
           "settings": {
-            "link": "shopify:\/\/pages\/sobre-nos",
+            "link": "shopify://pages/sobre-nos",
             "link_text": "SOBRE NÓS"
           }
         }
@@ -432,7 +432,7 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/bannerIPG.jpg",
+            "image": "shopify://shop_images/bannerIPG.jpg",
             "image_mobile": null,
             "parallax_direction": "top",
             "overlay_opacity": 0
@@ -470,8 +470,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/SLYCE_ilustracao_01.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/SLYCE_ilustracao_01.jpg",
+            "image": "shopify://shop_images/SLYCE_ilustracao_01.jpg",
+            "image_mobile": "shopify://shop_images/SLYCE_ilustracao_01.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 32
           }
@@ -490,8 +490,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/SLYCE_ilustracao_02_78eaf336-b6b8-48bd-9644-dfa5fce8f2fa.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/SLYCE_ilustracao_02_78eaf336-b6b8-48bd-9644-dfa5fce8f2fa.jpg",
+            "image": "shopify://shop_images/SLYCE_ilustracao_02_78eaf336-b6b8-48bd-9644-dfa5fce8f2fa.jpg",
+            "image_mobile": "shopify://shop_images/SLYCE_ilustracao_02_78eaf336-b6b8-48bd-9644-dfa5fce8f2fa.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 32
           }
@@ -511,19 +511,19 @@
       },
       "blocks": {
         "instafeed_app_block_6dwEQ": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-63303ba33031b7479094e7727f961632": null,
+            "header-0a445803857387a6a81eacc93de21a99": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-e8760573936c9b8abf02e03c0bf7b9a1": null,
+            "header-a7895982aad5e609428f5154d3563402": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-fdb5332acdd171008355606e3dee0a43": null,
+            "header-98fa8b4635ee0482e0ef83b466ab3d89": null,
             "background_color": "",
             "html_area": ""
           }
@@ -545,7 +545,7 @@
         "text": {
           "settings": {
             "enlarge_text": true,
-            "text": "<h1>IT'S NEVER OVER<\/h1>"
+            "text": "<h1>IT'S NEVER OVER</h1>"
           }
         }
       }
