@@ -77,19 +77,19 @@
     "cart_additional_buttons": false,
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
-    "social_instagram_link": "https:\/\/www.instagram.com\/slyce.apparel\/",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@slyce.apparel",
-    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/slyceapparel\/",
+    "social_instagram_link": "https://www.instagram.com/slyce.apparel/",
+    "social_tiktok_link": "https://www.tiktok.com/@slyce.apparel",
+    "social_linkedin_link": "https://www.linkedin.com/company/slyceapparel/",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": false,
-    "favicon": "shopify:\/\/shop_images\/favicon_2x_9430781c-b278-4996-9918-8d94df2aabb4.png",
+    "favicon": "shopify://shop_images/favicon_2x_9430781c-b278-4996-9918-8d94df2aabb4.png",
     "search_enable": true,
     "predictive_search_enabled": true,
     "predictive_search_show_price": false,
     "show_breadcrumbs": false,
     "show_breadcrumbs_collection_link": false,
-    "checkout_logo_image": "shopify:\/\/shop_images\/SLYCE_logo_verde_ec245a2e-555a-4dc0-ac24-f6c75c4cec32.svg",
+    "checkout_logo_image": "shopify://shop_images/SLYCE_logo_verde_ec245a2e-555a-4dc0-ac24-f6c75c4cec32.svg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#ffffff",
@@ -114,31 +114,31 @@
     ],
     "blocks": {
       "1744347199190486471": {
-        "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/app\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+        "type": "shopify://apps/hulk-advanced-wishlist/blocks/app/330d9272-08ea-4193-b3e0-475a69fa65fa",
         "disabled": false,
         "settings": {
         }
       },
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
       },
       "10746902591489815047": {
-        "type": "shopify:\/\/apps\/rt-google-fonts-custom-fonts\/blocks\/app-embed\/2caf2c68-0038-455e-b0b9-066a7c2ad923",
+        "type": "shopify://apps/rt-google-fonts-custom-fonts/blocks/app-embed/2caf2c68-0038-455e-b0b9-066a7c2ad923",
         "disabled": false,
         "settings": {
         }
       },
       "1909789295049107559": {
-        "type": "shopify:\/\/apps\/mbc-bundles-volume-discount\/blocks\/mbc-bundles-core-snippet\/57c94b78-e464-47f4-9403-7ffcfcddb33f",
+        "type": "shopify://apps/mbc-bundles-volume-discount/blocks/mbc-bundles-core-snippet/57c94b78-e464-47f4-9403-7ffcfcddb33f",
         "disabled": true,
         "settings": {
         }
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
         "settings": {
           "button_color": "#203122",
@@ -152,39 +152,52 @@
         }
       },
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {
         }
       },
       "1232542678405107163": {
-        "type": "shopify:\/\/apps\/instafeed\/blocks\/head-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": false,
         "settings": {
         }
       },
       "9144908965052497053": {
-        "type": "shopify:\/\/apps\/glo-related-products-upsell\/blocks\/app-embed\/75cf2d86-3988-45e7-8f28-ada23c99704f",
+        "type": "shopify://apps/glo-related-products-upsell/blocks/app-embed/75cf2d86-3988-45e7-8f28-ada23c99704f",
         "disabled": true,
         "settings": {
         }
       },
       "2102808784413787648": {
-        "type": "shopify:\/\/apps\/kb-back-in-stock\/blocks\/main-app-embed\/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
+        "type": "shopify://apps/kb-back-in-stock/blocks/main-app-embed/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
         "disabled": true,
         "settings": {
         }
       },
       "6986766168588894248": {
-        "type": "shopify:\/\/apps\/preorder-now-wolf\/blocks\/app-embed\/7ee1d740-e67b-4ea8-b0c9-1f62cb8777ec",
+        "type": "shopify://apps/preorder-now-wolf/blocks/app-embed/7ee1d740-e67b-4ea8-b0c9-1f62cb8777ec",
         "disabled": false,
         "settings": {
         }
       },
       "5439026248262864547": {
-        "type": "shopify:\/\/apps\/preorder-globo\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
+        "type": "shopify://apps/preorder-globo/blocks/app-embed/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
         "disabled": true,
         "settings": {
+        }
+      },
+      "3188416721648828243": {
+        "type": "shopify://apps/g-translate/blocks/flags_code/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": false,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "native_language_names": true,
+          "flag_size": "16",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
         }
       }
     }
@@ -384,7 +397,7 @@
               "settings": {
                 "show_footer_title": true,
                 "title": "Sign up and save",
-                "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+                "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
                 "container_width": 30
               }
             },
@@ -417,7 +430,7 @@
             "popup_seconds": 5,
             "popup_days": 30,
             "popup_title": "Sign up and save",
-            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.<\/p>",
+            "popup_text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers. Include an image for extra impact.</p>",
             "popup_image": "",
             "enable_newsletter": true,
             "button_label": "Optional button",
@@ -441,7 +454,7 @@
                 "enable_image": true,
                 "image": "",
                 "title": "Site-wide promotion",
-                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
                 "button_label": "Optional button",
                 "button_link": ""
               }
@@ -452,7 +465,7 @@
                 "enable_image": true,
                 "image": "",
                 "title": "Site-wide promotion",
-                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
                 "button_label": "Optional button",
                 "button_link": ""
               }
@@ -463,7 +476,7 @@
                 "enable_image": true,
                 "image": "",
                 "title": "Site-wide promotion",
-                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.<\/p>",
+                "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
                 "button_label": "Optional button",
                 "button_link": ""
               }
