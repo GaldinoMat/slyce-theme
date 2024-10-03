@@ -174,21 +174,21 @@
         "enable_gutter": true
       },
       "blocks": {
-        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-1": {
-          "type": "collection",
-          "disabled": false,
-          "settings": {
-            "collection": "masculino",
-            "title": "MASCULINO",
-            "focal_point": "center center"
-          }
-        },
         "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-2": {
           "type": "collection",
           "disabled": false,
           "settings": {
             "collection": "feminino-1",
             "title": "FEMININO",
+            "focal_point": "center center"
+          }
+        },
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-1": {
+          "type": "collection",
+          "disabled": false,
+          "settings": {
+            "collection": "masculino",
+            "title": "MASCULINO",
             "focal_point": "center center"
           }
         },
@@ -212,8 +212,8 @@
         }
       },
       "block_order": [
-        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-1",
         "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-2",
+        "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-1",
         "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-3",
         "template--14990080671809__4902973c-faf4-4db0-881a-1b80701e6b28-collection-4"
       ]
@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify://shop_images/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-a1cafe4a0a1fa682d2f2f68e2238aa82": null,
+            "header-f57cc0c8bd914adaf5f27b9ad8847bbd": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-3025cca2df8d57b9c2da9b56bf623d2e": null,
+            "header-aa9788865aa58044aa17fed61e01ceb6": null,
             "text_align": "vertical-center horizontal-center",
-            "header-f73dc4b8e2b0baadfad54e81b1484a1f": null,
+            "header-f82d41165ea690e06bff500968da6890": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify://shop_images/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-3523ad043243338cd023f2fb4fc72dc3": null,
+            "header-6c9fb641bf34263297bfaed7696298fa": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-0ea7e737f8ef2b2b51e79bb8623e6932": null,
+            "header-34fbc67279e8ba8b42776bbe4f7d73ee": null,
             "text_align": "vertical-center horizontal-center",
-            "header-d4a6e6a18a60b9cf27fb49398ed7f977": null,
+            "header-e6b459a91445ebf56e9b043228af15b9": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -514,16 +514,16 @@
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-0a445803857387a6a81eacc93de21a99": null,
+            "header-4ee734e81b96043591d65c68ff0796cd": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-a7895982aad5e609428f5154d3563402": null,
+            "header-2af414d913d0dd64a9a1fabdd86ec2e1": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-98fa8b4635ee0482e0ef83b466ab3d89": null,
+            "header-5f2cff0778f4e7b872f6360cef5bbb8c": null,
             "background_color": "",
             "html_area": ""
           }
