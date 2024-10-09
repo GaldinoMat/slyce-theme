@@ -1045,8 +1045,8 @@ p#pq-branding {
 @media (max-width: 768px) {
   .model-sizing {
     position: absolute;
-    bottom: 254px; /* Ajusta a distância da parte inferior da imagem */
-    left: 22px; /* Ajusta a distância da borda esquerda da imagem */
+    bottom: 33px; /* Ajusta a distância da parte inferior da imagem */
+    left: 3px; /* Ajusta a distância da borda esquerda da imagem */
     z-index: 20; /* Garante que o botão fique sobre a imagem */
   }
 
