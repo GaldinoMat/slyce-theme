@@ -85,8 +85,8 @@
     <div class="page-width">
       <div class="grid product-grid {% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
-          <div class="grid__item {{ product_image_width }} product-single__sticky">
-            <div class="model-sizing" id="modelSizing">
+
+          <div class="model-sizing" id="modelSizing">
   <button class="toggle-button" id="toggleButton">
     <span class="toggle-button-text">Tamanho do modelo</span>
     <i class="fa fa-info-circle toggle-icon"></i> <!-- Ícone do Font Awesome -->
@@ -95,6 +95,8 @@
     {{ product.metafields.custom.medidas_modelo }}
   </div>
 </div>
+          <div class="grid__item {{ product_image_width }} product-single__sticky">
+            
             
             {%- render 'product-images',
               section_id: section_id,
