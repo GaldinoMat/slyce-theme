@@ -1037,9 +1037,7 @@ p#pq-branding {
   left: 10px;
   z-index: 21; /* Garante que a mensagem apareça sobre a imagem */
 }
-.product-single__sticky {
-  position: relative; /* Garante que o botão "Tamanho do modelo" fique dentro da imagem */
-}
+
 /* Para telas menores (mobile), ajuste a posição */
 @media (max-width: 768px) {
   .model-sizing {
