@@ -995,6 +995,7 @@ p#pq-branding {
   color: white;
   padding: 5px;
   border-radius: 50%;
+  z-index: 20; /* Garante que o ícone apareça sobre a imagem */
 }
 
 /* O modal (escondido por padrão) */
