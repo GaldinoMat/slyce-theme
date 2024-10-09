@@ -1041,19 +1041,21 @@ p#pq-branding {
 /* Para telas menores (mobile), ajuste a posição */
 @media (max-width: 768px) {
   .model-sizing {
-    bottom: 5px; /* Diminui a distância do fundo no mobile */
-    left: 5px; /* Diminui a distância da borda no mobile */
-    font-size: 12px; /* Torna o botão e o texto um pouco menores no mobile */
+    position: absolute;
+    bottom: 10px; /* Ajusta a distância da parte inferior da imagem */
+    left: 10px; /* Ajusta a distância da borda esquerda da imagem */
+    z-index: 20; /* Garante que o botão fique sobre a imagem */
   }
 
   .toggle-button {
-    padding: 5px 8px; /* Ajusta o espaçamento no botão para telas menores */
-    font-size: 12px;
+    padding: 5px 8px; /* Ajusta o padding para telas menores */
+    font-size: 12px; /* Deixa o texto e o botão um pouco menores */
   }
 
   .toggle-icon {
-    font-size: 14px; /* Ajusta o tamanho do ícone no mobile */
+    font-size: 14px; /* Tamanho menor do ícone para mobile */
   }
+}
   .product-single__sticky {
   position: relative; /* Garante que o botão "Tamanho do modelo" fique dentro da imagem */
 }
