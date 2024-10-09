@@ -996,12 +996,12 @@ p#pq-branding {
   background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para ser discreto */
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 4px 7px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 4px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .toggle-button:hover {
