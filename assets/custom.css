@@ -983,3 +983,17 @@ p#pq-branding {
 .recently-viewed-meta {
   width: 100% !important;
 }
+
+.product-block-modelo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente opcional */
+  color: #fff; /* Cor do texto */
+  padding: 10px;
+  z-index: 10;
+}
+
+.product-single__sticky {
+  position: relative;
+}
