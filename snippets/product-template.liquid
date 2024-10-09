@@ -110,7 +110,9 @@
            {% if product.metafields.custom.medidas_modelo != blank %}
   <div class="model-sizing" id="modelSizing">
     <button class="toggle-button" id="toggleButton">
-      <span class="toggle-button-text"></span>
+     {% comment %}
+  <span class="toggle-button-text"></span>
+{% endcomment %} 
       <i class="fa fa-info-circle toggle-icon"></i> <!-- Ícone do Font Awesome -->
     </button>
     <div class="toggle-message hidden" id="toggleMessage">
