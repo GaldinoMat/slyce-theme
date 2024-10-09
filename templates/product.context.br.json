@@ -27,7 +27,7 @@
         "link": "",
         "color_accent": "rgba(0,0,0,0)",
         "text_align": "vertical-center horizontal-left",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/edbeddd5c27f4f5fb7f612935fc89cd8.mp4",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/edbeddd5c27f4f5fb7f612935fc89cd8.mp4",
         "overlay_opacity": 24,
         "section_height": "450px",
         "mobile_height": "auto"
@@ -47,11 +47,11 @@
       },
       "blocks": {
         "52983cba-720b-4879-890b-a746a66ba2fe": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-b21b28668a99ec00f607ea6a04e300fb": null,
-            "paragraph-9ee699645be7227f756c11626c55556a": null
+            "paragraph-9919e71317b3910d51fcad571664d04f": null,
+            "paragraph-042bf090caa0ff2cf6d5d91511adafa9": null
           }
         }
       },
@@ -63,7 +63,7 @@
       "disabled": false,
       "custom_css": [
         "a.icon-wishlist-heart-empty.wishlist-btn.heart-wishlist-animation.style_4.hulkapps-wishlist-btn-enabled {width: 100%;}",
-        ".icon-and-text {background-color: #e0d3b4; \/* Cor de fundo desejada *\/ padding: 10px;}",
+        ".icon-and-text {background-color: #e0d3b4; /* Cor de fundo desejada */ padding: 10px;}",
         ".icon.icon-package {display: none;}",
         ".coming-soon-label {font-size: 15px; font-weight: bold;}",
         ".product-block .rte p {font-size: 12px;}",
@@ -91,16 +91,23 @@
           }
         },
         "aa264cb5-fcc9-4396-b988-0cd20ec46c3f": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": false,
           "settings": {
-            "paragraph-28b7b7da666c62b4f80c0ecaae56c448": null,
-            "paragraph-eecf414f973932d7a93f4cc6fdbc9e23": null
+            "paragraph-7e2a297d8bd01816af0401b0078ee15c": null,
+            "paragraph-2bd33fe4e8031b0a7023ffb2728e8ed4": null
           }
         },
         "description": {
           "settings": {
             "is_tab": false
+          }
+        },
+        "text_jdGq9": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "text": "{{ product.metafields.custom.medidas_modelo.value }}"
           }
         },
         "size_chart_y4AfJ": {
@@ -124,12 +131,12 @@
           }
         },
         "glo_related_products_upsell_app_block_product_wEwVp": {
-          "type": "shopify:\/\/apps\/glo-related-products-upsell\/blocks\/app-block-product\/75cf2d86-3988-45e7-8f28-ada23c99704f",
+          "type": "shopify://apps/glo-related-products-upsell/blocks/app-block-product/75cf2d86-3988-45e7-8f28-ada23c99704f",
           "disabled": true,
           "settings": {
             "widget": "3",
-            "gashortcode": "<div class=\"globo_widget_17281\"><\/div>",
-            "paragraph-61e31ccec7d3057ea99db4672e319041": null
+            "gashortcode": "<div class=\"globo_widget_17281\"></div>",
+            "paragraph-db28f24e58392f56492df79bd0faae49": null
           }
         },
         "inventory_status": {
@@ -149,7 +156,7 @@
           "disabled": true,
           "settings": {
             "title": "Características",
-            "content": "<p>Tecido: Polyester 90%, Elastano 10%<\/p>",
+            "content": "<p>Tecido: Polyester 90%, Elastano 10%</p>",
             "page": ""
           }
         },
@@ -157,12 +164,12 @@
           "type": "complementary_products",
           "disabled": true,
           "settings": {
-            "paragraph-0076fd09a6ae165c32fd3de92d4f7509": null,
+            "paragraph-5f295bf2ff1c0ebe0637d65030aa2ec3": null,
             "product_complementary_heading": "Compre junto",
             "complementary_count": 2,
             "per_slide": 3,
             "control_type": "arrows",
-            "header-812d7b67d6a77dbd69ae91e03b60290e": null,
+            "header-ebb1edf7744ce71b867a3877119fb741": null,
             "image_style": "default"
           }
         }
@@ -172,6 +179,7 @@
         "aa264cb5-fcc9-4396-b988-0cd20ec46c3f",
         "price",
         "description",
+        "text_jdGq9",
         "separator",
         "size_chart_y4AfJ",
         "variant_picker",
@@ -206,7 +214,7 @@
           "disabled": false,
           "settings": {
             "title": "Composição",
-            "content": "<p>{{ product.metafields.custom.composi_o | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.composi_o | metafield_tag }}</p>",
             "page": ""
           }
         },
@@ -224,7 +232,7 @@
           "disabled": false,
           "settings": {
             "title": "Envios & Devolução",
-            "content": "<p>Mudou de ideia? Se arrependeu ou o seu pedido não era o que você queria? Não se preocupe. Sua satisfação é prioridade para a <strong>Slyce<\/strong>. Aqui você tem o direito de troca gratuita!<\/p><p>Comprometidos com os princípios de excelência no atendimento, transparência e em conformidade com o Código de Defesa do Consumidor, a <strong>Slyce<\/strong> arca com todos os custos de troca, devolução e também da entrega de um novo produto.<\/p><p>Conforme lei do artigo 41 do Código de Defesa do Consumidor, na loja virtual da <strong>Slyce<\/strong>, o consumidor tem até 07 (sete) dias corridos após a entrega para se arrepender e comunicar a desistência do produto adquirido ao fornecedor.<\/p><p>O consumidor que comprar no site da <strong>Slyce <\/strong>tem até 30 dias corridos após a entrega para pedir a troca do produto, desde que o produto trocado respeite os índices de qualidade da equipe Slyce.<\/p><p>Leia mais sobre as trocas e devoluções <a href=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/trocas-e-devolucoes\">aqui<\/a>.<\/p><p>Para saber mais sobre nossos métodos de envio, <a href=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\" target=\"_blank\" title=\"https:\/\/www.slyce.com.br\/pages\/politica-de-envio\">clique aqui.<\/a><\/p><p><\/p><p><\/p>",
+            "content": "<p>Mudou de ideia? Se arrependeu ou o seu pedido não era o que você queria? Não se preocupe. Sua satisfação é prioridade para a <strong>Slyce</strong>. Aqui você tem o direito de troca gratuita!</p><p>Comprometidos com os princípios de excelência no atendimento, transparência e em conformidade com o Código de Defesa do Consumidor, a <strong>Slyce</strong> arca com todos os custos de troca, devolução e também da entrega de um novo produto.</p><p>Conforme lei do artigo 41 do Código de Defesa do Consumidor, na loja virtual da <strong>Slyce</strong>, o consumidor tem até 07 (sete) dias corridos após a entrega para se arrepender e comunicar a desistência do produto adquirido ao fornecedor.</p><p>O consumidor que comprar no site da <strong>Slyce </strong>tem até 30 dias corridos após a entrega para pedir a troca do produto, desde que o produto trocado respeite os índices de qualidade da equipe Slyce.</p><p>Leia mais sobre as trocas e devoluções <a href=\"https://www.slyce.com.br/pages/trocas-e-devolucoes\" target=\"_blank\" title=\"https://www.slyce.com.br/pages/trocas-e-devolucoes\">aqui</a>.</p><p>Para saber mais sobre nossos métodos de envio, <a href=\"https://www.slyce.com.br/pages/politica-de-envio\" target=\"_blank\" title=\"https://www.slyce.com.br/pages/politica-de-envio\">clique aqui.</a></p><p></p><p></p>",
             "page": ""
           }
         },
@@ -232,15 +240,15 @@
           "type": "share",
           "disabled": true,
           "settings": {
-            "paragraph-e591fb957802348d41975891edfb6f46": null
+            "paragraph-72d2b768e898209d7c1601eb565dc0ad": null
           }
         },
         "d80b9fc0-785d-473f-a6c4-a386f2230bc4": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-541c226954ca62a3d004fd6283d597e8": null,
-            "paragraph-49515739b4453f77bbebfc5d0d917585": null
+            "paragraph-3a4cafe475e7e05db1accca0955f233a": null,
+            "paragraph-4010950b9dd8128d6f3c9c7f9845dec4": null
           }
         }
       },
@@ -258,16 +266,9 @@
       "settings": {
         "subtitle": "Designs Sofisticados",
         "title": "E Performance Incomparável",
-        "text": "<p>Queremos que você se sinta no seu melhor dentro da quadra, para que, quando a pressão chegar, possa executar o ponto no mais alto nível<\/p>",
-        "image": "shopify:\/\/shop_images\/Slyce_banner_08.jpg",
+        "text": "<p>Queremos que você se sinta no seu melhor dentro da quadra, para que, quando a pressão chegar, possa executar o ponto no mais alto nível</p>",
+        "image": "shopify://shop_images/Slyce_banner_08.jpg",
         "layout": "right"
-      },
-      "blocks": {
-      }
-    },
-    "recently-viewed": {
-      "disabled": false,
-      "settings": {
       },
       "blocks": {
       }
