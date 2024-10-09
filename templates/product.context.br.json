@@ -50,8 +50,8 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-9919e71317b3910d51fcad571664d04f": null,
-            "paragraph-042bf090caa0ff2cf6d5d91511adafa9": null
+            "paragraph-c141fe4752d9b9d7351d66f0b228f73a": null,
+            "paragraph-14cca986bf17a557d51ebe9340072c3f": null
           }
         }
       },
@@ -94,20 +94,13 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": false,
           "settings": {
-            "paragraph-7e2a297d8bd01816af0401b0078ee15c": null,
-            "paragraph-2bd33fe4e8031b0a7023ffb2728e8ed4": null
+            "paragraph-80f1371dfdb1d46a3dbbcea91731b29b": null,
+            "paragraph-38398b435cc13a51e7320ec1f004537b": null
           }
         },
         "description": {
           "settings": {
             "is_tab": false
-          }
-        },
-        "text_jdGq9": {
-          "type": "text",
-          "disabled": false,
-          "settings": {
-            "text": "{{ product.metafields.custom.medidas_modelo.value }}"
           }
         },
         "size_chart_y4AfJ": {
@@ -136,7 +129,7 @@
           "settings": {
             "widget": "3",
             "gashortcode": "<div class=\"globo_widget_17281\"></div>",
-            "paragraph-db28f24e58392f56492df79bd0faae49": null
+            "paragraph-f85e0b23d5ddefc322c94aa295d1fc3c": null
           }
         },
         "inventory_status": {
@@ -164,12 +157,12 @@
           "type": "complementary_products",
           "disabled": true,
           "settings": {
-            "paragraph-5f295bf2ff1c0ebe0637d65030aa2ec3": null,
+            "paragraph-db278b550cbe7a981c4a6deaee6a8195": null,
             "product_complementary_heading": "Compre junto",
             "complementary_count": 2,
             "per_slide": 3,
             "control_type": "arrows",
-            "header-ebb1edf7744ce71b867a3877119fb741": null,
+            "header-f94a675f5068ffa3e3849510cf3851b4": null,
             "image_style": "default"
           }
         }
@@ -179,7 +172,6 @@
         "aa264cb5-fcc9-4396-b988-0cd20ec46c3f",
         "price",
         "description",
-        "text_jdGq9",
         "separator",
         "size_chart_y4AfJ",
         "variant_picker",
@@ -240,15 +232,15 @@
           "type": "share",
           "disabled": true,
           "settings": {
-            "paragraph-72d2b768e898209d7c1601eb565dc0ad": null
+            "paragraph-d407f7e1e72d72190968c5ec9c520063": null
           }
         },
         "d80b9fc0-785d-473f-a6c4-a386f2230bc4": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
           "settings": {
-            "paragraph-3a4cafe475e7e05db1accca0955f233a": null,
-            "paragraph-4010950b9dd8128d6f3c9c7f9845dec4": null
+            "paragraph-ca5b541e94a88d272ad8c74ee86022ae": null,
+            "paragraph-bc3ad3a6798275f634171125972908d5": null
           }
         }
       },
