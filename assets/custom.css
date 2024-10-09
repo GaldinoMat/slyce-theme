@@ -1027,14 +1027,14 @@ p#pq-branding {
 /* Mensagem visível ao clicar */
 .toggle-message {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
   padding: 10px;
   border-radius: 4px;
   position: absolute;
-  bottom: 40px; /* Ajuste conforme necessário */
-  left: 10px;
+  bottom: 30px; /* Ajuste conforme necessário */
+  left: 0px;
   z-index: 21; /* Garante que a mensagem apareça sobre a imagem */
   white-space: nowrap; /* Força o texto a ficar em uma única linha */
   overflow: hidden; /* Esconde o texto que ultrapassa o contêiner */
