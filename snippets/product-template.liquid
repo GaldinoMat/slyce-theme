@@ -86,9 +86,7 @@
       <div class="grid product-grid {% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
-            <div class="product-block-modelo">
-  {{ product.metafields.custom.medidas_modelo }}
-</div>
+            
             {%- render 'product-images',
               section_id: section_id,
               product: product,
@@ -108,7 +106,9 @@
               fallback: fallback,
               mobile_layout: mobile_layout
             -%}
-
+<div class="product-block-modelo">
+  {{ product.metafields.custom.medidas_modelo }}
+</div>
             
           </div>
         {%- endif -%}
