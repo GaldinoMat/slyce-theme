@@ -8316,28 +8316,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  var infoIcon = document.getElementById('infoIcon');
-  var infoModal = document.getElementById('infoModal');
-  var closeModal = document.getElementById('closeModal');
+document.addEventListener('DOMContentLoaded', function() {
+  var toggleButton = document.getElementById('toggleButton');
+  var toggleMessage = document.getElementById('toggleMessage');
 
-  // Abrir o modal ao clicar no ícone
-  infoIcon.addEventListener('click', function() {
-    infoModal.style.display = 'block';
-  });
-
-  // Fechar o modal ao clicar no "X"
-  closeModal.addEventListener('click', function() {
-    infoModal.style.display = 'none';
-  });
-
-  // Fechar o modal ao clicar fora da caixa de conteúdo
-  window.addEventListener('click', function(event) {
-    if (event.target == infoModal) {
-      infoModal.style.display = 'none';
+  toggleButton.addEventListener('click', function() {
+    if (toggleMessage.classList.contains('hidden')) {
+      toggleMessage.classList.remove('hidden');
+    } else {
+      toggleMessage.classList.add('hidden');
     }
   });
 });
+
 
 
 
