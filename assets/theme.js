@@ -8316,21 +8316,29 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function openModal() {
-  document.getElementById("infoModal").style.display = "block";
-}
+document.addEventListener('DOMContentLoaded', function () {
+  var infoIcon = document.getElementById('infoIcon');
+  var infoModal = document.getElementById('infoModal');
+  var closeModal = document.getElementById('closeModal');
 
-function closeModal() {
-  document.getElementById("infoModal").style.display = "none";
-}
+  // Abrir o modal ao clicar no ícone
+  infoIcon.addEventListener('click', function() {
+    infoModal.style.display = 'block';
+  });
 
-// Fecha o modal se clicar fora dele
-window.onclick = function(event) {
-  var modal = document.getElementById("infoModal");
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+  // Fechar o modal ao clicar no "X"
+  closeModal.addEventListener('click', function() {
+    infoModal.style.display = 'none';
+  });
+
+  // Fechar o modal ao clicar fora da caixa de conteúdo
+  window.addEventListener('click', function(event) {
+    if (event.target == infoModal) {
+      infoModal.style.display = 'none';
+    }
+  });
+});
+
 
 
 
