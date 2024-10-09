@@ -986,7 +986,6 @@ p#pq-branding {
 
 /* Estilo para o botão discreto sobre a imagem */
 .model-sizing {
-  position: absolute;
   bottom: 3px;
   left: 120px;
   z-index: 20; /* Garante que o botão apareça sobre a imagem */
