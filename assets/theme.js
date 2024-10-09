@@ -8321,13 +8321,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var toggleMessage = document.getElementById('toggleMessage');
 
   toggleButton.addEventListener('click', function() {
-    if (toggleMessage.classList.contains('hidden')) {
-      toggleMessage.classList.remove('hidden');
-    } else {
-      toggleMessage.classList.add('hidden');
-    }
+    toggleMessage.classList.toggle('hidden'); // Alterna entre ocultar e mostrar
   });
 });
+
 
 
 
