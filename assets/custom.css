@@ -1029,13 +1029,18 @@ p#pq-branding {
   margin-top: 10px;
   font-size: 14px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
   padding: 10px;
   border-radius: 4px;
   position: absolute;
   bottom: 40px; /* Ajuste conforme necessário */
   left: 10px;
   z-index: 21; /* Garante que a mensagem apareça sobre a imagem */
+  white-space: nowrap; /* Força o texto a ficar em uma única linha */
+  overflow: hidden; /* Esconde o texto que ultrapassa o contêiner */
+  text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto se ele for muito longo */
+}
+
 }
 
 /* Para telas menores (mobile), ajuste a posição */
