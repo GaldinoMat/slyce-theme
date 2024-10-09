@@ -8315,7 +8315,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function openModal() {
+  document.getElementById("infoModal").style.display = "block";
+}
 
+function closeModal() {
+  document.getElementById("infoModal").style.display = "none";
+}
+
+// Fecha o modal se clicar fora dele
+window.onclick = function(event) {
+  var modal = document.getElementById("infoModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 
