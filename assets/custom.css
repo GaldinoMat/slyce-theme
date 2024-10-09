@@ -1037,4 +1037,20 @@ p#pq-branding {
   left: 10px;
   z-index: 21; /* Garante que a mensagem apareça sobre a imagem */
 }
+/* Para telas menores (mobile), ajuste a posição */
+@media (max-width: 768px) {
+  .model-sizing {
+    bottom: 5px; /* Diminui a distância do fundo no mobile */
+    left: 5px; /* Diminui a distância da borda no mobile */
+    font-size: 12px; /* Torna o botão e o texto um pouco menores no mobile */
+  }
 
+  .toggle-button {
+    padding: 5px 8px; /* Ajusta o espaçamento no botão para telas menores */
+    font-size: 12px;
+  }
+
+  .toggle-icon {
+    font-size: 14px; /* Ajusta o tamanho do ícone no mobile */
+  }
+}
