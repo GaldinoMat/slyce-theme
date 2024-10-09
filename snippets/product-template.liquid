@@ -106,14 +106,12 @@
               fallback: fallback,
               mobile_layout: mobile_layout
             -%}
-<!-- Ícone de informação -->
-<div class="info-icon" id="infoIcon">ℹ️</div>
-
-<!-- Modal para exibir o texto -->
-<div id="infoModal" class="modal">
-  <div class="modal-content">
-    <span class="close" id="closeModal">&times;</span>
-    <p>{{ product.metafields.custom.medidas_modelo }}</p>
+<div class="model-sizing" id="modelSizing">
+  <button class="toggle-button" id="toggleButton">
+    <span class="toggle-button-text">Tamanho do modelo</span>
+  </button>
+  <div class="toggle-message hidden" id="toggleMessage">
+    {{ product.metafields.custom.medidas_modelo }}
   </div>
 </div>
             
