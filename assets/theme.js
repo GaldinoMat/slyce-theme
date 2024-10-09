@@ -7413,6 +7413,8 @@ theme.recentlyViewed = {
           incomingInventoryEl.classList.add(classes.hidden);
         }
       },
+
+      
   
       /*============================================================================
         Product videos
@@ -8314,7 +8316,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 function openModal() {
   document.getElementById("infoModal").style.display = "block";
 }
@@ -8329,7 +8330,8 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
+
 
 
 
