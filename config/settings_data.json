@@ -216,7 +216,7 @@
           "flag_size": "24",
           "flag_style": "2d",
           "wrapper_selector": ".toolbar__social",
-          "custom_css": ".glink {\ndisplay:inline-flex!important;\nfloat:right!important;\n}\n\n.toolbar__social {\nwidth:165px!important;\n}\n\n@media only screen and (max-width: 600px) {\n.glink img {\nheightL16px!important;\nwidth:16px!important;\n}\n}"
+          "custom_css": ".glink {\ndisplay:inline-flex!important;\nfloat:right!important;\npadding:2px!important;\n}\n\n.toolbar__social {\nwidth:165px!important;\n}\n\n@media only screen and (max-width: 600px) {\n.glink img {\nheightL16px!important;\nwidth:16px!important;\n}\n}"
         }
       }
     }
