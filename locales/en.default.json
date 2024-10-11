@@ -435,6 +435,9 @@
         },
         "discount_order_stacking": {
           "many": "Order discounts"
+        },
+        "subtotal_label_with_quantity": {
+          "many": "Subtotal • %{count} items"
         }
       },
       "shipping": {
@@ -467,6 +470,39 @@
           },
           "free_for_first_n_order": {
             "many": "For the first %{count} orders"
+          },
+          "free_shipping_cycles": {
+            "many": "Free shipping on over %{count} deliveries"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "many": "Free shipping for %{count} deliveries"
+          },
+          "first_n_order_free_with_cycle": {
+            "many": "Free shipping on %{count} more deliveries, then %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "many": "Free shipping on %{count} deliveries, after %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "many": "More %{count} deliveries for %{shipping_price} each"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "many": "More %{count} deliveries for %{shipping_price} each"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "many": "Free shipping for the first %{cycle}, then %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_one_cycle": {
+            "many": "%{shipping_price} for more than %{count} deliveries (%{per_delivery_cost})"
+          },
+          "prepaid_order_one_cycle_delivery_not_included": {
+            "many": "%{shipping_price} for %{count} deliveries (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "many": "%{shipping_price} for more %{count} deliveries (%{per_delivery_cost}), then %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "many": "%{shipping_price} for %{count} deliveries (%{per_delivery_cost}), then %{recurring_order_shipping_price}"
           }
         },
         "shipping_method_first_shipment_group_title": {
@@ -729,6 +765,21 @@
           "many": "{{count}} minutes ago"
         }
       }
+    },
+    "order_details": {
+      "image_gallery": {
+        "load_more_items": {
+          "many": "Load more {{count}} items"
+        }
+      }
+    }
+  },
+  "gempages": {
+    "Carousel": {
+      "no_slider": "In the Slider"
+    },
+    "Newsletter": {
+      "err_msg_default": "Can't send email. Please try again later."
     }
   }
 }
