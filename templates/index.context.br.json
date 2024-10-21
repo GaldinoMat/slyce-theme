@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "parent": "index.json",
   "context": {
@@ -29,26 +29,6 @@
         "lazyload_images": true
       },
       "blocks": {
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
-          "type": "image",
-          "disabled": false,
-          "settings": {
-            "top_subheading": "CONHEÇA",
-            "title": "Linha Endurance Feminina",
-            "title_size": 64,
-            "subheading": "A linha de treino feminina",
-            "link": "shopify://collections/endurance-feminino",
-            "link_text": "SHOP NOW",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify://shop_images/Banners_Horizontais_DesktopENDU.jpg",
-            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileENDU.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 30
-          }
-        },
         "image_MPncm": {
           "type": "image",
           "disabled": false,
@@ -108,13 +88,33 @@
             "parallax_direction": "top",
             "overlay_opacity": 20
           }
+        },
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "top_subheading": "CONHEÇA",
+            "title": "Linha Endurance Feminina",
+            "title_size": 64,
+            "subheading": "A linha de treino feminina",
+            "link": "shopify://collections/endurance-feminino",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/Banners_Horizontais_DesktopENDU.jpg",
+            "image_mobile": "shopify://shop_images/Banners_Horizontais_MobileENDU.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
-        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1",
         "image_MPncm",
         "image_qLj7f",
-        "image_bMUMh"
+        "image_bMUMh",
+        "template--14990080671809__08ae2f32-005a-424d-ad05-79c9c538ee9f-image-1"
       ]
     },
     "2ba1b168-7e1a-4818-8743-3c15841e3616": {
@@ -302,13 +302,13 @@
             "cta_link2": "",
             "image": "shopify://shop_images/Banners_Horizontais_Desktop-ATLETAS3.jpg",
             "video_url": "",
-            "header-430e7f1b91a12d87a08f652bb6f0e209": null,
+            "header-a996a37f6a6f2c27ab488360d13ea177": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-a7c6a40b96646aa6a460713d014c46e5": null,
+            "header-580dac5121e6404a9336cf5b954e49fd": null,
             "text_align": "vertical-center horizontal-center",
-            "header-8dd632510382c0be1e2323113cb6358a": null,
+            "header-8fe724a64183fc07cdbcc2c84eb86b12": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -327,13 +327,13 @@
             "cta_link2": "",
             "image": "shopify://shop_images/Primeira-Ingrid.jpg",
             "video_url": "",
-            "header-55028a8fcd6ec67fe0ec64f1d2992d5b": null,
+            "header-d20c254dfaa1656cb6b0d02bf9df2482": null,
             "width": "50",
             "height": 500,
             "text_size": 100,
-            "header-87d1b3921d707f828c1b149e4062e258": null,
+            "header-54b00df0f8c8bcdcccee5bf6ff8f9e77": null,
             "text_align": "vertical-center horizontal-center",
-            "header-134f4d817b7437fcdf97f47a65b6fcb8": null,
+            "header-4752e35653c3de156f1553f225606976": null,
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
@@ -514,16 +514,16 @@
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "disabled": false,
           "settings": {
-            "header-1293f70fd73ebf10c1319fd33636a64e": null,
+            "header-e01de7443429f29ef4029f563aaa2d41": null,
             "title": "",
             "title_color": "",
             "title_size": null,
             "alignment": "center",
-            "header-a43bd97bd5f5a62a150fcc2cba465bb8": null,
+            "header-3909a76faf92260c30e851f15cf62a63": null,
             "margin_top": null,
             "margin_bottom": null,
             "margin_sides": null,
-            "header-db0d83fc071c0be85657d99539d4c615": null,
+            "header-f72c9a97780a3cde1ac6a12b5a539f97": null,
             "background_color": "",
             "html_area": ""
           }
